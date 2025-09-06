@@ -27,10 +27,11 @@ jobs:
       # 6️⃣ Commit et push du fichier généré
       - name: Commit et push gocal_fr.ics
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add calendar/gocal_fr.ics
-          git commit -m "Mise à jour du calendrier FR"
-          git push
+          git commit -m "MàJ calendrier FR" || echo "Rien à commit"
+          git push https://${PAT_TOKEN}@github.com/SneakyOnTv/pokemon-go-calendar-fr.git main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+
