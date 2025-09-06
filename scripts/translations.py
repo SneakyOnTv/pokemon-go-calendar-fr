@@ -531,7 +531,7 @@ TRANSLATIONS = {
     "Manaphy": "Manaphy",
     "Darkrai": "Darkrai",
     "Shaymin": "Shaymin",
-    "Arceus": "Arceus"
+    "Arceus": "Arceus",
 
   
     # ... compléter le reste de la Gen si besoin # ...
@@ -693,7 +693,7 @@ TRANSLATIONS = {
     "Kyurem": "Kyurem",
     "Keldeo": "Keldeo",
     "Meloetta": "Meloetta",
-    "Genesect": "Genesect"
+    "Genesect": "Genesect",
 
   
     # ... compléter le reste de la Gen si besoin # ...
@@ -771,7 +771,7 @@ TRANSLATIONS = {
     "Zygarde": "Zygarde",
     "Diancie": "Diancie",
     "Hoopa": "Hoopa",
-    "Volcanion": "Volcanion"
+    "Volcanion": "Volcanion",
 
   
     # ... compléter le reste de la Gen si besoin # ...
@@ -1009,7 +1009,7 @@ TRANSLATIONS = {
     "Sneasler": "Farfurex",
     "Overqwil": "Qwilpik",
     "Enamorus Incarnate Form": "Amovénus Forme Avatar",
-    "Enamorus Therian Form": "Amovénus Forme Totémique"
+    "Enamorus Therian Form": "Amovénus Forme Totémique",
 
 
     # ... compléter le reste de la Gen si besoin # ...
