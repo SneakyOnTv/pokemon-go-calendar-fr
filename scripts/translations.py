@@ -835,7 +835,6 @@ TRANSLATIONS = {
     "Sandygast": "Bacabouh",
     "Palossand": "Trépassable",
     "Pyukumuku": "Concombaffe",
-    "Type: Null": "Type:0",
     "Silvally (Type : Normal)": "Silvallié Type : Normal",
     "Silvally (Type : Combat)": "Silvallié Type : Combat",
     "Silvally (Type : Vol)": "Silvallié Type : Vol",
