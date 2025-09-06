@@ -32,4 +32,4 @@ jobs:
           git add calendar/gocal_fr.ics
           git commit -m "MàJ calendrier FR" || echo "Rien à commit"
           
-          git push https://${{ secrets.PAT_TOKEN }}@github.com/SneakyOnTv/pokemon-go-calendar-fr.git main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/SneakyOnTv/pokemon-go-calendar-fr.git main
