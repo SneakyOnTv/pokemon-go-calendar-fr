@@ -27,4 +27,4 @@ os.makedirs("calendar", exist_ok=True)
 with open("calendar/gocal_fr.ics", "w", encoding="utf-8") as f:
     f.write(ics_content)
 
-print("✅ Fichier ICS généré dans calendar/gocal_fr.ics")
+print("Parfait ! Fichier ICS généré dans calendar/gocal_fr.ics")
