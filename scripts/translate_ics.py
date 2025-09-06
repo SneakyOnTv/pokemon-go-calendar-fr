@@ -2,7 +2,7 @@ import requests
 import os
 from translations import TRANSLATIONS
 
-ICS_URL = "https://github.com/othyn/go-calendar/releases/download/v2.0.1/gocal.ics"
+ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
 def main():
     print("Téléchargement du fichier ICS...")
