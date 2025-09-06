@@ -2,7 +2,6 @@
 
 # Dictionnaire de traductions pour Pokémon GO FR
 TRANSLATIONS = {
-{
     # 📅 Événements
       "Anniversary Event": "Événement Anniversaire",
       "Battle Event": "Événement Combat",
