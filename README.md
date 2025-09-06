@@ -10,9 +10,9 @@ Il inclut : événements spéciaux, Journées Communauté, raids, bonus XP x2, P
 
 ## 🔗 Lien d’abonnement
 
-webcal://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calendar/gocal_fr.ics  
+https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics 
 
-> ⚠️ Important : Copie **tout l’URL jusqu’au `.ics`**.  
+> ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.  
 
 ---
 
@@ -21,20 +21,29 @@ webcal://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calend
 ### iPhone
 1. Réglages → **Calendrier** → **Comptes** → **Ajouter un compte**  
 2. Choisir **Autre → Ajouter un abonnement à un calendrier**  
-3. Coller le lien webcal ci-dessus → Valider  
-4. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
+3. Coller le lien webcal ci-dessus:
+  https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+              > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
+5. → Valider  
+6. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
 
 ### Android (Google Agenda)
 1. Ouvrir Google Agenda sur PC → « Autres agendas » → **+ → À partir de l’URL**  
 2. Coller le lien :  
 
-https://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calendar/gocal_fr.ics
+https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+            > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
 3. Ajouter → synchronisation automatique sur mobile  
 
 ### Outlook
 1. Ajouter un calendrier → **À partir d’Internet**  
-2. Coller le lien webcal → Valider  
+2. Coller le lien webcal
+
+https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+            > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
+
+4. → Valider  
 
 ---
 
@@ -64,9 +73,10 @@ https://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calenda
 
 ## 🚀 Améliorations futures
 
-- Traduction complète de tous les noms de Pokémon  
-- Ajout de rappels personnalisés supplémentaires  
-- Amélioration de l’affichage et des catégories  
+- Traduction
+- M.a.j des nouveau pokemon
+- Amélioration des catégories
+- Ajout de rappels personnalisés supplémentaires    
 
 ---
 
