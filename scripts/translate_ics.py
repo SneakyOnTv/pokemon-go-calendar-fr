@@ -34,3 +34,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+if r.status_code != 200:
+    print(f"Erreur HTTP : {r.status_code} pour l'URL {ICS_URL}")
+    raise Exception(...)
