@@ -30,6 +30,20 @@ TRANSLATIONS = {
       "Seasonal Event": "Événement saisonnier",
       "Mega Evolution Event": "Événement Méga-Évolution",
       "Team GO Rocket Event": "Événement Team GO Rocket",
+      "Mega Sharpedo Raid Day": "Journée de Raids Mega Sharpedo",
+      "Tales of Transformation": "Histoires de Transformation",
+      "Mega Kanto Starters in Mega Raid": "Starters de Kanto en Méga Raid",
+      "Palkia in 5-star Raid Battles": "Palkia dans les Raids 5 étoiles",
+      "Trade Days: Tales of Transformation": "Journées d'Échanges : Histoires de Transformation",
+      "Great League and Retro Cup: Great League Edition": "Super Ligue et Coupe Rétro : Édition Super Ligue",
+      "During Max Monday": "Pendant le Max Lundi",
+      "Summer Cup": "Coupe Été",
+      "Ultra League": "Ultra Ligue",
+      "Psychic Spectacular: Taken Over": "Spectacle Psy : Pris en Main",
+      "Gallame": "Gallame",
+      "Steel Skyline": "Ligne d'Acier",
+      "GO Battle Weekend": "Week-end GO Battle",
+    
 
     # 🎁 Bonus
       "Candy for Catch x2": "Bonbons pour capture x2",
@@ -63,6 +77,53 @@ TRANSLATIONS = {
       "XL Candy for Walk": "Bonbons XL pour marche",
       "PvP Bonus": "Bonus PvP",
 
+
+
+     # Mots fréquents / mots de liaison
+        "and": "et",
+        "in": "dans",
+        "the": "le",
+        "of": "de",
+        "for": "pour",
+        "at": "à",
+        "on": "le",
+        "with": "avec",
+        "by": "par",
+        "from": "de",
+        "to": "à",
+        "during": "pendant",
+        "Edition": "Édition",
+        "Day": "Jour",
+        "Hour": "Heure",
+        "Event": "Événement",
+        "Raid": "Raid",
+        "Battles": "Batailles",
+        "League": "Ligue",
+        "Cup": "Coupe",
+        "Spotlight": "Heure vedette",
+        "Community": "Communauté",
+        "Research": "Recherche",
+        "Breakthrough": "Percée",
+        "Tour": "Tour",
+        "Global": "Global",
+        "Launch": "Lancement",
+        "Weekend": "Week-end",
+        "Special": "Spécial",
+        "Daylight": "Lumière du jour",
+        "Holiday": "Vacances",
+        "Classic": "Classique",
+        "Master": "Maître",
+        "Premier": "Premier",
+        "Ultra": "Ultra",
+        "Winter": "Hiver",
+        "Summer": "Été",
+        "Spring": "Printemps",
+        "Autumn": "Automne",
+
+
+
+
+    
     # 🐾 Pokémon Génération 1 Kanto (001–151)
     "Bulbasaur": "Bulbizarre",
     "Ivysaur": "Herbizarre",
