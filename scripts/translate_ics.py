@@ -10,6 +10,7 @@ def main():
         r = requests.get(ICS_URL, allow_redirects=True)
         r.raise_for_status()  # Lève une erreur pour code HTTP != 200-299
 
+        # Vérification du type de contenu
         content_type = r.headers.get('Content-Type', '')
         if 'text' not in content_type and 'ical' not in content_type.lower():
             print(f"Avertissement : type de contenu inattendu : {content_type}")
@@ -34,7 +35,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-if r.status_code != 200:
-    print(f"Erreur HTTP : {r.status_code} pour l'URL {ICS_URL}")
-    raise Exception(...)
