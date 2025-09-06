@@ -24,8 +24,8 @@ jobs:
       - run: mkdir -p calendar
       # 5️⃣ Lancer le script Python
       - run: python scripts/translate_ics.py
-      # 6️⃣ Commit et push du fichier généré
-      - name: Commit et push gocal_fr.ics
+      # 6️⃣ Commit et push avec token GitHub sécurisé
+      - name: Commit et push avec PAT
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
