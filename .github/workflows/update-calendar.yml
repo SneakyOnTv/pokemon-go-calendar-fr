@@ -40,12 +40,11 @@ jobs:
 
       # 7️⃣ Créer ou mettre à jour la release
       - name: Créer/MàJ release et upload ICS
-        id: release
         uses: ncipollo/release-action@v1
         with:
-          tag: latest
+          tag: v1.0.0                  # On fixe un tag, pas 'latest'
           name: Calendrier FR
-          files: calendar/gocal_fr.ics
-          overwrite: true
+          allowUpdates: true           # Permet de mettre à jour la release existante
+          artifact: calendar/gocal_fr.ics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
