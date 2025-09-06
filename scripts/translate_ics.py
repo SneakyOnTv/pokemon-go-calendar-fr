@@ -3,7 +3,7 @@ import os
 from translations import TRANSLATIONS
 
 # URL du fichier ICS original
-ICS_URL = "https://raw.githubusercontent.com/othyn/go-calendar/main/calendar/gocal.ics"
+ICS_URL = "github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
 # Télécharger le ICS
 r = requests.get(ICS_URL)
