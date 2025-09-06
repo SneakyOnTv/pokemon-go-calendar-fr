@@ -1,5 +1,6 @@
 import requests
 import os
+from translations import TRANSLATIONS
 
 # URL du fichier ICS original
 ICS_URL = "https://raw.githubusercontent.com/othyn/go-calendar/main/calendar/gocal.ics"
@@ -8,16 +9,8 @@ ICS_URL = "https://raw.githubusercontent.com/othyn/go-calendar/main/calendar/goc
 r = requests.get(ICS_URL)
 ics_content = r.text
 
-# Table de traduction automatique
-translations = {
-    "Community Day": "Journée Communauté",
-    "Raid": "Raid",
-    "XP x2": "XP x2",
-    "Stardust x2": "Poussière d'étoile x2",
-    # Ajouter d'autres traductions selon tes besoins
-}
-
-for en, fr in translations.items():
+# Appliquer les traductions
+for en, fr in TRANSLATIONS.items():
     ics_content = ics_content.replace(en, fr)
 
 # Créer le dossier calendar si inexistant
