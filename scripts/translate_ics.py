@@ -2,11 +2,14 @@ import requests
 import os
 from translations import TRANSLATIONS
 
-# URL du fichier ICS original
-ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
+# URL du fichier ICS original (raw GitHub)
+ICS_URL = "https://raw.githubusercontent.com/othyn/go-calendar/main/calendar/gocal.ics"
 
 # Télécharger le ICS
 r = requests.get(ICS_URL)
+if r.status_code != 200:
+    raise Exception(f"Impossible de récupérer le fichier ICS, code {r.status_code}")
+
 ics_content = r.text
 
 # Appliquer les traductions
