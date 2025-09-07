@@ -59,11 +59,11 @@ TRANSLATIONS = {
 
 
 # 🔤 Mots génériques
-"during": "pendant",
-"in": "dans",
-"on": "le",
-"at": "à",
-"and": "et",
+#"during": "pendant",
+#"in": "dans",
+#"on": "le",
+#"at": "à",
+#"and": "et",
 
 
 # ✅ Termes clés
