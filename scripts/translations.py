@@ -24,6 +24,8 @@ TRANSLATIONS = {
 "Steel Skyline Spotlight Hour": "Heure Vedette Skyline Acier",
 "Completely Normal Raid Hour": "Heure de Raids Complètement Normale",
 "GO Battle Week-end: Tales of Transformation": "Week-end GO Battle : Histoires de Transformation",
+"in 5-star raid battles ": "dans un raid 5 étoiles",
+"Tales of Transformation": "Transformations fabuleuses",
 
 
 # 🎁 Bonus
@@ -56,28 +58,29 @@ TRANSLATIONS = {
 "XL Candy for Transfer": "Bonbons XL pour Transfert",
 "XL Candy for Walk": "Bonbons XL pour Marche",
 "PvP Bonus": "Bonus PvP",
+"xp celebration": "Celebration XP",
+"completely-normal": "Event Complètement normal",
 
 
 # 🔤 Mots génériques
-#"during": "pendant",
-#"in": "dans",
-#"on": "le",
-#"at": "à",
-#"and": "et",
-
+#"": "",
+#"": "",
+#"": "",
+#"": "",
+#"": "",
+#"": "",
+      
 
 # ✅ Termes clés
 "Trade": "Échange",
 "Trades": "Échanges",
 "Day": "Journée",
 "Days": "Journées",
-"Max": "Max",
-"Raid": "Raid",
 "Raids": "Raids",
 "Edition": "Édition",
 "Event": "Événement",
-"Battles": "Batailles",
 "League": "Ligue",
+"Great": "Super",
 "Cup": "Coupe",
 "Spotlight": "Vedette",
 "Community": "Communauté",
