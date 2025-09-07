@@ -19,11 +19,14 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 ## 📱 Installation rapide
 
 ### iPhone
-1. Réglages → **Calendrier** → **Comptes** → **Ajouter un compte**  
-2. Choisir **Autre → Ajouter un abonnement à un calendrier**  
+1. Réglages → APP → **Calendrier** → **Comptes Calendrier** → **Ajouter un compte**  
+2. Choisir **Autre → Ajouter un cal. avec abonnement**  
 3. Coller le lien webcal ci-dessus:
+4. 
   https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
-              > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
+
+     > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
+     
 5. → Valider  
 6. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
 
@@ -49,6 +52,7 @@ Les événements sont maintenant importés dans ton agenda et prêts à être co
 2. Coller le lien :  
 
 https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
 3. Ajouter → synchronisation automatique sur mobile  
