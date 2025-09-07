@@ -53,7 +53,31 @@ TRANSLATIONS = {
 "XL Candy for Walk": "Bonbons XL pour Marche",
 "PvP Bonus": "Bonus PvP",
 
-    
+      # ✅ Termes clés
+  "Trade": "Échange",
+  "Trades": "Échanges",
+  "Day": "Journée",
+  "Days": "Journées",
+  "Max": "Max",
+  "Raid": "Raid",
+  "Raids": "Raids",
+  "Edition": "Édition",
+  "Event": "Événement",
+  "Battles": "Batailles",
+  "League": "Ligue",
+  "Cup": "Coupe",
+  "Spotlight": "Vedette",
+  "Community": "Communauté",
+  "Research": "Recherche",
+  "Breakthrough": "Percée",
+  "Tour": "Tour",
+  "Global": "Global",
+  "Launch": "Lancement",
+  "Weekend": "Week-end",
+  "Special": "Spécial",
+  "Classic": "Classique",
+  "Master": "Maître",
+  "Autumn": "Automne",
     
     
     # 🐾 Pokémon Génération 1 Kanto (001–151)
