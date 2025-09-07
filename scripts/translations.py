@@ -1170,7 +1170,7 @@ TRANSLATIONS = {
     "Dudunsparce Two-Segment Form": "Deusolourdo",
     "Dudunsparce Three-Segment Form": "Deusolourdo",
     "Kingambit": "Scalpereur",
-    "Great Tusk": "Fort-Ivoire",
+    "Great-Tusk": "Fort-Ivoire",
     "Scream Tail": "Hurle-Queue",
     "Brute Bonnet": "Fongus-Furie",
     "Flutter Mane": "Flotte-Mèche",
