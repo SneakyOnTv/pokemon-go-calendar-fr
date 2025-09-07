@@ -189,7 +189,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-15
 DTSTAMP:20250907T003048Z
-SUMMARY:[MM] Dynamax Abra during Max Monday
+SUMMARY:[MM] Dynamax Abra pendant Lundi Max
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /max-mondays-2025-09-15/
 URL:https://leekduck.com/events/max-mondays-2025-09-15/
@@ -199,14 +199,14 @@ DTSTART:20250915T180000
 DTEND:20250915T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Abra during Max Monday
+DESCRIPTION:[MM] Dynamax Abra pendant Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:palkia-in-5-star-raid-battles-september-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[RB] Palkia in 5-star Raid Battles
+SUMMARY:[RB] Palkia dans les Raids 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /palkia-in-5-star-raid-battles-september-2025/
 URL:https://leekduck.com/events/palkia-in-5-star-raid-battles-september-202
@@ -216,14 +216,14 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Palkia in 5-star Raid Battles
+DESCRIPTION:[RB] Palkia dans les Raids 5 étoiles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-pidgeot-gyarados-in-mega-raids-september-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[RB] Mega Roucarnage and Mega Léviator in Mega Raids
+SUMMARY:[RB] Méga Roucarnage et Méga Lokhlass dans les Méga Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /mega-pidgeot-gyarados-in-mega-raids-september-2025/
 URL:https://leekduck.com/events/mega-pidgeot-gyarados-in-mega-raids-septemb
@@ -233,7 +233,7 @@ DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Roucarnage and Mega Léviator in Mega Raids
+DESCRIPTION:[RB] Méga Roucarnage et Méga Lokhlass dans les Méga Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -404,7 +404,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250924
 DTSTAMP:20250907T003048Z
-SUMMARY:[RH] Dialga (Origin Forme) Raid Hour
+SUMMARY:[RH] Heure de Raid Dialga (Forme Originelle)
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /raidhour20250924/
 URL:https://leekduck.com/events/raidhour20250924/
@@ -413,14 +413,14 @@ DTSTART:20250924T180000
 DTEND:20250924T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Dialga (Origin Forme) Raid Hour
+DESCRIPTION:[RH] Heure de Raid Dialga (Forme Originelle)
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:Événement Complètement normal-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[E] Completely Normal
+SUMMARY:[E] Complètement Normal
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /Événement Complètement normal-2025/
 URL:https://leekduck.com/events/Événement Complètement normal-2025/
@@ -430,7 +430,7 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250927
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Completely Normal
+DESCRIPTION:[E] Complètement Normal
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -527,7 +527,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-raid-day-september-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[RD] Mega Raid Journée
+SUMMARY:[RD] Journée Méga Raid
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /mega-raid-day-september-2025/
 URL:https://leekduck.com/events/mega-raid-day-september-2025/
@@ -537,14 +537,14 @@ DTSTART:20250928T100000
 DTEND:20250928T200000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Mega Raid Journée
+DESCRIPTION:[RD] Journée Méga Raid
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-29
 DTSTAMP:20250907T003048Z
-SUMMARY:[MM] Dynamax Terhal during Max Monday
+SUMMARY:[MM] Dynamax Terhal pendant Lundi Max
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /max-mondays-2025-09-29/
 URL:https://leekduck.com/events/max-mondays-2025-09-29/
@@ -554,14 +554,14 @@ DTSTART:20250929T180000
 DTEND:20250929T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Terhal during Max Monday
+DESCRIPTION:[MM] Dynamax Terhal pendant Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-in-mega-raids-september-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[RB] Mega Kangourex and Mega Lockpin in Mega Raids
+SUMMARY:[RB] Méga Kangourex et Méga Lockpin dans les Méga Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /mega-kangaskhan-lopunny-in-mega-raids-september-2025/
 URL:https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-septe
@@ -571,7 +571,7 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Kangourex and Mega Lockpin in Mega Raids
+DESCRIPTION:[RB] Méga Kangourex et Méga Lockpin dans les Méga Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -600,7 +600,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-30
 DTSTAMP:20250907T003048Z
-SUMMARY:[PSH] Galekid Vedette Hour
+SUMMARY:[PSH] Heure de Projecteur sur Galekid
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2025-09-30/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-30/
@@ -610,14 +610,14 @@ DTSTART:20250930T180000
 DTEND:20250930T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Galekid Vedette Hour
+DESCRIPTION:[PSH] Heure de Projecteur sur Galekid
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251001
 DTSTAMP:20250907T003048Z
-SUMMARY:[RH] Dialga (Origin Forme) Raid Hour
+SUMMARY:[RH] Heure de Raid Dialga (Forme Originelle)
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /raidhour20251001/
 URL:https://leekduck.com/events/raidhour20251001/
@@ -626,14 +626,14 @@ DTSTART:20251001T180000
 DTEND:20251001T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Dialga (Origin Forme) Raid Hour
+DESCRIPTION:[RH] Heure de Raid Dialga (Forme Originelle)
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-september-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[GP] GO Pass: September
+SUMMARY:[GP] Pass GO : Septembre
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /go-pass-september-2025/
 URL:https://leekduck.com/events/go-pass-september-2025/
@@ -643,14 +643,14 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GP] GO Pass: September
+DESCRIPTION:[GP] Pass GO : Septembre
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dialga-in-5-star-raid-battles-september-october-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[RB] Dialga in 5-star Raid Battles
+SUMMARY:[RB] Dialga dans les Raids 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /dialga-in-5-star-raid-battles-september-october-2025/
 URL:https://leekduck.com/events/dialga-in-5-star-raid-battles-september-oct
@@ -660,7 +660,7 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Dialga in 5-star Raid Battles
+DESCRIPTION:[RB] Dialga dans les Raids 5 étoiles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -706,7 +706,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:steel-skyline-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[E] Steel Skyline
+SUMMARY:[E] Horizon Acier
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /steel-skyline-2025/
 URL:https://leekduck.com/events/steel-skyline-2025/
@@ -716,14 +716,14 @@ DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Steel Skyline
+DESCRIPTION:[E] Horizon Acier
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[CD] October Communauté Journée
+SUMMARY:[CD] Journée Communauté Octobre
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /october-communityday2025/
 URL:https://leekduck.com/events/october-communityday2025/
@@ -732,7 +732,7 @@ DTSTART:20251012T140000
 DTEND:20251012T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] October Communauté Journée
+DESCRIPTION:[CD] Journée Communauté Octobre
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -760,7 +760,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xp-celebration-event-2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[E] XP Celebration
+SUMMARY:[E] Célébration XP
 DESCRIPTION:Starts at 13:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /xp-celebration-event-2025/
 URL:https://leekduck.com/events/xp-celebration-event-2025/
@@ -770,7 +770,7 @@ DTSTART;VALUE=DATE:20250825
 DTEND;VALUE=DATE:20251014
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] XP Celebration
+DESCRIPTION:[E] Célébration XP
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -858,7 +858,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-wild-area-2025-nagasaki-japan
 DTSTAMP:20250907T003048Z
-SUMMARY:[WA] Pokémon GO Wild Area: Nagasaki
+SUMMARY:[WA] Zone Sauvage Pokémon GO : Nagasaki
 DESCRIPTION:Starts at 00:00\, ends at 08:00.\n\nhttps://leekduck.com/events
  /pokemon-go-wild-area-2025-nagasaki-japan/
 URL:https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/
@@ -869,7 +869,7 @@ DTSTART;VALUE=DATE:20251107
 DTEND;VALUE=DATE:20251109
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[WA] Pokémon GO Wild Area: Nagasaki
+DESCRIPTION:[WA] Zone Sauvage Pokémon GO : Nagasaki
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -960,7 +960,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2025
 DTSTAMP:20250907T003048Z
-SUMMARY:[CD] November Communauté Journée
+SUMMARY:[CD] Journée Communauté Novembre
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /november-communityday2025/
 URL:https://leekduck.com/events/november-communityday2025/
@@ -969,7 +969,7 @@ DTSTART:20251130T140000
 DTEND:20251130T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] November Communauté Journée
+DESCRIPTION:[CD] Journée Communauté Novembre
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
