@@ -98,8 +98,8 @@ TRANSLATIONS = {
   "the": "le",
   "of": "de",
   "for": "pour",
-  "at": "à",           // appliquer uniquement pour mot isolé
-  "on": "sur",         // appliquer uniquement pour mot isolé
+  "at": "à",    
+  "on": "sur",
   "by": "par",
   "from": "de",
   "to": "à",
