@@ -53,13 +53,6 @@ TRANSLATIONS = {
 "XL Candy for Walk": "Bonbons XL pour Marche",
 "PvP Bonus": "Bonus PvP",
 
-# 🔤 Mots génériques
-"during": "pendant",
-"in": "dans",
-"on": "le",
-"at": "à",
-"and": "et",
-
 # ✅ Termes clés
 "Trade": "Échange",
 "Trades": "Échanges",
