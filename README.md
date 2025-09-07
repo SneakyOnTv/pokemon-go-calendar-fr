@@ -24,7 +24,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 1. **Ouvrir l’application Calendrier et accéder aux comptes**
    
  **1. App**&nbsp;&nbsp;&nbsp;
-<img src="images/1.png" width="200" /> &nbsp;
+<img src="images/1.png" width="200" /> <br>
  **2. Compte Calendrier**
 <img src="images/2.png" width="200" />  
 
