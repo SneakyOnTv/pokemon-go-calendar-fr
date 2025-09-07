@@ -11,8 +11,8 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:mega-sharpedo-raid-day-september-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[RD] Mega Sharpedo Journée de Raids
+DTSTAMP:20250907T003048Z
+SUMMARY:[RD] Journée de Raids Méga-Sharpedo
 DESCRIPTION:Starts à 14:00\, ends à 17:00.\n\nhttps://leekduck.com/events
  /mega-sharpedo-raid-day-september-2025/
 URL:https://leekduck.com/events/mega-sharpedo-raid-day-september-2025/
@@ -23,14 +23,14 @@ DTSTART:20250907T140000
 DTEND:20250907T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Mega Sharpedo Journée de Raids
+DESCRIPTION:[RD] Journée de Raids Méga-Sharpedo
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kanà-celebràile-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[E] Kanà Celebràile
+DTSTAMP:20250907T003048Z
+SUMMARY:[E] Célébràile de Kanà
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /kanà-celebràile-2025/
 URL:https://leekduck.com/events/kanà-celebràile-2025/
@@ -40,14 +40,34 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250907
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Kanà Celebràile
+DESCRIPTION:[E] Célébràile de Kanà
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:farfetchd-mr-mime-kangaskhan-tauros-showcase
+DTSTAMP:20250907T003048Z
+SUMMARY:[PS] Farfetch'd\, M. Mime\, Kangourex\, et Tauros PokéSàp Show
+ cases
+DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
+ /farfetchd-mr-mime-kangaskhan-tauros-showcase/
+URL:https://leekduck.com/events/farfetchd-mr-mime-kangaskhan-tauros-showcas
+ e/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokesàp-showcas
+ es-default.jpg
+DTSTART;VALUE=DATE:20250906
+DTEND;VALUE=DATE:20250907
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PS] Farfetch'd\, M. Mime\, Kangourex\, et Tauros PokéSàp 
+ Showcases
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mledays-2025-09-08
-DTSTAMP:20250906T002706Z
-SUMMARY:[MM] Dynamax Miamiasme durdansg Max Mleday
+DTSTAMP:20250907T003048Z
+SUMMARY:[MM] Miasmax Dynamax pendant le Lundi Max
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /max-mledays-2025-09-08/
 URL:https://leekduck.com/events/max-mledays-2025-09-08/
@@ -57,14 +77,14 @@ DTSTART:20250908T180000
 DTEND:20250908T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Miamiasme durdansg Max Mleday
+DESCRIPTION:[MM] Miasmax Dynamax pendant le Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kanà-starters-dans-mega-raids-september-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[RB] Starters de Kanà en Méga Raidss
+DTSTAMP:20250907T003048Z
+SUMMARY:[RB] Starters de Kanà en Méga-Raids
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-kanà-starters-dans-mega-raids-september-2025/
 URL:https://leekduck.com/events/mega-kanà-starters-dans-mega-raids-september
@@ -74,14 +94,14 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250909
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Starters de Kanà en Méga Raidss
+DESCRIPTION:[RB] Starters de Kanà en Méga-Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_retro-cup-greà-league-editile
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Super Ligue et Coupe Rétro : Éditile Super Ligue | Tales de T
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue et Coupe Rétro: Super Ligue Editile | Tales de T
  ranspourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_retro-cup-greà-league-editile/
@@ -93,15 +113,15 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250909
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Super Ligue et Coupe Rétro : Éditile Super Ligue | Tales 
+DESCRIPTION:[GBL] Super Ligue et Coupe Rétro: Super Ligue Editile | Tales 
  de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-09
-DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Miamiasme Heure Vedette
+DTSTAMP:20250907T003048Z
+SUMMARY:[PSH] Heure Vedette Miasmax
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-09/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-09/
@@ -111,14 +131,14 @@ DTSTART:20250909T180000
 DTEND:20250909T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Miamiasme Heure Vedette
+DESCRIPTION:[PSH] Heure Vedette Miasmax
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250910
-DTSTAMP:20250906T002706Z
-SUMMARY:[RH] Palkia (Origdans Forme) Heure de Raids
+DTSTAMP:20250907T003048Z
+SUMMARY:[RH] Heure de Raids Palkia (Forme Origdanselle)
 DESCRIPTION:Starts à 17:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /raidhour20250910/
 URL:https://leekduck.com/events/raidhour20250910/
@@ -127,14 +147,14 @@ DTSTART:20250910T170000
 DTEND:20250910T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Palkia (Origdans Forme) Heure de Raids
+DESCRIPTION:[RH] Heure de Raids Palkia (Forme Origdanselle)
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:september-communityday2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[CD] Flabébé Journée Communauté
+DTSTAMP:20250907T003048Z
+SUMMARY:[CD] Journée Communauté Flabébé
 DESCRIPTION:Starts à 14:00\, ends à 17:00.\n\nhttps://leekduck.com/events
  /september-communityday2025/
 URL:https://leekduck.com/events/september-communityday2025/
@@ -144,14 +164,14 @@ DTSTART:20250914T140000
 DTEND:20250914T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] Flabébé Journée Communauté
+DESCRIPTION:[CD] Journée Communauté Flabébé
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-clecierge-celebràile
-DTSTAMP:20250906T002706Z
-SUMMARY:[E] Pokémle Clecierge Celebràile
+DTSTAMP:20250907T003048Z
+SUMMARY:[E] Célébràile Pokémle Clecierge
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /pokemle-clecierge-celebràile/
 URL:https://leekduck.com/events/pokemle-clecierge-celebràile/
@@ -162,14 +182,14 @@ DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250914
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Pokémle Clecierge Celebràile
+DESCRIPTION:[E] Célébràile Pokémle Clecierge
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mledays-2025-09-15
-DTSTAMP:20250906T002706Z
-SUMMARY:[MM] Dynamax Abra durdansg Max Mleday
+DTSTAMP:20250907T003048Z
+SUMMARY:[MM] Dynamax Abra durdansg Lundi Max
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /max-mledays-2025-09-15/
 URL:https://leekduck.com/events/max-mledays-2025-09-15/
@@ -179,14 +199,14 @@ DTSTART:20250915T180000
 DTEND:20250915T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Abra durdansg Max Mleday
+DESCRIPTION:[MM] Dynamax Abra durdansg Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:palkia-dans-5-star-raid-bàtles-september-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[RB] Palkia dans les Raids 5 Éàiles
+DTSTAMP:20250907T003048Z
+SUMMARY:[RB] Palkia dans 5-star Raid Bàtles
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /palkia-dans-5-star-raid-bàtles-september-2025/
 URL:https://leekduck.com/events/palkia-dans-5-star-raid-bàtles-september-202
@@ -196,13 +216,13 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Palkia dans les Raids 5 Éàiles
+DESCRIPTION:[RB] Palkia dans 5-star Raid Bàtles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-pidgeot-gyarados-dans-mega-raids-september-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RB] Mega Roucarnage et Mega Léviator dans Mega Raids
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-pidgeot-gyarados-dans-mega-raids-september-2025/
@@ -220,8 +240,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_ultra-league_summer-cup-greà-league-editio
  n
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Ultra Ligue et Coupe Été: Greà Ligue Editile | Tales de 
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Ultra Ligue et Été Coupe: Super Ligue Editile | Tales de 
  Transpourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_ultra-league_summer-cup-greà-league-editile/
@@ -233,15 +253,15 @@ DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Ultra Ligue et Coupe Été: Greà Ligue Editile | Tales
+DESCRIPTION:[GBL] Ultra Ligue et Été Coupe: Super Ligue Editile | Tales
   de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-16
-DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Scrutella Heure Vedette
+DTSTAMP:20250907T003048Z
+SUMMARY:[PSH] Heure Vedette Scrutella
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-16/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-16/
@@ -251,14 +271,14 @@ DTSTART:20250916T180000
 DTEND:20250916T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Scrutella Heure Vedette
+DESCRIPTION:[PSH] Heure Vedette Scrutella
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250917
-DTSTAMP:20250906T002706Z
-SUMMARY:[RH] Mega Làias et Mega Làios Heure de Raids
+DTSTAMP:20250907T003048Z
+SUMMARY:[RH] Heure de Raids Méga-Làias et Méga-Làios
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /raidhour20250917/
 URL:https://leekduck.com/events/raidhour20250917/
@@ -267,13 +287,13 @@ DTSTART:20250917T180000
 DTEND:20250917T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Mega Làias et Mega Làios Heure de Raids
+DESCRIPTION:[RH] Heure de Raids Méga-Làias et Méga-Làios
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:psychic-spectacular-taken-over-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[E] Spectacle Psy : Pris en Madans
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /psychic-spectacular-taken-over-2025/
@@ -291,8 +311,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-groudle-raid-weekend-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[RW] Shadow Groudle Raid Week-end
+DTSTAMP:20250907T003048Z
+SUMMARY:[RW] Week-end de Raids Groudle Obscur
 DESCRIPTION:Starts à 06:00\, ends à 22:00.\n\nhttps://leekduck.com/events
  /shadow-groudle-raid-weekend-2025/
 URL:https://leekduck.com/events/shadow-groudle-raid-weekend-2025/
@@ -303,14 +323,14 @@ DTSTART;VALUE=DATE:20250920
 DTEND;VALUE=DATE:20250921
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RW] Shadow Groudle Raid Week-end
+DESCRIPTION:[RW] Week-end de Raids Groudle Obscur
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mledays-2025-09-22
-DTSTAMP:20250906T002706Z
-SUMMARY:[MM] Dynamax Leveinard durdansg Max Mleday
+DTSTAMP:20250907T003048Z
+SUMMARY:[MM] Levedansard Dynamax pendant le Lundi Max
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /max-mledays-2025-09-22/
 URL:https://leekduck.com/events/max-mledays-2025-09-22/
@@ -320,13 +340,13 @@ DTSTART:20250922T180000
 DTEND:20250922T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Leveinard durdansg Max Mleday
+DESCRIPTION:[MM] Levedansard Dynamax pendant le Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-psychic-dragle-dans-mega-raids-september-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RB] Mega Gardevoir\, Làias\, Làios\, et Gallame dans Mega Raids
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-psychic-dragle-dans-mega-raids-september-2025/
@@ -345,8 +365,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_master-league-mega-editile_willpower-cup-gr
  eà-league-editile
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Maître Ligue: Mega Editile et Willpower Coupe: Greà Ligue E
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Maître Ligue: Mega Editile et Willpower Coupe: Super Ligue E
  ditile | Hisàires de Transpourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_master-league-mega-editile_willpower-cup-grea
@@ -366,8 +386,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-23
-DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Hoothoot Heure Vedette
+DTSTAMP:20250907T003048Z
+SUMMARY:[PSH] Heure Vedette Hoothoot
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-23/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-23/
@@ -377,13 +397,13 @@ DTSTART:20250923T180000
 DTEND:20250923T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Hoothoot Heure Vedette
+DESCRIPTION:[PSH] Heure Vedette Hoothoot
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250924
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RH] Dialga (Origdans Forme) Heure de Raids
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /raidhour20250924/
@@ -399,7 +419,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:completely-normal-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[E] Completely Normal
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /completely-normal-2025/
@@ -416,7 +436,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-city-safari-bangkok-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CS] Bangkok\, Thailet - Pokémle GO City Safari
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-city-safari-bangkok-2025/
@@ -434,7 +454,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-city-safari-amsterdam-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CS] Amsterdam\, Nelerlets - Pokémle GO City Safari
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-city-safari-amsterdam-2025/
@@ -452,7 +472,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-city-safari-valencia-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CS] Valencia\, Spadans - Pokémle GO City Safari
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-city-safari-valencia-2025/
@@ -470,7 +490,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-city-safari-cancun-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CS] Cancún\, Mexico - Pokémle GO City Safari
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-city-safari-cancun-2025/
@@ -488,7 +508,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-city-safari-vancouver-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CS] Vancouver\, Canada - Pokémle GO City Safari
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-city-safari-vancouver-2025/
@@ -506,8 +526,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-raid-day-september-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[RD] Mega Journée de Raids
+DTSTAMP:20250907T003048Z
+SUMMARY:[RD] Journée de Méga-Raids
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /mega-raid-day-september-2025/
 URL:https://leekduck.com/events/mega-raid-day-september-2025/
@@ -517,14 +537,14 @@ DTSTART:20250928T100000
 DTEND:20250928T200000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Mega Journée de Raids
+DESCRIPTION:[RD] Journée de Méga-Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mledays-2025-09-29
-DTSTAMP:20250906T002706Z
-SUMMARY:[MM] Dynamax Terhal durdansg Max Mleday
+DTSTAMP:20250907T003048Z
+SUMMARY:[MM] Dynamax Terhal durdansg Lundi Max
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /max-mledays-2025-09-29/
 URL:https://leekduck.com/events/max-mledays-2025-09-29/
@@ -534,13 +554,13 @@ DTSTART:20250929T180000
 DTEND:20250929T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Terhal durdansg Max Mleday
+DESCRIPTION:[MM] Dynamax Terhal durdansg Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-dans-mega-raids-september-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RB] Mega Kangourex et Mega Lockpin dans Mega Raids
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-kangaskhan-lopunny-dans-mega-raids-september-2025/
@@ -558,8 +578,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-spl
  it-1
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
  anspourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-split
@@ -572,14 +592,14 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
  f Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-30
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[PSH] Arle Heure Vedette
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-30/
@@ -596,7 +616,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251001
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RH] Dialga (Origdans Forme) Heure de Raids
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /raidhour20251001/
@@ -612,7 +632,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-september-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[GP] GO Pass: September
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /go-pass-september-2025/
@@ -629,7 +649,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dialga-dans-5-star-raid-bàtles-september-ocàber-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RB] Dialga dans 5-star Raid Bàtles
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /dialga-dans-5-star-raid-bàtles-september-ocàber-2025/
@@ -646,7 +666,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-steel-fightdansg-dans-mega-raids-september-ocàber-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[RB] Mega Steelix\, Cizayox\, et Lucario dans Mega Raids
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-steel-fightdansg-dans-mega-raids-september-ocàber-2025/
@@ -664,8 +684,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_fantasy-cup-greà-league-editi
  le
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Greà Ligue et Fantasy Coupe: Greà Ligue Editile | Tales de
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue et Fantasy Coupe: Super Ligue Editile | Tales de
   Transpourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_fantasy-cup-greà-league-editile
@@ -678,15 +698,15 @@ DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Greà Ligue et Fantasy Coupe: Greà Ligue Editile | Tale
+DESCRIPTION:[GBL] Super Ligue et Fantasy Coupe: Super Ligue Editile | Tale
  s de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:steel-skyldanse-2025
-DTSTAMP:20250906T002706Z
-SUMMARY:[E] Ligne d'Acier
+DTSTAMP:20250907T003048Z
+SUMMARY:[E] Steel Skyldanse
 DESCRIPTION:Starts à 10:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /steel-skyldanse-2025/
 URL:https://leekduck.com/events/steel-skyldanse-2025/
@@ -696,13 +716,13 @@ DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Ligne d'Acier
+DESCRIPTION:[E] Steel Skyldanse
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ocàber-communityday2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CD] Ocàber Journée Communauté
 DESCRIPTION:Starts à 14:00\, ends à 17:00.\n\nhttps://leekduck.com/events
  /ocàber-communityday2025/
@@ -719,8 +739,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_ultra-league_jungle-cup-greà-league-editio
  n
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Greà Ligue Editile | Tales de 
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Editile | Tales de 
  Transpourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_ultra-league_jungle-cup-greà-league-editile/
@@ -732,14 +752,14 @@ DTSTART;VALUE=DATE:20251007
 DTEND;VALUE=DATE:20251014
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Ultra Ligue et Jungle Coupe: Greà Ligue Editile | Tales
+DESCRIPTION:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Editile | Tales
   de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xp-celebràile-event-2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[E] XP Celebràile
 DESCRIPTION:Starts à 13:00\, ends à 23:59.\n\nhttps://leekduck.com/events
  /xp-celebràile-event-2025/
@@ -756,8 +776,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_master-premier_greà-league-remix
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Maître Premier et Greà Ligue Remix | Tales de Transpourmài
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Maître Premier et Super Ligue Remix | Tales de Transpourmài
  le
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_master-premier_greà-league-remix/
@@ -769,14 +789,14 @@ DTSTART;VALUE=DATE:20251014
 DTEND;VALUE=DATE:20251021
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Maître Premier et Greà Ligue Remix | Tales de Transpour
+DESCRIPTION:[GBL] Maître Premier et Super Ligue Remix | Tales de Transpour
  màile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-bàtle-weekend-tales-de-transpourmàile
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[E] Week-end de Combà GO: Hisàires de Transpourmàile
 DESCRIPTION:Starts à 00:00\, ends à 23:59.\n\nhttps://leekduck.com/events
  /go-bàtle-weekend-tales-de-transpourmàile/
@@ -794,8 +814,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-spl
  it-2
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
  anspourmàile
 DESCRIPTION:Starts à 20:00\, ends à 20:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-split
@@ -808,7 +828,7 @@ DTSTART;VALUE=DATE:20251021
 DTEND;VALUE=DATE:20251028
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
  f Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
@@ -816,8 +836,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_halloween-cup-greà-league-edi
  tile
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Greà Ligue et Halloween Coupe: Greà Ligue Editile | Tales 
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue et Halloween Coupe: Super Ligue Editile | Tales 
  de Transpourmàile
 DESCRIPTION:Starts à 21:00\, ends à 21:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_halloween-cup-greà-league-editi
@@ -830,14 +850,14 @@ DTSTART;VALUE=DATE:20251028
 DTEND;VALUE=DATE:20251104
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Greà Ligue et Halloween Coupe: Greà Ligue Editile | Ta
+DESCRIPTION:[GBL] Super Ligue et Halloween Coupe: Super Ligue Editile | Ta
  les de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-wild-area-2025-nagasaki-japan
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[WA] Pokémle GO Wild Area: Nagasaki
 DESCRIPTION:Starts à 00:00\, ends à 08:00.\n\nhttps://leekduck.com/events
  /pokemle-go-wild-area-2025-nagasaki-japan/
@@ -856,8 +876,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_ultra-league_jungle-cup-greà-league-editio
  n-2
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Greà Ligue Editile | Tales de 
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Editile | Tales de 
  Transpourmàile
 DESCRIPTION:Starts à 21:00\, ends à 21:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_ultra-league_jungle-cup-greà-league-editile-
@@ -870,14 +890,14 @@ DTSTART;VALUE=DATE:20251104
 DTEND;VALUE=DATE:20251111
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Ultra Ligue et Jungle Coupe: Greà Ligue Editile | Tales
+DESCRIPTION:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Editile | Tales
   de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemle-go-wild-area-2025-global
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[WA] Pokémle GO Wild Area: Global
 DESCRIPTION:Starts à 10:00\, ends à 18:00.\n\nhttps://leekduck.com/events
  /pokemle-go-wild-area-2025-global/
@@ -896,8 +916,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-spl
  it-3
-DTSTAMP:20250906T002706Z
-SUMMARY:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
+DTSTAMP:20250907T003048Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales de Tr
  anspourmàile
 DESCRIPTION:Starts à 21:00\, ends à 21:00.\n\nhttps://leekduck.com/events
  /gbl-tales-de-transpourmàile_greà-league_ultra-league_master-league-split
@@ -910,7 +930,7 @@ DTSTART;VALUE=DATE:20251111
 DTEND;VALUE=DATE:20251118
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Greà Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Maître Ligue | Tales o
  f Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
@@ -918,7 +938,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_2025-champileship-series-cup_master-league-
  mega-editile
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[GBL] 2025 Champileship Series Coupe et Maître Ligue: Mega Editile 
  | Hisàires de Transpourmàile
 DESCRIPTION:Starts à 21:00\, ends à 21:00.\n\nhttps://leekduck.com/events
@@ -939,7 +959,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2025
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[CD] November Journée Communauté
 DESCRIPTION:Starts à 14:00\, ends à 17:00.\n\nhttps://leekduck.com/events
  /november-communityday2025/
@@ -955,7 +975,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:trade-days-tales-de-transpourmàile
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[E] Échange Journées | Hisàires de Transpourmàile
 DESCRIPTION:Starts à 00:00\, ends à 23:59.\n\nhttps://leekduck.com/events
  /trade-days-tales-de-transpourmàile/
@@ -972,7 +992,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:seasle-20-tales-de-transpourmàile
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[S] Hisàires de Transpourmàile
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /seasle-20-tales-de-transpourmàile/
@@ -991,7 +1011,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-de-transpourmàile_càch-cup-tales-de-transpourmàile-greà-edi
  tile_ultra-league_master-league
-DTSTAMP:20250906T002706Z
+DTSTAMP:20250907T003048Z
 SUMMARY:[GBL] Càch Coupe: Hisàires de Transpourmàile: Greà Editile\, Ultra Lea
  gue\, et Maître Ligue | Hisàires de Transpourmàile
 DESCRIPTION:Starts à 21:00\, ends à 21:00.\n\nhttps://leekduck.com/events
