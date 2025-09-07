@@ -94,15 +94,9 @@ TRANSLATIONS = {
   "PvP Bonus": "Bonus PvP",
 
   "and": "et",
-  "in": "dans",
   "the": "le",
-  "of": "de",
-  "for": "pour",
-  "at": "à",    
-  "on": "sur",
-  "by": "par",
+  "for": "pour",  
   "from": "de",
-  "to": "à",
   "during": "pendant",
 
   "Trade": "Échange",
