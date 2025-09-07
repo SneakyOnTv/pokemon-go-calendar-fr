@@ -30,19 +30,19 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 <img src="images/2.png" width="200" />  
 
 
-   3. **Ajouter un compte**  
+   **3. Ajouter un compte**  
 <img src="images/3.png" width="200" />  
 
 
-   4. **Choisir “Autre”**  
+   **4. Choisir “Autre”**  
 <img src="images/4.png" width="200" />  
 
 
-5. **Ajouter un calendrier avec abonnement**  
+   **5. Ajouter un calendrier avec abonnement**  
 <img src="images/5.png" width="200" />  
 
 
-6. **Coller le lien du calendrier dans le serveur**  
+   **6. Coller le lien du calendrier dans le serveur**  
 https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
 
             > ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
