@@ -2,7 +2,7 @@
 
 # Dictionnaire de traductions pour Pokémon GO FR
 TRANSLATIONS = {
-    # 📅 Événements
+    // 📅 Événements
 "Mega Sharpedo Raid Day": "Journée de Raids Méga-Sharpedo",
 "Kanto Celebration": "Célébration de Kanto",
 "Dynamax Trubbish during Max Monday": "Miasmax Dynamax pendant le Lundi Max",
@@ -22,8 +22,7 @@ TRANSLATIONS = {
 "Master League: Mega Edition and Willpower Cup: Great League Edition | Tales of Transformation": "Maître Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Histoires de Transformation",
 "Hoothoot Spotlight Hour": "Heure Vedette Hoothoot",
 
-
-# 🎁 Bonus
+// 🎁 Bonus
 "Candy for Catch x2": "Bonbons pour Capture x2",
 "Candy for Transfer x2": "Bonbons pour Transfert x2",
 "Candy for Walk x2": "Bonbons pour Marche x2",
@@ -54,12 +53,14 @@ TRANSLATIONS = {
 "XL Candy for Walk": "Bonbons XL pour Marche",
 "PvP Bonus": "Bonus PvP",
 
-
-# 🔤 Mots génériques
+// 🔤 Mots génériques
 "during": "pendant",
+"in": "dans",
+"on": "le",
+"at": "à",
+"and": "et",
 
-
-# ✅ Termes clés
+// ✅ Termes clés
 "Trade": "Échange",
 "Trades": "Échanges",
 "Day": "Journée",
