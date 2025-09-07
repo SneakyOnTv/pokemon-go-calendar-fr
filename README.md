@@ -43,7 +43,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 6. **Coller le lien du calendrier dans le serveur**  
 https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
 
-> ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
+            > ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
 <img src="images/6.png" width="200" />
 
 
@@ -84,6 +84,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 2. Coller le lien webcal
 
 https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
 4. → Valider  
