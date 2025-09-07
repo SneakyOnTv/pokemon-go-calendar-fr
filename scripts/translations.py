@@ -26,6 +26,8 @@ TRANSLATIONS = {
 "GO Battle Week-end: Tales of Transformation": "Week-end GO Battle : Histoires de Transformation",
 "in 5-star raid battles ": "dans un raid 5 étoiles",
 "Tales of Transformation": "Transformations fabuleuses",
+"Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation": "Coupe Catch : Histoires de Transformation : Édition Super, Ultra Ligue et Maître Ligue",
+
 
 
 # 🎁 Bonus
@@ -63,7 +65,7 @@ TRANSLATIONS = {
 
 
 # 🔤 Mots génériques
-#"": "",
+
 #"": "",
 #"": "",
 #"": "",
