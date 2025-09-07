@@ -126,6 +126,16 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 
 ---
 
+### 🔍 Aperçu du calendrier Pokémon GO sur iPhone
+
+Voici quelques images pour montrer le calendrier et certains événements :
+
+<img src="images/IMG_07.png" width="200" /> <img src="images/IMG_10.png" width="200" /> <img src="images/IMG_25.png" width="200" />
+
+💡 Astuce : Les événements apparaissent en **points colorés**, et tu peux cliquer sur un jour pour voir tous les détails et horaires.
+
+---
+
 ## 🙌 Contributeurs
 
 - **[@SneakyOnTv](https://github.com/SneakyOnTv)** → Création et gestion du calendrier FR  
