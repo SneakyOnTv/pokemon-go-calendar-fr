@@ -18,17 +18,37 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 
 ## 📱 Installation rapide
 
-### iPhone
-1. Réglages → APP → **Calendrier** → **Comptes Calendrier** → **Ajouter un compte**  
-2. Choisir **Autre → Ajouter un cal. avec abonnement**  
-3. Coller le lien webcal ci-dessus:
-4. 
-  https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
 
-     > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
-     
-5. → Valider  
-6. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
+### 📱 Ajouter le calendrier Pokémon GO sur iPhone – Tuto illustré
+
+1. **Ouvrir l’application Calendrier et accéder aux comptes**  
+<img src="images/1.png" width="200" /> <img src="images/2.png" width="200" />  
+**1. App** &nbsp;&nbsp;&nbsp; **2. Compte Calendrier**
+
+2. **Ajouter un compte**  
+<img src="images/3.png" width="200" />  
+**3. Ajouter un compte**
+
+3. **Choisir “Autre”**  
+<img src="images/4.png" width="200" />  
+**4. Autre**
+
+4. **Ajouter un calendrier avec abonnement**  
+<img src="images/5.png" width="200" />  
+**5. Ajouter un cal. avec abonnement**
+
+5. **Coller le lien du calendrier dans le serveur**  
+https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+
+<img src="images/6.png" width="200" />  
+**6. Coller le lien dans le serveur**
+
+> ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
+
+7. **Valider**  
+- Le calendrier apparaît maintenant dans l’application **Calendrier** de l’iPhone.
+
+8. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
 
 ### Android (Google Agenda)
 Télécharge le fichier :
