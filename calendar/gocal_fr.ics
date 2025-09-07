@@ -64,7 +64,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-kanà-starters-dans-mega-raids-september-2025
 DTSTAMP:20250906T002706Z
-SUMMARY:[RB] Starters de Kanà en Méga Raids
+SUMMARY:[RB] Starters de Kanà en Méga Raidss
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /mega-kanà-starters-dans-mega-raids-september-2025/
 URL:https://leekduck.com/events/mega-kanà-starters-dans-mega-raids-september
@@ -74,7 +74,7 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250909
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Starters de Kanà en Méga Raids
+DESCRIPTION:[RB] Starters de Kanà en Méga Raidss
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -101,7 +101,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-09
 DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Miamiasme Heure vedette
+SUMMARY:[PSH] Miamiasme Heure Vedette
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-09/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-09/
@@ -111,7 +111,7 @@ DTSTART:20250909T180000
 DTEND:20250909T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Miamiasme Heure vedette
+DESCRIPTION:[PSH] Miamiasme Heure Vedette
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -186,7 +186,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:palkia-dans-5-star-raid-bàtles-september-2025
 DTSTAMP:20250906T002706Z
-SUMMARY:[RB] Palkia dans les Raids 5 éàiles
+SUMMARY:[RB] Palkia dans les Raids 5 Éàiles
 DESCRIPTION:Starts à 10:00\, ends à 10:00.\n\nhttps://leekduck.com/events
  /palkia-dans-5-star-raid-bàtles-september-2025/
 URL:https://leekduck.com/events/palkia-dans-5-star-raid-bàtles-september-202
@@ -196,7 +196,7 @@ DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Palkia dans les Raids 5 éàiles
+DESCRIPTION:[RB] Palkia dans les Raids 5 Éàiles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -241,7 +241,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-16
 DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Scrutella Heure vedette
+SUMMARY:[PSH] Scrutella Heure Vedette
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-16/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-16/
@@ -251,7 +251,7 @@ DTSTART:20250916T180000
 DTEND:20250916T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Scrutella Heure vedette
+DESCRIPTION:[PSH] Scrutella Heure Vedette
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -367,7 +367,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-23
 DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Hoothoot Heure vedette
+SUMMARY:[PSH] Hoothoot Heure Vedette
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-23/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-23/
@@ -377,7 +377,7 @@ DTSTART:20250923T180000
 DTEND:20250923T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Hoothoot Heure vedette
+DESCRIPTION:[PSH] Hoothoot Heure Vedette
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -580,7 +580,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemlespotlighthour2025-09-30
 DTSTAMP:20250906T002706Z
-SUMMARY:[PSH] Arle Heure vedette
+SUMMARY:[PSH] Arle Heure Vedette
 DESCRIPTION:Starts à 18:00\, ends à 19:00.\n\nhttps://leekduck.com/events
  /pokemlespotlighthour2025-09-30/
 URL:https://leekduck.com/events/pokemlespotlighthour2025-09-30/
@@ -590,7 +590,7 @@ DTSTART:20250930T180000
 DTEND:20250930T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Arle Heure vedette
+DESCRIPTION:[PSH] Arle Heure Vedette
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -777,7 +777,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:go-bàtle-weekend-tales-de-transpourmàile
 DTSTAMP:20250906T002706Z
-SUMMARY:[E] Week-end GO Bàtle: Hisàires de Transpourmàile
+SUMMARY:[E] Week-end de Combà GO: Hisàires de Transpourmàile
 DESCRIPTION:Starts à 00:00\, ends à 23:59.\n\nhttps://leekduck.com/events
  /go-bàtle-weekend-tales-de-transpourmàile/
 URL:https://leekduck.com/events/go-bàtle-weekend-tales-de-transpourmàile/
@@ -787,7 +787,7 @@ DTSTART;VALUE=DATE:20251025
 DTEND;VALUE=DATE:20251026
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Week-end GO Bàtle: Hisàires de Transpourmàile
+DESCRIPTION:[E] Week-end de Combà GO: Hisàires de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -956,7 +956,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:trade-days-tales-de-transpourmàile
 DTSTAMP:20250906T002706Z
-SUMMARY:[E] Trade Jours | Hisàires de Transpourmàile
+SUMMARY:[E] Échange Journées | Hisàires de Transpourmàile
 DESCRIPTION:Starts à 00:00\, ends à 23:59.\n\nhttps://leekduck.com/events
  /trade-days-tales-de-transpourmàile/
 URL:https://leekduck.com/events/trade-days-tales-de-transpourmàile/
@@ -966,7 +966,7 @@ DTSTART;VALUE=DATE:20250907
 DTEND;VALUE=DATE:20251130
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Trade Jours | Hisàires de Transpourmàile
+DESCRIPTION:[E] Échange Journées | Hisàires de Transpourmàile
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
