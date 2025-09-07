@@ -136,6 +136,33 @@ Voici quelques images pour montrer le calendrier et certains événements :
 
 ---
 
+📅 Légende des événements Pokémon GO
+Pour organiser les événements dans le calendrier, voici les abréviations utilisées :
+
+[CD] Community Day / Journée Communauté
+
+[MM] Max Monday / Lundi Max
+
+[RB] 5★ Raids / Méga Raids
+
+[PSH] Spotlight Hour / Heure de Projecteur
+
+[GBL] GO Battle League / Ligue de Combat GO
+
+[E] Event / Événement spécial
+
+[RH] Raid Hour / Heure de Raid
+
+[RW] Raid Weekend / Week-end de Raid
+
+[CS] Urban Safari / Safari Urbain
+
+[RD] Mega Raid Day / Journée Méga Raid
+
+[S] Season / Saison
+
+---
+
 ## 🙌 Contributeurs
 
 - **[@SneakyOnTv](https://github.com/SneakyOnTv)** → Création et gestion du calendrier FR  
