@@ -28,6 +28,23 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 6. Activer les alertes selon vos préférences (matin pour événements jour entier, 30–45 min avant pour les raids)  
 
 ### Android (Google Agenda)
+Télécharge le fichier :
+https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+
+Ouvre le fichier téléchargé
+Clique dessus depuis la barre de notifications ou depuis ton dossier Téléchargements.
+
+Ajoute le calendrier à ton agenda
+L’application Google Agenda s’ouvrira automatiquement.
+
+Clique sur Tout ajouter ou Ajouter tous les événements.
+Valide
+
+Les événements sont maintenant importés dans ton agenda et prêts à être consultés sur ton Android.
+
+
+& , ou 
+
 1. Ouvrir Google Agenda sur PC → « Autres agendas » → **+ → À partir de l’URL**  
 2. Coller le lien :  
 
