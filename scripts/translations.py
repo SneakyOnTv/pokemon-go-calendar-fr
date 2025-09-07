@@ -83,7 +83,7 @@ TRANSLATIONS = {
 "Special": "Spécial",
 "Classic": "Classique",
 "Master": "Maître",
-"Autumn": "Automne"
+"Autumn": "Automne",
     
     
     
