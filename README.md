@@ -22,28 +22,30 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 ### 📱 Ajouter le calendrier Pokémon GO sur iPhone – Tuto illustré
 
 1. **Ouvrir l’application Calendrier et accéder aux comptes**  
-<img src="images/1.png" width="200" /> <img src="images/2.png" width="200" />  
-**1. App** &nbsp;&nbsp;&nbsp; **2. Compte Calendrier**
+**1. App** &nbsp;&nbsp;&nbsp;
+<img src="images/1.png" width="200" />
+ **2. Compte Calendrier**
+<img src="images/2.png" width="200" />  
 
-2. **Ajouter un compte**  
+
+3. **Ajouter un compte**  
 <img src="images/3.png" width="200" />  
-**3. Ajouter un compte**
 
-3. **Choisir “Autre”**  
+
+4. **Choisir “Autre”**  
 <img src="images/4.png" width="200" />  
-**4. Autre**
 
-4. **Ajouter un calendrier avec abonnement**  
+
+5. **Ajouter un calendrier avec abonnement**  
 <img src="images/5.png" width="200" />  
-**5. Ajouter un cal. avec abonnement**
 
-5. **Coller le lien du calendrier dans le serveur**  
+
+6. **Coller le lien du calendrier dans le serveur**  
 https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
 
-<img src="images/6.png" width="200" />  
-**6. Coller le lien dans le serveur**
-
 > ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
+<img src="images/6.png" width="200" />
+
 
 7. **Valider**  
 - Le calendrier apparaît maintenant dans l’application **Calendrier** de l’iPhone.
