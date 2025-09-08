@@ -9,41 +9,30 @@ on:
     - cron: "1 22 * * *"   # 00h01 Paris
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       # 1️⃣ Checkout du dépôt
       - uses: actions/checkout@v4
 
-      # 2️⃣ Installer Python
+      # 2️⃣ Installer Python et dépendances
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3️⃣ Mettre en cache les dépendances Python
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      # 4️⃣ Installer les dépendances Python depuis requirements.txt
-      - name: Installer dependencies Python
+      - name: Installer les dépendances
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt --quiet
+          pip install -r requirements.txt
 
-      # 5️⃣ Créer le dossier calendar
+      # 3️⃣ Créer le dossier calendar si inexistant
       - run: mkdir -p calendar
 
-      # 6️⃣ Lancer le script de traduction
-      - name: Générer le fichier ICS traduit
-        run: python scripts/translate_ics.py
+      # 4️⃣ Lancer le script Python pour générer ICS
+      - run: python scripts/translate_ics.py
 
-      # 7️⃣ Commit et push du fichier ICS
-      - name: Commit et push ICS
+      # 5️⃣ Commit et push du fichier ICS
+      - name: Commit et push avec GITHUB_TOKEN
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
@@ -51,16 +40,8 @@ jobs:
           git commit -m "MàJ calendrier FR" || echo "Rien à commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/SneakyOnTv/pokemon-go-calendar-fr.git main
 
-      # 8️⃣ Déployer sur GitHub Pages
-      - name: Build & deploy GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./calendar
-          publish_branch: gh-pages
-
-      # 9️⃣ Créer/MàJ release et upload ICS
-      - name: Créer/MàJ release
+      # 6️⃣ Créer ou mettre à jour la release
+      - name: Créer/MàJ release et upload ICS
         uses: ncipollo/release-action@v1
         with:
           tag: v1.0.0
@@ -70,11 +51,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 🔟 Notifications après réussite complète
-      - name: Notification GitHub & Pushover
+      # 7️⃣ Notification de succès GitHub
+      - name: Notification de succès dans GitHub
+        if: success()
+        run: echo "::notice title=Calendrier FR::✅ Auto MàJ calendrier FR réussie !"
+
+      # 8️⃣ Notification Pushover
+      - name: Notification push Pushover
         if: success()
         run: |
-          echo "::notice title=Calendrier FR::✅ Auto MàJ calendrier FR réussie !"
           curl -s \
             --form-string "token=${{ secrets.PUSHOVER_TOKEN }}" \
             --form-string "user=${{ secrets.PUSHOVER_USER }}" \
