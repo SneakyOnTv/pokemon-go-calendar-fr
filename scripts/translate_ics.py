@@ -62,29 +62,14 @@ def unfold_ics(ics_content):
             unfolded.append(line)
     return "\n".join(unfolded)
 
-def protect_names(text):
-    protected_map = {}
-    for idx, name in enumerate(PROTECTED_NAMES):
-        placeholder = f"__PROTECTED_{idx}__"
-        protected_map[placeholder] = name
-        text = text.replace(name, placeholder)
-    return text, protected_map
-
-def restore_names(text, protected_map):
-    for placeholder, name in protected_map.items():
-        text = text.replace(placeholder, name)
-    return text
-
 def translate_text(text, translator):
     """
     Traduit un texte avec le dictionnaire manuel puis Google Translate si nécessaire.
     """
     original = text
-    # Remplacer par les traductions définies
     for en, fr in TRANSLATIONS.items():
         text = text.replace(en, fr)
 
-    # Traduction automatique si la ligne contient encore des mots anglais
     if re.search(r'[A-Za-z]{2,}', text):
         try:
             translated = translator.translate(text, src='en', dest='fr').text
@@ -107,14 +92,21 @@ def translate_field_line(line, translator):
 
     if key.upper() in TEXT_FIELDS:
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
-        value_decoded, protected_map = protect_names(value_decoded)
 
+        # Protéger uniquement les noms sensibles
+        protected_map = {}
+        for name in PROTECTED_NAMES:
+            if name in value_decoded:
+                placeholder = f"__PROTECTED_{len(protected_map)}__"
+                protected_map[placeholder] = name
+                value_decoded = value_decoded.replace(name, placeholder)
+
+        # Traduction manuelle + automatique
         translated = translate_text(value_decoded, translator)
-        translated = restore_names(translated, protected_map)
 
-        # Nettoyage des espaces ou backslashes introduits par la traduction
-        translated = re.sub(r"\\\s*n", "\\n", translated)
-        translated = re.sub(r"\s*\\,", "\\,", translated)
+        # Restaurer les noms protégés
+        for placeholder, name in protected_map.items():
+            translated = translated.replace(placeholder, name)
 
         # Réencoder pour iCalendar
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
@@ -171,7 +163,6 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(translated_lines))
 
-    # Vérification rapide du fichier ICS
     if translated_lines and translated_lines[0].startswith("BEGIN:VCALENDAR") and translated_lines[-1].startswith("END:VCALENDAR"):
         print(f"✅ Fichier ICS généré dans {output_file}")
         send_pushover(f"✅ Fichier ICS traduit généré avec succès : {output_file}")
