@@ -75,18 +75,39 @@ def restore_text(text):
     return text
 
 def translate_text(text, translator):
-    """Traduction manuelle + Google Translate si nécessaire"""
+    """
+    Traduction robuste : 
+    - Applique d'abord le dictionnaire TRANSLATIONS
+    - Préserve les Pokémon et abréviations
+    - Utilise Google Translate seulement sur le reste
+    """
     original = text
-    # Dictionnaire manuel
-    for en, fr in TRANSLATIONS.items():
-        text = text.replace(en, fr)
 
-    # Traduction automatique si reste de l'anglais et pas de placeholder
-    if re.search(r'[A-Za-z]{2,}', text) and "__PROTECTED_" not in text:
+    # 1️⃣ Appliquer le dictionnaire TRANSLATIONS mot/phrase par mot/phrase
+    # On trie par longueur décroissante pour éviter les conflits (ex: 'raid' vs 'raid battles')
+    for en in sorted(TRANSLATIONS.keys(), key=len, reverse=True):
+        fr = TRANSLATIONS[en]
+        # Remplacer uniquement si le mot anglais est présent, insensible à la casse
+        pattern = re.compile(re.escape(en), flags=re.IGNORECASE)
+        text = pattern.sub(fr, text)
+
+    # 2️⃣ Identifier les segments à traduire automatiquement (hors placeholders)
+    segments = re.split(r"(__PROTECTED_\d+__)", text)  # ne pas traduire les Pokémon
+    for i, seg in enumerate(segments):
+        if seg.startswith("__PROTECTED_") or not re.search(r"[A-Za-z]{2,}", seg):
+            continue  # segment protégé ou pas de texte anglais à traduire
         try:
-            text = translator.translate(text, src='en', dest='fr').text
+            translated_seg = translator.translate(seg, src='en', dest='fr').text
+            segments[i] = translated_seg
         except Exception as e:
-            print(f"⚠️ Erreur de traduction pour : {original}\n{e}")
+            print(f"⚠️ Erreur traduction automatique segment : {seg}\n{e}")
+
+    # 3️⃣ Recomposer le texte avec tous les segments
+    text = "".join(segments)
+
+    # 4️⃣ Restaurer les placeholders si nécessaire
+    text = restore_text(text)
+
     return text
 
 def translate_field_line(line, translator):
@@ -107,8 +128,6 @@ def translate_field_line(line, translator):
         value_protected = protect_text(value_decoded)
         # Traduire
         translated = translate_text(value_protected, translator)
-        # Restaurer les noms
-        translated = restore_text(translated)
         # Réencoder iCal
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
