@@ -24,6 +24,7 @@
   }
   .intro { text-align: center; margin-bottom: 20px; }
 
+  /* Grille de tags */
   .tags-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -36,9 +37,9 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
   }
-  .tag:hover { background: #eaeaea; }
+  .tag:hover { background: #eaeaea; transform: translateY(-2px); }
   .tag input { transform: scale(1.2); margin-right: 8px; }
   .tag label { font-weight: bold; cursor: pointer; }
 
@@ -58,16 +59,51 @@
   button:hover { background: #d32f2f; }
 
   #linkContainer { margin-top: 20px; text-align: center; font-size: 0.95em; word-break: break-all; }
+  #linkContainer div {
+    background:#f1f1f1;
+    padding:10px;
+    border-radius:8px;
+    display:inline-block;
+  }
+  #linkContainer button {
+    background:#1565c0;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:5px 10px;
+    margin-left:10px;
+    cursor:pointer;
+    font-size:0.85em;
+  }
+  #linkContainer button:hover { background:#0d47a1; }
   #linkContainer a { color: #1565c0; text-decoration: none; font-weight: bold; }
   #linkContainer a:hover { text-decoration: underline; }
 
-  #lexique { margin-top: 35px; }
+  /* Lexique */
+  #lexique { margin-top: 35px; overflow-x:auto; }
   #lexique h3 { margin-bottom: 12px; color: #444; text-align: center; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
-  table th, table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; min-width:700px; }
+  table th, table td { border: 1px solid #ddd; padding: 10px; text-align: left; transition: background 0.3s; }
   table th { background: #ef5350; color: white; text-align: center; }
   table tr:nth-child(even) { background: #f9f9f9; }
   table tr:hover { background: #f1f1f1; cursor: pointer; }
+
+  /* Couleurs tags / lexique */
+  .tag-RH, .lex-RH { background-color:#ffebee; }
+  .tag-RB, .lex-RB { background-color:#ffe0b2; }
+  .tag-PSH, .lex-PSH { background-color:#e1f5fe; }
+  .tag-CD, .lex-CD { background-color:#e8f5e9; }
+  .tag-GBL, .lex-GBL { background-color:#f3e5f5; }
+  .tag-WA, .lex-WA { background-color:#fff9c4; }
+  .tag-E, .lex-E { background-color:#fce4ec; }
+  .tag-S, .lex-S { background-color:#d7ccc8; }
+  .tag-MM, .lex-MM { background-color:#c8e6c9; }
+  .tag-RD, .lex-RD { background-color:#ffccbc; }
+  .tag-RW, .lex-RW { background-color:#d1c4e9; }
+  .tag-GP, .lex-GP { background-color:#b3e5fc; }
+  .tag-CS, .lex-CS { background-color:#ffe082; }
+
+  .highlight { outline: 3px solid #1565c0; transition: outline 0.3s; }
   .abbr-RH { color: #d32f2f; font-weight: bold; }
   .abbr-RB { color: #f57c00; font-weight: bold; }
   .abbr-PSH { color: #fbc02d; font-weight: bold; }
@@ -88,21 +124,21 @@
   <h1>Pokémon GO - Sélection des événements</h1>
   <p class="intro">Cochez les événements que vous voulez inclure dans votre calendrier, ou cliquez directement sur une ligne du lexique, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
 
-  <!-- Liste des tags -->
+  <!-- Grille de tags -->
   <div class="tags-grid">
-    <div class="tag"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Raid Hour</label></div>
-    <div class="tag"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
-    <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Pokémon Spotlight Hour</label></div>
-    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
-    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] GO Battle League</label></div>
-    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
-    <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Event</label></div>
-    <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
-    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
-    <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
-    <div class="tag"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
-    <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Pass</label></div>
-    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] City Safari</label></div>
+    <div class="tag tag-RH" data-tag="RH"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Raid Hour</label></div>
+    <div class="tag tag-RB" data-tag="RB"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
+    <div class="tag tag-PSH" data-tag="PSH"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Pokémon Spotlight Hour</label></div>
+    <div class="tag tag-CD" data-tag="CD"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
+    <div class="tag tag-GBL" data-tag="GBL"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] GO Battle League</label></div>
+    <div class="tag tag-WA" data-tag="WA"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
+    <div class="tag tag-E" data-tag="E"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Event</label></div>
+    <div class="tag tag-S" data-tag="S"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
+    <div class="tag tag-MM" data-tag="MM"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
+    <div class="tag tag-RD" data-tag="RD"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
+    <div class="tag tag-RW" data-tag="RW"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
+    <div class="tag tag-GP" data-tag="GP"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Pass</label></div>
+    <div class="tag tag-CS" data-tag="CS"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] City Safari</label></div>
   </div>
 
   <button onclick="generateLink()">Générer mon calendrier</button>
@@ -116,19 +152,19 @@
         <tr><th>Abréviation</th><th>Nom anglais</th><th>Nom français</th><th>Description</th></tr>
       </thead>
       <tbody>
-        <tr class="clickable-row" data-tag="RH"><td class="abbr-RH">[RH]</td><td>Raid Hour</td><td>Heure de Raid</td><td>Raids spéciaux concentrés sur un Pokémon.</td></tr>
-        <tr class="clickable-row" data-tag="RB"><td class="abbr-RB">[RB]</td><td>Raid Boss</td><td>Boss de Raid</td><td>Pokémon disponible en tant que boss de raid.</td></tr>
-        <tr class="clickable-row" data-tag="PSH"><td class="abbr-PSH">[PSH]</td><td>Pokémon Spotlight Hour</td><td>Heure vedette Pokémon</td><td>Apparition accrue d’un Pokémon spécifique.</td></tr>
-        <tr class="clickable-row" data-tag="CD"><td class="abbr-CD">[CD]</td><td>Community Day</td><td>Journée Communautaire</td><td>Événement avec un Pokémon vedette et des bonus spéciaux.</td></tr>
-        <tr class="clickable-row" data-tag="GBL"><td class="abbr-GBL">[GBL]</td><td>GO Battle League</td><td>Ligue de Combat GO</td><td>Combats PvP avec règles et récompenses.</td></tr>
-        <tr class="clickable-row" data-tag="WA"><td class="abbr-WA">[WA]</td><td>Wild Area</td><td>Zone Sauvage</td><td>Apparitions spéciales dans la nature.</td></tr>
-        <tr class="clickable-row" data-tag="E"><td class="abbr-E">[E]</td><td>Event</td><td>Événement</td><td>Événement global ou local.</td></tr>
-        <tr class="clickable-row" data-tag="S"><td class="abbr-S">[S]</td><td>Tales of Transformation</td><td>Transformation fabuleuse</td><td>Événement spécial avec des Pokémon et des mécaniques uniques.</td></tr>
-        <tr class="clickable-row" data-tag="MM"><td class="abbr-MM">[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux.</td></tr>
-        <tr class="clickable-row" data-tag="RD"><td class="abbr-RD">[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Concentrée sur un Pokémon en raids.</td></tr>
-        <tr class="clickable-row" data-tag="RW"><td class="abbr-RW">[RW]</td><td>Raid Weekend</td><td>Week-end de Raids</td><td>Raids intensifs sur plusieurs jours.</td></tr>
-        <tr class="clickable-row" data-tag="GP"><td class="abbr-GP">[GP]</td><td>GO Pass</td><td>Passe GO</td><td>Le Passe GO suit votre progression pendant une période donnée.</td></tr>
-        <tr class="clickable-row" data-tag="CS"><td class="abbr-CS">[CS]</td><td>City Safari</td><td>Safari en Ville</td><td>Événement spécial dans certaines villes.</td></tr>
+        <tr class="lex-RH clickable-row" data-tag="RH"><td class="abbr-RH">[RH]</td><td>Raid Hour</td><td>Heure de Raid</td><td>Raids spéciaux concentrés sur un Pokémon.</td></tr>
+        <tr class="lex-RB clickable-row" data-tag="RB"><td class="abbr-RB">[RB]</td><td>Raid Boss</td><td>Boss de Raid</td><td>Pokémon disponible en tant que boss de raid.</td></tr>
+        <tr class="lex-PSH clickable-row" data-tag="PSH"><td class="abbr-PSH">[PSH]</td><td>Pokémon Spotlight Hour</td><td>Heure vedette Pokémon</td><td>Apparition accrue d’un Pokémon spécifique.</td></tr>
+        <tr class="lex-CD clickable-row" data-tag="CD"><td class="abbr-CD">[CD]</td><td>Community Day</td><td>Journée Communautaire</td><td>Événement avec un Pokémon vedette et des bonus spéciaux.</td></tr>
+        <tr class="lex-GBL clickable-row" data-tag="GBL"><td class="abbr-GBL">[GBL]</td><td>GO Battle League</td><td>Ligue de Combat GO</td><td>Combats PvP avec règles et récompenses.</td></tr>
+        <tr class="lex-WA clickable-row" data-tag="WA"><td class="abbr-WA">[WA]</td><td>Wild Area</td><td>Zone Sauvage</td><td>Apparitions spéciales dans la nature.</td></tr>
+        <tr class="lex-E clickable-row" data-tag="E"><td class="abbr-E">[E]</td><td>Event</td><td>Événement</td><td>Événement global ou local.</td></tr>
+        <tr class="lex-S clickable-row" data-tag="S"><td class="abbr-S">[S]</td><td>Tales of Transformation</td><td>Transformation fabuleuse</td><td>Événement spécial avec des Pokémon et des mécaniques uniques.</td></tr>
+        <tr class="lex-MM clickable-row" data-tag="MM"><td class="abbr-MM">[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux.</td></tr>
+        <tr class="lex-RD clickable-row" data-tag="RD"><td class="abbr-RD">[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Concentrée sur un Pokémon en raids.</td></tr>
+        <tr class="lex-RW clickable-row" data-tag="RW"><td class="abbr-RW">[RW]</td><td>Raid Weekend</td><td>Week-end de Raids</td><td>Raids intensifs sur plusieurs jours.</td></tr>
+        <tr class="lex-GP clickable-row" data-tag="GP"><td class="abbr-GP">[GP]</td><td>GO Pass</td><td>Passe GO</td><td>Le Passe GO suit votre progression pendant une période donnée.</td></tr>
+        <tr class="lex-CS clickable-row" data-tag="CS"><td class="abbr-CS">[CS]</td><td>City Safari</td><td>Safari en Ville</td><td>Événement spécial dans certaines villes.</td></tr>
       </tbody>
     </table>
   </div>
@@ -136,24 +172,54 @@
 
 <script>
 function generateLink() {
-  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
-                            .map(e => e.value);
-  if(selectedTags.length === 0) {
-    alert("Veuillez cocher au moins un événement !");
-    return;
-  }
+  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e => e.value);
+  if(selectedTags.length === 0) { alert("Veuillez cocher au moins un événement !"); return; }
   const baseURL = "https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics?tags=";
   const finalURL = baseURL + selectedTags.join(",");
-  document.getElementById("linkContainer").innerHTML =
-    `Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>`;
+  const container = document.getElementById("linkContainer");
+  container.innerHTML = `<div>Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>
+  <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
 }
 
-// Rendre toute la ligne cliquable pour cocher/décocher le tag correspondant
+function copyLink(url) {
+  navigator.clipboard.writeText(url).then(()=>alert("Lien copié dans le presse-papiers !"))
+  .catch(()=>alert("Impossible de copier le lien."));
+}
+
+// Hover dynamique tag ↔ lexique
+document.querySelectorAll('.tag, .clickable-row').forEach(el=>{
+  el.addEventListener('mouseenter', ()=>highlightTag(el.dataset.tag,true));
+  el.addEventListener('mouseleave', ()=>highlightTag(el.dataset.tag,false));
+});
+function highlightTag(tag, state) {
+  if(!tag) return;
+  document.querySelectorAll(`[data-tag="${tag}"]`).forEach(el=>{
+    if(state) el.classList.add('highlight'); else el.classList.remove('highlight');
+  });
+}
+
+// Ligne cliquable pour cocher/décocher
 document.querySelectorAll('.clickable-row').forEach(row => {
   row.addEventListener('click', () => {
     const tag = row.dataset.tag;
     const checkbox = document.getElementById(tag);
     if(checkbox) checkbox.checked = !checkbox.checked;
+    // Synchronisation tag ↔ lexique
+    const rows = document.querySelectorAll(`.lex-${tag}`);
+    rows.forEach(r => {
+      if(checkbox.checked) r.classList.add('highlight'); else r.classList.remove('highlight');
+    });
+  });
+});
+
+// Synchronisation tag ↔ lexique pour cocher directement depuis la grille
+document.querySelectorAll('input[name="tags"]').forEach(checkbox => {
+  checkbox.addEventListener('change', () => {
+    const tag = checkbox.id;
+    const rows = document.querySelectorAll(`.lex-${tag}`);
+    rows.forEach(row => {
+      if(checkbox.checked) row.classList.add('highlight'); else row.classList.remove('highlight');
+    });
   });
 });
 </script>
