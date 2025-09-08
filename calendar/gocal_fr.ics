@@ -12,7 +12,7 @@ TTL X-TTL: PT1440M
 Commencer: vevent
 UID: Mega-Sharpedo-Raid-Day-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1098__ Journée de __protected_1151__s Méga -__ Protected_318__
+Résumé: __ Protected_1098__ Mega __protected_318__ Journée RAID
 Description: commence à 14: 00 \, se termine à 17h00. \ n \ nhttps: //leekduck.com/events
 / méga-sharpedo-raid-day-septembre-2025 /
 URL: https: //leekduck.com/events/mega-sharpedo-raid-day-september-2025/
@@ -23,14 +23,14 @@ DTSTART: 20250907T140000
 DTEND: 20250907T170000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1098__ Journée de __protected_1151__s Méga -__ Protected_318__
+Description: __ Protected_1098__ Mega __protected_318__ Journée RAID
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Kanto-Celebration-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1096__ Célébration de Kanto
+Résumé: __ Protected_1096__ __protected_1103__
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / Kanto-Celebration-2025 /
 URL: https: //leekduck.com/events/kanto-cenlebration-2025/
@@ -40,26 +40,26 @@ Dtstart; valeur = date: 20250902
 Dtend; valeur = date: 20250907
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1096__ Célébration de Kanto
+Description: __ Protected_1096__ __protected_1103__
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Farfetchd-Mr-Mime-Kangaskhan-Tauros-showcase
 Dtstamp: 20250908T002957Z
-Résumé: [ps] farfetch'd \, M. mime \, kangourex \, et __protected_127__ Pokéstop Show
+Résumé: [ps] farfetch'd \, __protected_121 __ \, __protected_114 __ \, et __protected_127__ Pokéstop Show
 cas
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / farfetchd-mr-mime-kangaskhan-tauros-showcase /
 URL: https: //leekduck.com/events/farfetch'd-mr-mime-kangaskhan-tauros-showcase
-e /
+ e/
 Image; valeur = uri: https: //cdn.leekduck.com/assets/img/events/pokestop-showcase
 es-default.jpg
 Dtstart; valeur = date: 20250906
 Dtend; valeur = date: 20250907
 Commencer: valarm
 Action: affichage
-Description: [ps] farfetch'd \, M. mime \, kangourex \, et __protected_127__ pokéstop
+Description: [ps] farfetch'd \, __protected_121 __ \, __protected_114 __ \, et __protected_127__ pokéstop
 Vitrines
 Trigger: -pt15m
 Fin: valar
@@ -67,7 +67,7 @@ Fin: vevent
 Commencer: vevent
 UID: Max-Mondays-2025-09-08
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1097__ Miasmax Dynamax Pendant Le Lundi Max
+Résumé: __ Protected_1097__ Dynamax __protected_567__ pendant max lundi
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / Max-Mondays-2025-09-08 /
 URL: https: //leekduck.com/events/max-mondays-2025-09-08/
@@ -77,14 +77,14 @@ DTSTART: 20250908T180000
 DTEND: 20250908T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1097__ Miasmax Dynamax Pendant le Lundi Max
+Description: __ Protected_1097__ Dynamax __protected_567__ pendant max lundi
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-Kanto-Starters in Mega-Raids-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ démarreurs de Kanto en Méga -__ Protected_1151__s
+Résumé: __ Protected_1091__ Débuts de Kanto en Maga-Raids
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Mega-Kanto-Starters in Mega-Raids-septembre-2025 /
 URL: https: //leekduck.com/events/mega-kanto-starters-in-mega-laids-septembre
@@ -94,7 +94,7 @@ Dtstart; valeur = date: 20250902
 Dtend; valeur = date: 20250909
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ démarreurs de Kanto en Méga -__ Protected_1151__s
+Description: __ Protected_1091__ Starters de Kanto en Maga-raids
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -107,21 +107,21 @@ Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduc
 / gbl-tales-de transformation_great-league_retro-cup-great-legue-edition /
 URL: https: //leekduck.com/events/gbl-tales-of-transformation_great-league_re
 tro-cup-great-ligue-édition /
-Image; valeur = uri: https: //cdn.leekduck.com/assets/img/events/gobattle-greatle
-ague-key.jpg
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatle
+ ague-key.jpg
 Dtstart; valeur = date: 20250902
-Dtend; valeur = date: 20250909
-Commencer: valarm
-Action: affichage
-Description: __ Protected_1094__ Super Ligue and Retro Coupé: Super Ligue Édition |Contes
+DTEND;VALUE=DATE:20250909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue and Retro Coupe: Super Ligue Édition | Tales 
 de transformation
 Trigger: -pt15m
-Fin: valar
+END:VALARM
 Fin: vevent
-Commencer: vevent
+BEGIN:VEVENT
 UID: Pokemonspotlighthour2025-09-09
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1092__ Heure Vedette Miasmax
+Résumé: _ Protected_1092 _ _ Protected_567 _ Hour Vedette
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / pokemonspotlighthour2025-09-09 /
 URL: https: //leekduck.com/events/pokemonspotlighthour2025-09-09/
@@ -131,14 +131,14 @@ DTSTART: 20250909T180000
 DTEND: 20250909T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1092__ Heure Vedette Miasmax
+Description: _ Protected_1092 _ _ Protected_567 _ Vedette Hour
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: RAIDHOUR20250910
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1090__ Heure de __protected_1151__s __protected_483__ (FORME ORIONELLE)
+Résumé: __ Protected_1090__ __protected_483__ (Origin Forme) Hour Raid
 Description: commence à 17: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / raidhour20250910 /
 URL: https: //leekduck.com/events/raidhour20250910/
@@ -147,14 +147,14 @@ DTSTART: 20250910T170000
 DTEND: 20250910T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1090__ Heure de __protected_1151__s __protected_483__ (FORME ORIÈRE)
+Description: __ Protected_1090__ __protected_483__ (Origin Forme) Hour Raid
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Venusaur-Charizard-Blastoise-showcase
 Dtstamp: 20250908T002957Z
-Résumé: [PS] Florizarre \, Dracaufeu \, et PokéStop Pokéstop présente
+Résumé: [ps] __protected_2 __ \, __protected_5 __ \, et __protected_8__ Pokéstop présente
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / Venusaur-Charizard-Blastoise-showcase /
 URL: https: //leekduck.com/events/venusaur-charizard-blastoise-showcase/
@@ -164,14 +164,14 @@ Dtstart; valeur = date: 20250908
 Dtend; valeur = date: 20250910
 Commencer: valarm
 Action: affichage
-Description: [PS] Florizarre \, Dracaufeu \, et PokéStop Troptank présente
+Description: [ps] __protected_2 __ \, __protected_5 __ \, et __protected_8__ Pokéstop présente
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Septembre-Communityday2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1093__ Journée Communauté __Protected_668__
+Résumé: __ Protected_1093__ __protected_668__ Communiauté Journée
 Description: commence à 14: 00 \, se termine à 17h00. \ n \ nhttps: //leekduck.com/events
 / septembre-communityday2025 /
 URL: https: //leekduck.com/events/september-communityday2025/
@@ -181,7 +181,7 @@ DTSTART: 20250914T140000
 DTEND: 20250914T170000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1093__ Journée Communauté __Protected_668__
+Description: __ Protected_1093__ __protected_668__ Communiauté Journée
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -206,7 +206,7 @@ Fin: vevent
 Commencer: vevent
 UID: Max-Mondays-2025-09-15
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1097__ Dynamax __Protected_62__ Pendant Lundi Max
+Résumé: __ Protected_1097__ Dynamax __protected_62__ pendant le lundi maximum
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / Max-Mondays-2025-09-15 /
 URL: https: //leekduck.com/events/max-mondays-2025-09-15/
@@ -216,31 +216,31 @@ DTSTART: 20250915T180000
 DTEND: 20250915T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1097__ Dynamax __protected_62__ Pendant Lundi Max
+Description: __ Protected_1097__ Dynamax __protected_62__ pendant le lundi maximum
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
-UID: Palkia-in -__ Protected_1134 __- Raid Battles-septembre-2025
+UID: Palkia-in-5-Star-Raid Battles-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ __protected_483__ dans les __protected_1151__s 5 étoiles
+Résumé: __ Protected_1091__ __protected_483__ dans des batailles RAID 5 étoiles
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
-/ Palkia-in -__ Protected_1134 __- Raid Battles-septembre-2025 /
-URL: https: //leekduck.com/events/palkia-in-__protected_1134__-raid-batles- September-202
+/ Palkia-in-5-Star-Raid Battles-septembre-2025 /
+URL: https: //leekduck.com/events/palkia-in-5-star-raid batles-september-202
  5/
 Image; valeur = uri: https: //cdn.leekduck.com/assets/img/events/palkiaraid.jpg
 Dtstart; valeur = date: 20250902
 Dtend; valeur = date: 20250916
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ __protected_483__ dans les __protected_1151__s 5 étoiles
+Description: __ Protected_1091__ __protected_483__ dans des batailles RAID 5 étoiles
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-Pidgeot-gyarados-in-méga-raids-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ Méga Roucarnage et Méga Lokhlass dans les Méga __Protected_1151__
+Résumé: __ Protected_1091__ Mega __protected_17__ et Mega __Protected_129__ dans les méga raids
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Mega-Pidgeot-gyarados-in-méga-raids-septembre-2025 /
 URL: https: //leekduck.com/events/mega-pidgeot-gyarados-in-mega-raids-septe
@@ -250,15 +250,15 @@ Dtstart; valeur = date: 20250909
 Dtend; valeur = date: 20250916
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ MÉGA ROUCARNAGE ET MÉGA LOKHLASS DANS Les Méga __Protected_1151__
+Description: __ Protected_1091__ Mega __protected_17__ et Mega __Protected_129__ dans les méga raids
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: GBL-Tales-of Transformation Ultra-League Summer-Cup-Great-Ledition-Edition
-n
+ n
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __Protected_1153__ Ligue et __protected_1174__ Coupé: Super Ligue Édition |Contes
+Résumé: __ Protected_1094__ Ultra Ligue and Summer Coupé: Super Ligue Édition |Contes
 Transformation
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_ultra-league_summer-cup-great-ligue-edition /
@@ -270,7 +270,7 @@ Dtstart; valeur = date: 20250909
 Dtend; valeur = date: 20250916
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ __protected_1153__ Ligue et __protected_1174__ Coupé: Super Ligue Édition |Contes
+Description: __ Protected_1094__ Ultra Ligue and Summer Coupé: Super Ligue Édition |Contes
 de transformation
 Trigger: -pt15m
 Fin: valar
@@ -278,7 +278,7 @@ Fin: vevent
 Commencer: vevent
 UID: Pokemonspotlighthour2025-09-16
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1092__ Heure Vedette Scrutella
+Résumé: _ Protected_1092 _ _ Protected_573 _ Vedette Hour
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / pokemonspotlighthour2025-09-16 /
 URL: https: //leekduck.com/events/pokemonspotlighthour2025-09-16/
@@ -288,14 +288,14 @@ DTSTART: 20250916T180000
 DTEND: 20250916T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1092__ Heure Vedette Scrutella
+Description: _ Protected_1092 _ _ Protected_573 _ Vedette Hour
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: RAIDHOUR20250917
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1090__ Heure de __protected_1151__s Méga -__ Protected_379__ et Méga -__ Protected_380__
+Résumé: __ Protected_1090__ Mega __protected_379__ et Mega __protected_380__ Hour RAID
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / raidhour20250917 /
 URL: https: //leekduck.com/events/raidhour20250917/
@@ -304,7 +304,7 @@ DTSTART: 20250917T180000
 DTEND: 20250917T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1090__ Heure de __protected_1151__s Méga -__ Protected_379__ et Méga -__ Protected_380__
+Description: __ Protected_1090__ Mega __protected_379__ et Mega __protected_380__ Raid Hour
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -329,7 +329,7 @@ Fin: vevent
 Commencer: vevent
 UID: Shadow-groudon-raid-weekend-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1099__ Week-End de __protected_1151__s __protected_382__ obscur
+Résumé: __ Protected_1099__ Shadow __Protected_382__ Week-end RAID
 Description: commence à 06: 00 \, se termine à 22: 00. \ n \ nhttps: //leekduck.com/events
 / Shadow-Groudon-Raid-Weekend-2025 /
 URL: https: //leekduck.com/events/shadow-groudon-raid-weekend-2025/
@@ -340,14 +340,14 @@ Dtstart; valeur = date: 20250920
 Dtend; valeur = date: 20250921
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1099__ Week-End de __protected_1151__s __protected_382__ obscur
+Description: __ Protected_1099__ Shadow __Protected_382__ Week-end RAID
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Max-Mondays-2025-09-22
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1097__ Leveinard Pendant Dynamax Le Lundi Max
+Résumé: __ Protected_1097__ Dynamax __protected_112__ pendant le lundi maximum
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / Max-Mondays-2025-09-22 /
 URL: https: //leekduck.com/events/max-mondays-2025-09-22/
@@ -357,14 +357,14 @@ DTSTART: 20250922T180000
 DTEND: 20250922T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1097__ Leveinard Pendant Dynamax Le Lundi Max
+Description: __ Protected_1097__ Dynamax __protected_112__ pendant le lundi maximum
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-psychic-dragon-in-méga-raids-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ Mega __protected_281 __ \, __protected_379 __ \, __protected_380 __ \, et gallame dans mega __protected_1151__s
+Résumé: __ Protected_1091__ Mega __protected_281 __ \, __protected_379 __ \, __protected_380 __ \, et __protected_474__ dans les méga raids
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Mega-psychic-dragon-in-méga-raids-septembre-2025 /
 URL: https: //leekduck.com/events/mega-psychic-dragon-in-mega-raids-september
@@ -374,7 +374,7 @@ Dtstart; valeur = date: 20250916
 Dtend; valeur = date: 20250923
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ Mega __protected_281 __ \, __protected_379 __ \, __protected_380 __ \, et gallame dans Mega Rai
+Description: __ Protected_1091__ Mega __protected_281 __ \, __protected_379 __ \, __protected_380 __ \, et __protected_474__
 ds
 Trigger: -pt15m
 Fin: valar
@@ -383,7 +383,7 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_master-league-méga-édition_willpower-cup-gr
 Eat-League-Edition
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __Protected_1154__ Ligue: Mega Édition et Willpower Coupé: Super Ligue E
+Résumé: __ Protected_1094__ Master Ligue: Mega Édition et Willpower Coupé: Super Ligue E
 Dition |Transformations Fabuleus
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation Master-League-méga-édition Willpower-Cup-Great
@@ -396,7 +396,7 @@ Dtstart; valeur = date: 20250916
 Dtend; valeur = date: 20250923
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094 __ Protected_1154__ Ligue: Mega Édition et Willpower Coupé: Super League
+Description: __ Protected_1094__ Master League: Mega Édition et Willpower Coupé: Super League
 ue édition |Transformations Fabuleus
 Trigger: -pt15m
 Fin: valar
@@ -404,7 +404,7 @@ Fin: vevent
 Commencer: vevent
 UID: Pokemonspotlighthour2025-09-23
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1092__ Heure Vedette __protected_162__
+Résumé: _ Protected_1092 _ _ Protected_162 _ Hour Vedette
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / pokemonspotlighthour2025-09-23 /
 URL: https: //leekduck.com/events/pokemonspotlighthour2025-09-23/
@@ -414,14 +414,14 @@ DTSTART: 20250923T180000
 DTEND: 20250923T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1092__ Heure Vedette __Protected_162__
+Description: _ Protected_1092 _ _ Protected_162 _ Hour Vedette
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: RAIDHOUR20250924
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1090__ Heure de __protected_1151__ __protected_482__ (FORME ORIÈRE)
+Résumé: __ Protected_1090__ __protected_482__ (Origin Forme) Hour Raid
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / raidhour20250924 /
 URL: https: //leekduck.com/events/raidhour20250924/
@@ -430,14 +430,14 @@ DTSTART: 20250924T180000
 DTEND: 20250924T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1090__ Heure de __protected_1151__ __protected_482__ (FORME ORIÈRE)
+Description: __ Protected_1090__ __protected_482__ (Origin Forme) Hour Raid
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Événation Complère Normal-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1096__ Complétation normale
+Résumé: __ Protected_1096__ complètement normal
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / Événémination Complétation normal-2025 /
 URL: https: //leekduck.com/events/événements complétation normal-2025 /
@@ -447,14 +447,14 @@ Dtstart; valeur = date: 20250923
 Dtend; valeur = date: 20250927
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1096__ Complétation normale
+Description: __ Protected_1096__ complètement normal
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-City-Safari-Bangkok-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1101__ Bangkok \, Thaïlande - Pokémon Go City __Protected_1168__
+Résumé: __ Protected_1101__ Bangkok \, Thaïlande - Pokémon Go City Safari
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-City-Safari-Bangkok-2025 /
 URL: https: //leekduck.com/events/pokemon-go-city-safari-bangkok-2025/
@@ -465,14 +465,14 @@ Dtstart; valeur = date: 20250927
 Dtend; valeur = date: 20250928
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1101__ Bangkok \, Thaïlande - Pokémon Go City __Protected_1168__
+Description: __ Protected_1101__ Bangkok \, Thaïlande - Pokémon Go City Safari
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-City-Safari-Amsterdam-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1101__ Amsterdam \, Pays-Bas - Pokémon Go City __Protected_1168__
+Résumé: __ Protected_1101__ Amsterdam \, Pays-Bas - Pokémon Go City Safari
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-City-Safari-Amsterdam-2025 /
 URL: https: //leekduck.com/events/pokemon-go-city-safari-amsterdam-2025/
@@ -483,14 +483,14 @@ Dtstart; valeur = date: 20250927
 Dtend; valeur = date: 20250928
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1101__ Amsterdam \, Pays-Bas - Pokémon Go City __Protected_1168__
+Description: __ Protected_1101__ Amsterdam \, Pays-Bas - Pokémon Go City Safari
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-City-Safari-Valencia-2025
 Dtstamp: 20250908T002957Z
-Résumé: _ Protected_1101 _ Valencia \, Espagne - Pokémon Go City __ Protected_1168 __
+Résumé: __ Protected_1101__ Valencia \, Espagne - Pokémon Go City Safari
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-City-Safari-Valencia-2025 /
 URL: https: //leekduck.com/events/pokemon-go-city-safari-valencia-2025/
@@ -501,14 +501,14 @@ Dtstart; valeur = date: 20250927
 Dtend; valeur = date: 20250928
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1101__ Valencia \, Espagne - Pokémon Go City __Protected_1168__
+Description: __ Protected_1101__ Valencia \, Espagne - Pokémon Go City Safari
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-City-Safari-Cancun-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1101__ Cancún \, Mexique - Pokémon Go City __Protected_1168__
+Résumé: __ Protected_1101__ Cancún \, Mexique - Pokémon Go City Safari
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-City-Safari-Cancun-2025 /
 URL: https: //leekduck.com/events/pokemon-go-city-safari-cancun-2025/
@@ -519,14 +519,14 @@ Dtstart; valeur = date: 20250927
 Dtend; valeur = date: 20250928
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1101__ Cancún \, Mexique - Pokémon Go City __Protected_1168__
+Description: __ Protected_1101__ Cancún \, Mexique - Pokémon Go City Safari
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-City-Safari-Vancouver-2025
 Dtstamp: 20250908T002957Z
-Résumé: _ Protected_1101 _ Vancouver \, Canada - Pokémon Go City __ Protected_1168 __
+Résumé: __ Protected_1101__ Vancouver \, Canada - Pokémon Go City Safari
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-City-Safari-Vancouver-2025 /
 URL: https: //leekduck.com/events/pokemon-go-city-safari-vancouver-2025/
@@ -537,14 +537,14 @@ Dtstart; valeur = date: 20250927
 Dtend; valeur = date: 20250928
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1101__ Vancouver \, Canada - Pokémon Go City __Protected_1168__
+Description: __ Protected_1101__ Vancouver \, Canada - Pokémon Go City Safari
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-Raid-Day-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1098 __ Protected_1151 __
+Résumé: __ Protected_1098__ MEGA RAID JOURNÉ
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / méga-raid-jour-septembre-2025 /
 URL: https: //leekduck.com/events/mega-raid-ay-septembember-2025/
@@ -554,14 +554,14 @@ DTSTART: 20250928T100000
 DTEND: 20250928T200000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1098 __ Protected_1151 __
+Description: __ Protected_1098__ MEGA RAID JOURNÉ
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Max-Mondays-2025-09-29
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1097__ Dynamax Terhal Pendant Lundi Max
+Résumé: __ Protected_1097__ Dynamax __protected_373__ pendant max lundi
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / Max-Mondays-2025-09-29 /
 URL: https: //leekduck.com/events/max-mondays-2025-09-29/
@@ -571,14 +571,14 @@ DTSTART: 20250929T180000
 DTEND: 20250929T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1097__ Dynamax Terhal Pendant Lundi Max
+Description: __ Protected_1097__ Dynamax __protected_373__ pendant max lundi
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-Kangaskhan-Lopunny-in Mega-Raids-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ Méga Kangourex et Méga Lockpin dans les Méga __Protected_1151__
+Résumé: __ Protected_1091__ Mega __protected_114__ et Mega __protected_427__ dans les méga raids
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Mega-Kangaskhan-Lopunny in Mega-Raids-septembre-2025 /
 URL: https: //leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-septembember
@@ -588,7 +588,7 @@ Dtstart; valeur = date: 20250923
 Dtend; valeur = date: 20250930
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ Méga Kangourex et Méga Lockpin dans les Méga __protected_1151__
+Description: __ Protected_1091__ Mega __protected_114__ et Mega __protected_427__ dans les méga raids
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -596,7 +596,7 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_great-league_ultra-league_master-ligue-spl
 it-1
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes de TR
+Résumé: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes de TR
 réformation
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_great-league_ultra-league_master-league-split
@@ -609,7 +609,7 @@ Dtstart; valeur = date: 20250923
 Dtend; valeur = date: 20250930
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes o
+Description: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes o
 F transformation
 Trigger: -pt15m
 Fin: valar
@@ -617,7 +617,7 @@ Fin: vevent
 Commencer: vevent
 UID: Pokemonspotlighthour2025-09-30
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1092__ Heure de projecteur sur Galekid
+Résumé: _ Protected_1092 _ _ Protected_303 _ Hour Vedette
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / pokemonspotlighthour2025-09-30 /
 URL: https: //leekduck.com/events/pokemonspotlighthour2025-09-30/
@@ -627,14 +627,14 @@ DTSTART: 20250930T180000
 DTEND: 20250930T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1092__ Heure de projecteur sur Galekid
+Description: _ Protected_1092 _ _ Protected_303 _ Hour Vedette
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: RAIDHOUR20251001
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1090__ Heure de __protected_1151__ __protected_482__ (FORME ORIÈRE)
+Résumé: __ Protected_1090__ __protected_482__ (Origin Forme) Hour Raid
 Description: commence à 18: 00 \, se termine à 19: 00. \ n \ nhttps: //leekduck.com/events
 / raidhour20251001 /
 URL: https: //leekduck.com/events/raidhour20251001/
@@ -643,14 +643,14 @@ DTSTART: 20251001T180000
 DTEND: 20251001T190000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1090__ Heure de __protected_1151__ __protected_482__ (FORME ORIÈRE)
+Description: __ Protected_1090__ __protected_482__ (Origin Forme) Hour Raid
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Go-Pass-septembre-2025
 Dtstamp: 20250908T002957Z
-Résumé: _ Protected_1100 _ _ Protected_1165 __: septembre
+Résumé: __ Protected_1100__ Go Pass: Septembre
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Go-Pass-septembre-2025 /
 URL: https: //leekduck.com/events/go-pass-septembember-2025/
@@ -660,31 +660,31 @@ Dtstart; valeur = date: 20250902
 Dtend; valeur = date: 20251007
 Commencer: valarm
 Action: affichage
-Description: _ Protected_1100 _ _ Protected_1165 __: septembre
+Description: __ Protected_1100__ Go Pass: Septembre
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
-UID: Dialga-in -__ Protected_1134 __- Raid Battles-septembre-octobre-2025
+UID: Dialga-in-5-star-raid Battles-septembre-octobre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ __protected_482__ dans les __protected_1151__s 5 étoiles
+Résumé: __ Protected_1091__ __protected_482__ dans des batailles RAID 5 étoiles
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
-/ Dialga-in -__ Protected_1134 __- Raid Battles-septembre-octobre-2025 /
-URL: https: //leekduck.com/events/dialga-in-__protected_1134__-raid battles-september-oct
+/ Dialga-in-5-star-raid Battles-septembre-octobre-2025 /
+URL: https: //leekduck.com/events/dialga-in-5-star-raid battles-september-oct
 Ober-2025 /
 Image; valeur = uri: https: //cdn.leekduck.com/assets/img/events/dialgaraids.jpg
 Dtstart; valeur = date: 20250923
 Dtend; valeur = date: 20251007
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ __protected_482__ dans les __protected_1151__s 5 étoiles
+Description: __ Protected_1091__ __protected_482__ dans des batailles RAID 5 étoiles
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Mega-Steel-Fighting in Mega-Raids-septembre-octobre-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1091__ Mega __protected_207 __ \, cizayox \ et __protected_447__ dans Mega __Protected_1151__
+Résumé: __ Protected_1091__ Mega __protected_207 __ \, __protected_211 __ \, et __protected_447__ dans les méga raids
 Description: commence à 10: 00 \, se termine à 10: 00. \ n \ nhttps: //leekduck.com/events
 / Mega-Steel-Fighting in méga-raids-septembre-octobre-2025 /
 URL: https: //leekduck.com/events/mega-teel-fighting-in-mega-laids-september
@@ -694,7 +694,7 @@ Dtstart; valeur = date: 20250930
 Dtend; valeur = date: 20251007
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1091__ Mega __protected_207 __ \, cizayox \ et __protected_447__ dans Mega __Protected_1151__
+Description: __ Protected_1091__ Mega __protected_207 __ \, __protected_211 __ \, et __protected_447__ dans les méga raids
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -723,7 +723,7 @@ Fin: vevent
 Commencer: vevent
 UID: Steel-Skyline-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1096__ Horizon ACIER
+Résumé: __ Protected_1096__ Skyline en acier
 Description: commence à 10: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / Steel-Skyline-2025 /
 URL: https: //leekduck.com/events/steel-skyline-2025/
@@ -733,14 +733,14 @@ Dtstart; valeur = date: 20250930
 Dtend; valeur = date: 20251007
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1096__ Horizon ACIER
+Description: __ Protected_1096__ Skyline en acier
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Octobre-Communityday2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1093__ Journée Communauté Octobre
+Résumé: __ Protected_1093__ Octobre Communauté Journée
 Description: commence à 14: 00 \, se termine à 17h00. \ n \ nhttps: //leekduck.com/events
 / octobre-communityday2025 /
 URL: https: //leekduck.com/events/october-communityday2025/
@@ -749,15 +749,15 @@ DTSTART: 20251012T140000
 DTEND: 20251012T170000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1093__ Journée Communauté Octobre
+Description: __ Protected_1093__ Octobre Communauté Journée
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Gbl-Tales-of Transformation Ultra-League Jungle-Cup-Great-Legue-Edition
-n
+ n
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __protected_1153__ Ligue and Jungle Coupé: Super Ligue Édition |Contes
+Résumé: __ Protected_1094__ Ultra Ligue and Jungle Coupé: Super Ligue Édition |Contes
 Transformation
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_ultra-league_jungle-cup-great-legue-edition /
@@ -769,7 +769,7 @@ Dtstart; valeur = date: 20251007
 Dtend; valeur = date: 20251014
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ __protected_1153__ Ligue and Jungle Coupé: Super Ligue Édition |Contes
+Description: __ Protected_1094__ Ultra Ligue and Jungle Coupé: Super Ligue Édition |Contes
 de transformation
 Trigger: -pt15m
 Fin: valar
@@ -777,7 +777,7 @@ Fin: vevent
 Commencer: vevent
 UID: XP-Celebration-Event-2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1096__ Célébration __Protected_1137__
+Résumé: __ Protected_1096__ XP Célébration
 Description: commence à 13: 00 \, se termine à 23: 59. \ n \ nhttps: //leekduck.com/events
 / XP-Celebration-Event-2025 /
 URL: https: //leekduck.com/events/xp-celebration-event-2025/
@@ -787,14 +787,14 @@ Dtstart; valeur = date: 20250825
 Dtend; valeur = date: 20251014
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1096__ Célébration __protected_1137__
+Description: __ Protected_1096__ XP Célébration
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 Uid: gbl-tales-de transformation_master-prémier_great-League-Remix
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __Protected_1154__ Premier et Super Ligue Remix |Contes de transformati
+Résumé: __ Protected_1094__ Master Premium et Super Ligue Remix |Contes de transformation
 sur
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_master-prémier_great-league-remix /
@@ -806,7 +806,7 @@ Dtstart; valeur = date: 20251014
 Dtend; valeur = date: 20251021
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ __protected_1154__ Premier et Super Ligue Remix |Contes de transfor
+Description: __ Protected_1094__ Maître Premier et Super Ligue Remix |Contes de transfor
 mation
 Trigger: -pt15m
 Fin: valar
@@ -832,7 +832,7 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_great-league_ultra-league_master-ligue-spl
 it-2
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes de TR
+Résumé: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes de TR
 réformation
 Description: commence à 20: 00 \, se termine à 20: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_great-league_ultra-league_master-league-split
@@ -845,7 +845,7 @@ Dtstart; valeur = date: 20251021
 Dtend; valeur = date: 20251028
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes o
+Description: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes o
 F transformation
 Trigger: -pt15m
 Fin: valar
@@ -875,7 +875,7 @@ Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-Wild-Area-2025-Nagasaki-Japan
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1095__ Zone Sauvage Pokémon Go: Nagasaki
+Résumé: __ Protected_1095__ Pokémon Go Wild Area: Nagasaki
 Description: commence à 00: 00 \, se termine à 08: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-Wild-Area-2025-Nagasaki-Japan /
 URL: https: //leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/
@@ -886,15 +886,15 @@ Dtstart; valeur = date: 20251107
 Dtend; valeur = date: 20251109
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1095__ Zone Sauvage Pokémon Go: Nagasaki
+Description: __ Protected_1095__ Pokémon Go Wild Area: Nagasaki
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
 Commencer: vevent
 UID: Gbl-Tales-of Transformation Ultra-League Jungle-Cup-Great-Legue-Edition
-n-2
+ n-2
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __protected_1153__ Ligue and Jungle Coupé: Super Ligue Édition |Contes
+Résumé: __ Protected_1094__ Ultra Ligue and Jungle Coupé: Super Ligue Édition |Contes
 Transformation
 Description: commence à 21: 00 \, se termine à 21: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_ultra-league_jungle-cup-great-league-édition-
@@ -907,7 +907,7 @@ Dtstart; valeur = date: 20251104
 Dtend; valeur = date: 20251111
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ __protected_1153__ Ligue and Jungle Coupé: Super Ligue Édition |Contes
+Description: __ Protected_1094__ Ultra Ligue and Jungle Coupé: Super Ligue Édition |Contes
 de transformation
 Trigger: -pt15m
 Fin: valar
@@ -915,7 +915,7 @@ Fin: vevent
 Commencer: vevent
 UID: Pokemon-Go-Wild-Area-2025-Global
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1095__ Pokémon Go __Protected_1167__: Global
+Résumé: __ Protected_1095__ Pokémon Go Wild Area: Global
 Description: commence à 10: 00 \, se termine à 18: 00. \ n \ nhttps: //leekduck.com/events
 / Pokemon-Go-Wild-Area-2025-Global /
 URL: https: //leekduck.com/events/pokemon-go-wild-area-2025-obal/
@@ -926,7 +926,7 @@ Dtstart; valeur = date: 20251115
 Dtend; valeur = date: 20251116
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1095__ Pokémon Go __Protected_1167__: Global
+Description: __ Protected_1095__ Pokémon Go Wild Area: Global
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -934,7 +934,7 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_great-league_ultra-league_master-ligue-spl
 it-3
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes de TR
+Résumé: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes de TR
 réformation
 Description: commence à 21: 00 \, se termine à 21: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_great-league_ultra-league_master-league-split
@@ -947,7 +947,7 @@ Dtstart; valeur = date: 20251111
 Dtend; valeur = date: 20251118
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ Super Ligue \, __Protected_1153__ Ligue \, et __protected_1154__ Ligue |Contes o
+Description: __ Protected_1094__ Super Ligue \, Ultra Ligue \, et Master Ligue |Contes o
 F transformation
 Trigger: -pt15m
 Fin: valar
@@ -956,7 +956,7 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_2025-championhip-series-cup_master-league-
 méga-édition
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ 2025 Championship Series Coupé et __protected_1154__ Ligue: Mega édition
+Résumé: __ Protected_1094__ 2025 Championship Series Coupé et Master Ligue: Mega édition
 |Transformations Fabuleus
 Description: commence à 21: 00 \, se termine à 21: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_2025-Championhip-series-cup_master-league-me
@@ -969,7 +969,7 @@ Dtstart; valeur = date: 20251118
 Dtend; valeur = date: 20251125
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ 2025 Championship Series Coupé et __protected_1154__ Ligue: Mega Edit
+Description: __ Protected_1094__ 2025 Championship Series Coupé et Master Ligue: Mega Edit
 ion |Transformations Fabuleus
 Trigger: -pt15m
 Fin: valar
@@ -977,7 +977,7 @@ Fin: vevent
 Commencer: vevent
 UID: novembre-communityday2025
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1093__ Journée Communauté Novembre
+Résumé: __ Protected_1093__ novembre Communauté Journée
 Description: commence à 14: 00 \, se termine à 17h00. \ n \ nhttps: //leekduck.com/events
 / novembre-communautaire Jour 2025 /
 URL: https: //leekduck.com/events/november-communityday2025/
@@ -986,7 +986,7 @@ DTSTART: 20251130T140000
 DTEND: 20251130T170000
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1093__ Journée Communauté Novembre
+Description: __ Protected_1093__ novembre Communauté Journée
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
@@ -1029,8 +1029,8 @@ Commencer: vevent
 Uid: gbl-tales-de transformation_catch-tales-tales-transformation-great-edi
 Tion_ultra-league_master-league
 Dtstamp: 20250908T002957Z
-Résumé: __ Protected_1094__ __protected_1149__ Coupé: Transformations Fabuleus: Super édition \, __protected_1153__ Lea
-gue \ et __protected_1154__ Ligue |Transformations Fabuleus
+Résumé: __ Protected_1094__ Catch Coupé: Transformations Fabuleus: Super Édition \, Ultra Lea
+gue \, et maître ligue |Transformations Fabuleus
 Description: commence à 21: 00 \, se termine à 21: 00. \ n \ nhttps: //leekduck.com/events
 / gbl-tales-de transformation_catch-cup-tales-de transformation-great-editi
 on_ultra-league_master-league /
@@ -1042,8 +1042,8 @@ Dtstart; valeur = date: 20251125
 Dtend; valeur = date: 20251202
 Commencer: valarm
 Action: affichage
-Description: __ Protected_1094__ __protected_1149__ Coupé: Transformations Fabuleus: Super édition \, __protected_1153__
-Ligue \, et __protected_1154__ Ligue |Transformations Fabuleus
+Description: __ Protected_1094__ Catch Coupé: Transformations Fabuleus: Super Édition \, Ultra
+Ligue \, et maître Ligue |Transformations Fabuleus
 Trigger: -pt15m
 Fin: valar
 Fin: vevent
