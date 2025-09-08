@@ -20,30 +20,39 @@
   <h1>Pokémon GO - Sélection des événements</h1>
   <p>Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
 
-  <div class="tag">
-    <input type="checkbox" id="RH" name="tags" value="RH">
-    <label for="RH">Red Hour [RH]</label>
-  </div>
-
-  <div class="tag">
-    <input type="checkbox" id="CD" name="tags" value="CD">
-    <label for="CD">Community Day [CD]</label>
-  </div>
-
-  <div class="tag">
-    <input type="checkbox" id="GBL" name="tags" value="GBL">
-    <label for="GBL">Go Battle League [GBL]</label>
-  </div>
+  <!-- 🔹 Liste complète des tags -->
+  <div class="tag"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">Heure de Raid [RH]</label></div>
+  <div class="tag"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">Raid Boss [RB]</label></div>
+  <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">Heure vedette Pokémon [PSH]</label></div>
+  <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">Community Day [CD]</label></div>
+  <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">GO Battle League [GBL]</label></div>
+  <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">Wild Area [WA]</label></div>
+  <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">Événement [E]</label></div>
+  <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">Max Monday [MM]</label></div>
+  <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">Raid Day [RD]</label></div>
+  <div class="tag"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">Raid Weekend [RW]</label></div>
+  <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">GO Plus / Global Play [GP]</label></div>
+  <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">City Safari [CS]</label></div>
 
   <button onclick="generateLink()">Générer mon calendrier</button>
 
   <p id="linkContainer"></p>
 
+  <!-- 🔹 Lexique -->
   <div id="lexique">
     <h3>Lexique des tags :</h3>
-    <p>[RH] → Red Hour : événements spéciaux où certains Pokémon apparaissent plus souvent.</p>
-    <p>[CD] → Community Day : Journée communautaire avec un Pokémon vedette et bonus spéciaux.</p>
-    <p>[GBL] → Go Battle League : Ligues de combat PvP avec différentes règles et récompenses.</p>
+    <p>[RH] → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
+    <p>[RB] → Raid Boss : Boss de raid disponible.</p>
+    <p>[PSH] → Spotlight Hour : Heure vedette d’un Pokémon spécifique.</p>
+    <p>[CD] → Community Day : Journée communautaire avec bonus spéciaux.</p>
+    <p>[GBL] → GO Battle League : Ligues PvP avec différentes règles.</p>
+    <p>[WA] → Wild Area : Apparitions spéciales dans la nature.</p>
+    <p>[E] → Événement global ou local.</p>
+    <p>[MM] → Max Monday : Lundi avec Raids Dynamax.</p>
+    <p>[RD] → Raid Day : Journée consacrée aux raids d’un Pokémon.</p>
+    <p>[RW] → Raid Weekend : Week-end spécial raids.</p>
+    <p>[GP] → GO Plus / Global Play : Événement lié à GO Plus ou bonus globaux.</p>
+    <p>[CS] → City Safari : Safari en ville (événement local).</p>
   </div>
 </div>
 
