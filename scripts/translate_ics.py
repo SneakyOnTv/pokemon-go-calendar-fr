@@ -11,6 +11,7 @@ from googletrans import Translator
 # =========================
 ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
+# Tous les noms à protéger (Pokémon, événements, abréviations)
 PROTECTED_NAMES = [
      # 🐾 Pokémon Génération 1 Kanto (001–151)
     "Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀","Nidorina","Nidoqueen","Nidoran♂","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch’d","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew",
@@ -41,6 +42,9 @@ PROTECTED_NAMES = [
     # … tu peux garder le reste de ta liste ici …
 ]
 
+# Créer une map globale des protections : chaque nom → placeholder unique
+PROTECTED_MAP_GLOBAL = {name: f"__PROTECTED_{i}__" for i, name in enumerate(PROTECTED_NAMES)}
+
 PUSHOVER_USER = os.getenv("PUSHOVER_USER")
 PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 
@@ -48,11 +52,7 @@ PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 # FONCTIONS
 # =========================
 def unfold_ics(ics_content):
-    """
-    Déplie les lignes iCalendar pour que chaque propriété soit sur une seule ligne.
-    Les lignes qui commencent par un espace ou une tabulation
-    sont la continuation de la ligne précédente.
-    """
+    """Déplie les lignes iCalendar multi-lignes"""
     lines = ics_content.splitlines()
     unfolded = []
     for line in lines:
@@ -62,26 +62,36 @@ def unfold_ics(ics_content):
             unfolded.append(line)
     return "\n".join(unfolded)
 
+def protect_text(text):
+    """Remplace tous les noms sensibles par leurs placeholders"""
+    for name, placeholder in PROTECTED_MAP_GLOBAL.items():
+        text = text.replace(name, placeholder)
+    return text
+
+def restore_text(text):
+    """Remet les noms originaux à partir des placeholders"""
+    for name, placeholder in PROTECTED_MAP_GLOBAL.items():
+        text = text.replace(placeholder, name)
+    return text
+
 def translate_text(text, translator):
-    """
-    Traduit un texte avec le dictionnaire manuel puis Google Translate si nécessaire.
-    """
+    """Traduction manuelle + Google Translate si nécessaire"""
     original = text
+    # Dictionnaire manuel
     for en, fr in TRANSLATIONS.items():
         text = text.replace(en, fr)
 
-    if re.search(r'[A-Za-z]{2,}', text):
+    # Traduction automatique si reste de l'anglais et pas de placeholder
+    if re.search(r'[A-Za-z]{2,}', text) and "__PROTECTED_" not in text:
         try:
-            translated = translator.translate(text, src='en', dest='fr').text
-            text = translated
+            text = translator.translate(text, src='en', dest='fr').text
         except Exception as e:
-            print(f"⚠️ Erreur de traduction pour : {original}")
-            print("Erreur :", e)
+            print(f"⚠️ Erreur de traduction pour : {original}\n{e}")
     return text
 
 def translate_field_line(line, translator):
     """
-    Traduit proprement les champs iCalendar sensibles aux retours à la ligne :
+    Traduit les champs iCalendar sensibles :
     SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES
     """
     if ":" not in line:
@@ -91,24 +101,15 @@ def translate_field_line(line, translator):
     TEXT_FIELDS = ["SUMMARY", "DESCRIPTION", "COMMENT", "LOCATION", "CATEGORIES"]
 
     if key.upper() in TEXT_FIELDS:
+        # Décoder les échappements iCal
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
-
-        # Protéger uniquement les noms sensibles
-        protected_map = {}
-        for name in PROTECTED_NAMES:
-            if name in value_decoded:
-                placeholder = f"__PROTECTED_{len(protected_map)}__"
-                protected_map[placeholder] = name
-                value_decoded = value_decoded.replace(name, placeholder)
-
-        # Traduction manuelle + automatique
-        translated = translate_text(value_decoded, translator)
-
-        # Restaurer les noms protégés
-        for placeholder, name in protected_map.items():
-            translated = translated.replace(placeholder, name)
-
-        # Réencoder pour iCalendar
+        # Protéger les noms sensibles
+        value_protected = protect_text(value_decoded)
+        # Traduire
+        translated = translate_text(value_protected, translator)
+        # Restaurer les noms
+        translated = restore_text(translated)
+        # Réencoder iCal
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
     else:
@@ -116,7 +117,7 @@ def translate_field_line(line, translator):
 
 def send_pushover(message):
     if not PUSHOVER_USER or not PUSHOVER_TOKEN:
-        print("⚠️ Pushover non configuré (USER/TOKEN manquants)")
+        print("⚠️ Pushover non configuré")
         return
     try:
         requests.post("https://api.pushover.net/1/messages.json", data={
@@ -126,7 +127,7 @@ def send_pushover(message):
         })
         print("📩 Notification Pushover envoyée")
     except Exception as e:
-        print("⚠️ Erreur lors de l'envoi Pushover :", e)
+        print(f"⚠️ Erreur Pushover : {e}")
 
 # =========================
 # MAIN
@@ -136,15 +137,12 @@ def main():
     try:
         r = requests.get(ICS_URL, allow_redirects=True, timeout=15)
         r.raise_for_status()
-        content_type = r.headers.get('Content-Type', '')
-        if 'text' not in content_type.lower() and 'ical' not in content_type.lower():
-            print(f"⚠️ Type de contenu inattendu : {content_type}")
     except requests.RequestException as e:
-        print("❌ Erreur lors du téléchargement du fichier ICS :", e)
+        print(f"❌ Erreur téléchargement ICS : {e}")
         send_pushover("❌ Échec génération ICS : téléchargement impossible")
         return
 
-    # Déplier les lignes iCalendar
+    # Déplier lignes iCalendar
     ics_unfolded = unfold_ics(r.text)
     ics_lines = ics_unfolded.splitlines()
 
@@ -155,7 +153,7 @@ def main():
         try:
             translated_lines.append(translate_field_line(line, translator))
         except Exception as e:
-            print(f"⚠️ Ligne ignorée à cause d'une erreur : {line}")
+            print(f"⚠️ Ligne ignorée : {line}\n{e}")
             translated_lines.append(line)
 
     os.makedirs("calendar", exist_ok=True)
@@ -167,7 +165,7 @@ def main():
         print(f"✅ Fichier ICS généré dans {output_file}")
         send_pushover(f"✅ Fichier ICS traduit généré avec succès : {output_file}")
     else:
-        print(f"⚠️ Fichier ICS généré mais peut être invalide ! Vérifie {output_file}")
+        print(f"⚠️ Fichier ICS généré mais invalide ! Vérifie {output_file}")
         send_pushover(f"⚠️ Fichier ICS généré mais invalide : {output_file}")
 
 if __name__ == "__main__":
