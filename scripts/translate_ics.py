@@ -7,6 +7,10 @@ from translations import TRANSLATIONS
 
 # Si googletrans n'est pas installé : pip install googletrans==4.0.0-rc1
 from googletrans import Translator
+import googletrans
+
+# Patch pour googletrans 4.0.0-rc1 afin d’éviter l’erreur AttributeError
+googletrans.client.Translator.raise_Exception = googletrans.client.Translator.raise_exception
 
 ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
@@ -91,9 +95,6 @@ PROTECTED_NAMES = [
 ]
 
 def protect_names(text):
-    """
-    Remplace temporairement les mots protégés par des placeholders pour éviter leur traduction
-    """
     protected_map = {}
     for idx, name in enumerate(PROTECTED_NAMES):
         placeholder = f"__PROTECTED_{idx}__"
@@ -102,17 +103,12 @@ def protect_names(text):
     return text, protected_map
 
 def restore_names(text, protected_map):
-    """
-    Remplace les placeholders par les noms originaux
-    """
     for placeholder, name in protected_map.items():
         text = text.replace(placeholder, name)
     return text
 
 def translate_line(line, translator):
-    """
-    Traduit une ligne via Google Translate si elle n'est pas déjà dans TRANSLATIONS
-    """
+    # Remplacer par les traductions définies
     for en, fr in TRANSLATIONS.items():
         line = line.replace(en, fr)
 
