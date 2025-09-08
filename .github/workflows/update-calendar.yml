@@ -42,14 +42,24 @@ jobs:
       - name: Créer/MàJ release et upload ICS
         uses: ncipollo/release-action@v1
         with:
-          tag: v1.0.0                  # On fixe un tag, pas 'latest'
+          tag: v1.0.0
           name: Calendrier FR
-          allowUpdates: true           # Permet de mettre à jour la release existante
+          allowUpdates: true
           artifact: calendar/gocal_fr.ics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 8️⃣ Message personnalisé de succès
-      - name: Notification de succès
+      # 8️⃣ Message personnalisé dans les logs GitHub
+      - name: Notification de succès dans GitHub
         if: success()
         run: echo "::notice title=Calendrier FR::✅ Auto MàJ calendrier FR réussie !"
+
+      # 9️⃣ Notification push Pushover
+      - name: Notification push Pushover
+        if: success()
+        run: |
+          curl -s \
+          --form-string "token=${{ secrets.PUSHOVER_TOKEN }}" \
+          --form-string "user=${{ secrets.PUSHOVER_USER }}" \
+          --form-string "message=✅ Calendrier FR mis à jour !" \
+          https://api.pushover.net/1/messages.json
