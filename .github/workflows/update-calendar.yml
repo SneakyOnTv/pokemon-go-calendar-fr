@@ -61,5 +61,5 @@ jobs:
           curl -s \
           --form-string "token=${{ secrets.PUSHOVER_TOKEN }}" \
           --form-string "user=${{ secrets.PUSHOVER_USER }}" \
-          --form-string "message=✅ Calendrier FR mis à jour !" \
+          --form-string "message=📅Calendrier PoGo FR mis à jour avec succès ! ✅" \
           https://api.pushover.net/1/messages.json
