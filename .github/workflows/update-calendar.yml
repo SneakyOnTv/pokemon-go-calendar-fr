@@ -48,3 +48,8 @@ jobs:
           artifact: calendar/gocal_fr.ics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 8️⃣ Message personnalisé de succès
+      - name: Notification de succès
+        if: success()
+        run: echo "::notice title=Calendrier FR::✅ Auto MàJ calendrier FR réussie !"
