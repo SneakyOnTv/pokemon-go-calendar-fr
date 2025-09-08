@@ -48,7 +48,7 @@ PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 # FONCTIONS
 # =========================
 def unfold_ics(ics_content):
-    """Déplie les lignes iCalendar."""
+    """Déplie les lignes iCalendar pour que chaque propriété soit sur une seule ligne."""
     lines = ics_content.splitlines()
     unfolded = []
     for line in lines:
@@ -56,10 +56,9 @@ def unfold_ics(ics_content):
             unfolded[-1] += line[1:]
         else:
             unfolded.append(line)
-    return "\n".join(unfolded)
+    return unfolded
 
 def protect_names(text):
-    """Remplace les noms protégés par des placeholders."""
     protected_map = {}
     for idx, name in enumerate(PROTECTED_NAMES):
         placeholder = f"__PROTECTED_{idx}__"
@@ -68,37 +67,49 @@ def protect_names(text):
     return text, protected_map
 
 def restore_names(text, protected_map):
-    """Restaure les noms protégés."""
     for placeholder, name in protected_map.items():
         text = text.replace(placeholder, name)
     return text
 
 def translate_text(text, translator):
-    """Traduit un texte avec dictionnaire + fallback Google Translate."""
+    """Traduit un texte en français en utilisant le dictionnaire et Google Translate."""
     text, protected_map = protect_names(text)
+
+    # Traduction via dictionnaire
     for en, fr in TRANSLATIONS.items():
         text = text.replace(en, fr)
+
+    # Traduction automatique si reste de l'anglais
     if re.search(r'[A-Za-z]{2,}', text):
         try:
             text = translator.translate(text, src='en', dest='fr').text
         except Exception as e:
-            print(f"⚠️ Erreur traduction automatique : {text} / {e}")
+            print(f"⚠️ Erreur de traduction : {text}")
+            print("Erreur :", e)
+
     text = restore_names(text, protected_map)
     return text
 
-def translate_ical_line(line, translator):
+def translate_field_line(line, translator):
     """
-    Traduit tous les champs texte iCalendar tout en gérant échappements iCal.
-    Champs typiques: SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES, etc.
+    Traduit tous les champs texte d'une ligne ICS.
+    Les champs texte sont : SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES, etc.
     """
-    match = re.match(r"^(SUMMARY|DESCRIPTION|COMMENT|LOCATION|CATEGORIES|X-.+):(.+)$", line)
-    if match:
-        key, value = match.groups()
-        value_decoded = value.replace("\\,", ",").replace("\\n", "\n")
-        value_translated = translate_text(value_decoded, translator)
-        value_escaped = value_translated.replace("\n", "\\n").replace(",", "\\,")
-        return f"{key}:{value_escaped}"
-    return line
+    if ":" not in line:
+        return line
+
+    key, value = line.split(":", 1)
+
+    # Liste des champs à traduire
+    TEXT_FIELDS = ["SUMMARY", "DESCRIPTION", "COMMENT", "LOCATION", "CATEGORIES"]
+
+    if key.upper() in TEXT_FIELDS:
+        value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
+        translated = translate_text(value_decoded, translator)
+        translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
+        return f"{key}:{translated_encoded}"
+    else:
+        return line
 
 def send_pushover(message):
     if not PUSHOVER_USER or not PUSHOVER_TOKEN:
@@ -124,23 +135,22 @@ def main():
         r.raise_for_status()
         content_type = r.headers.get('Content-Type', '')
         if 'text' not in content_type.lower() and 'ical' not in content_type.lower():
-            print(f"⚠️ Type inattendu : {content_type}")
+            print(f"⚠️ Type de contenu inattendu : {content_type}")
     except requests.RequestException as e:
-        print("❌ Erreur téléchargement ICS :", e)
+        print("❌ Erreur lors du téléchargement du fichier ICS :", e)
         send_pushover("❌ Échec génération ICS : téléchargement impossible")
         return
 
-    ics_unfolded = unfold_ics(r.text)
-    ics_lines = ics_unfolded.splitlines()
-
-    print("✏️ Traduction ligne par ligne...")
+    ics_lines = unfold_ics(r.text)
     translator = Translator()
     translated_lines = []
+
+    print("✏️ Traduction de tous les champs texte...")
     for line in ics_lines:
         try:
-            translated_lines.append(translate_ical_line(line, translator))
+            translated_lines.append(translate_field_line(line, translator))
         except Exception as e:
-            print(f"⚠️ Ligne ignorée : {line} / {e}")
+            print(f"⚠️ Ligne ignorée à cause d'une erreur : {line}")
             translated_lines.append(line)
 
     os.makedirs("calendar", exist_ok=True)
@@ -148,13 +158,13 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(translated_lines))
 
-    # Vérification rapide
+    # Vérification rapide du fichier ICS
     if translated_lines and translated_lines[0].startswith("BEGIN:VCALENDAR") and translated_lines[-1].startswith("END:VCALENDAR"):
         print(f"✅ Fichier ICS généré dans {output_file}")
         send_pushover(f"✅ Fichier ICS traduit généré avec succès : {output_file}")
     else:
-        print(f"⚠️ ICS généré mais peut être invalide ! Vérifie {output_file}")
-        send_pushover(f"⚠️ ICS généré mais invalide : {output_file}")
+        print(f"⚠️ Fichier ICS généré mais peut être invalide ! Vérifie {output_file}")
+        send_pushover(f"⚠️ Fichier ICS généré mais invalide : {output_file}")
 
 if __name__ == "__main__":
     main()
