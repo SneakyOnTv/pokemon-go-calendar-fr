@@ -53,15 +53,15 @@ def restore_names(text, protected_map):
     return text
 
 def translate_line(line, translator):
+    # Protéger les noms avant traduction
+    line, protected_map = protect_names(line)
+
     # Remplacer par les traductions définies
     for en, fr in TRANSLATIONS.items():
         line = line.replace(en, fr)
 
-    # Protéger les noms
-    line, protected_map = protect_names(line)
-
     # Traduction automatique si la ligne contient encore des mots anglais
-    if re.search(r'[A-Za-z]', line):
+    if re.search(r'[A-Za-z]{2,}', line):
         try:
             translated = translator.translate(line, src='en', dest='fr').text
             line = translated
@@ -74,29 +74,41 @@ def translate_line(line, translator):
     return line
 
 def main():
-    print("Téléchargement du fichier ICS...")
+    print("📥 Téléchargement du fichier ICS...")
     try:
-        r = requests.get(ICS_URL, allow_redirects=True)
+        r = requests.get(ICS_URL, allow_redirects=True, timeout=15)
         r.raise_for_status()
         content_type = r.headers.get('Content-Type', '')
-        if 'text' not in content_type and 'ical' not in content_type.lower():
-            print(f"Avertissement : type de contenu inattendu : {content_type}")
+        if 'text' not in content_type.lower() and 'ical' not in content_type.lower():
+            print(f"⚠️ Avertissement : type de contenu inattendu : {content_type}")
     except requests.RequestException as e:
-        print("Erreur lors du téléchargement du fichier ICS :", e)
+        print("❌ Erreur lors du téléchargement du fichier ICS :", e)
         return
 
     ics_lines = r.text.splitlines()
-    print("Application des traductions ligne par ligne...")
+    print("✏️ Application des traductions ligne par ligne...")
 
     translator = Translator()
-    translated_lines = [translate_line(line, translator) for line in ics_lines]
+    translated_lines = []
+    for line in ics_lines:
+        try:
+            translated_lines.append(translate_line(line, translator))
+        except Exception as e:
+            print(f"⚠️ Ligne ignorée à cause d'une erreur : {line}")
+            print("Erreur :", e)
+            translated_lines.append(line)  # fallback : garder la ligne originale
 
     os.makedirs("calendar", exist_ok=True)
     output_file = "calendar/gocal_fr.ics"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(translated_lines))
 
-    print(f"✅ Parfait ! Fichier ICS généré dans {output_file}")
+    # Vérification rapide du fichier ICS
+    if translated_lines and translated_lines[0].startswith("BEGIN:VCALENDAR") and translated_lines[-1].startswith("END:VCALENDAR"):
+        print(f"✅ Fichier ICS généré avec succès dans {output_file}")
+    else:
+        print(f"⚠️ Attention : le fichier ICS peut être invalide ! Vérifie {output_file}")
 
 if __name__ == "__main__":
     main()
+
