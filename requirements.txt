@@ -1,2 +1,11 @@
 requests
 googletrans==4.0.0-rc1
+# ==========================
+# Dépendances pour le projet
+# ==========================
+
+# Pour télécharger le fichier ICS depuis GitHub
+requests
+
+# Traduction automatique des lignes ICS
+googletrans==4.0.0-rc1
