@@ -4,19 +4,13 @@ import requests
 import os
 import re
 from translations import TRANSLATIONS
-
-# Si googletrans n'est pas installé : pip install googletrans==4.0.0-rc1
 from googletrans import Translator
-import googletrans
-
-# Patch pour googletrans 4.0.0-rc1 afin d’éviter l’erreur AttributeError
-googletrans.client.Translator.raise_Exception = googletrans.client.Translator.raise_exception
 
 ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
 # Liste de mots ou noms à protéger pour ne pas être traduits
 PROTECTED_NAMES = [
-    # 🐾 Pokémon Génération 1 Kanto (001–151)
+     # 🐾 Pokémon Génération 1 Kanto (001–151)
     "Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀","Nidorina","Nidoqueen","Nidoran♂","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch’d","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew",
     # 🐾 Pokémon Génération 2 Johto (152–251)
     "Chikorita","Bayleef","Meganium","Cyndaquil","Quilava","Typhlosion","Totodile","Croconaw","Feraligatr","Sentret","Furret","Hoothoot","Noctowl","Ledyba","Ledian","Spinarak","Ariados","Crobat","Chinchou","Lanturn","Pichu","Cleffa","Igglybuff","Togepi","Togetic","Natu","Xatu","Mareep","Flaaffy","Ampharos","Bellossom","Marill","Azumarill","Sudowoodo","Politoed","Hoppip","Skiploom","Jumpluff","Aipom","Sunkern","Sunflora","Yanma","Wooper","Quagsire","Espeon","Umbreon","Murkrow","Slowking","Misdreavus","Unown","Wobbuffet","Girafarig","Pineco","Forretress","Dunsparce","Gligar","Steelix","Snubbull","Granbull","Qwilfish","Scizor","Shuckle","Heracross","Sneasel","Teddiursa","Ursaring","Slugma","Magcargo","Swinub","Piloswine","Corsola","Remoraid","Octillery","Delibird","Mantine","Skarmory","Houndour","Houndoom","Kingdra","Phanpy","Donphan","Porygon2","Stantler","Smeargle","Tyrogue","Hitmontop","Smoochum","Elekid","Magby","Miltank","Blissey","Raikou","Entei","Suicune","Larvitar","Pupitar","Tyranitar","Lugia","Ho-oh","Celebi",
@@ -35,63 +29,14 @@ PROTECTED_NAMES = [
     # 🐾 Pokémon Génération 9 Paldea (906–1025)
     "Sprigatito","Floragato","Meowscarada","Fuecoco","Crocalor","Skeledirge","Quaxly","Quaxwell","Quaquaval","Lechonk","Oinkologne Male","Oinkologne Female","Tarountula","Spidops","Nymble","Lokix","Pawmi","Pawmo","Pawmot","Tandemaus","Maushold Family of Three","Maushold Family of Four","Fidough","Dachsbun","Smoliv","Dolliv","Arboliva","Squawkabilly Green","Squawkabilly Blue","Squawkabilly Yellow","Squawkabilly White","Nacli","Naclstack","Garganacl","Charcadet","Armarouge","Ceruledge","Tadbulb","Bellibolt","Wattrel","Kilowattrel","Maschiff","Mabosstiff","Shroodle","Grafaiai","Bramblin","Brambleghast","Toedscool","Toedscruel","Klawf","Capsakid","Scovillain","Rellor","Rabsca","Flittle","Espathra","Tinkatink","Tinkatuff","Tinkaton","Wiglett","Wugtrio","Bombirdier","Finizen","Palafin Zero Form","Palafin Hero Form","Varoom","Revavroom","Cyclizar","Orthworm","Glimmet","Glimmora","Greavard","Houndstone","Flamigo","Cetoddle","Cetitan","Veluza","Dondozo","Tatsugiri Curly Form","Tatsugiri Droopy Form","Tatsugiri Stretchy Form","Annihilape","Clodsire","Farigiraf","Dudunsparce Two-Segment Form","Dudunsparce Three-Segment Form","Kingambit","Great-Tusk","Scream Tail","Brute Bonnet","Flutter Mane","Slither Wing","Sandy Shocks","Iron Treads","Iron Bundle","Iron Hands","Iron Jugulis","Iron Moth","Iron Thorns","Frigibax","Arctibax","Baxcalibur","Gimmighoul Chest Form","Gimmighoul Roaming Form","Gholdengo","Wo-Chien","Chien-Pao","Ting-Lu","Chi-Yu","Roaring Moon","Iron Valiant","Koraidon Final Form","Koraidon Running Form","Koraidon Swimming Form","Koraidon Gliding Form","Miraidon Ultimate Mode","Miraidon Drive Mode","Miraidon Aquatic Mode","Miraidon Glide Mode","Walking Wake","Iron Leaves","Dipplin","Poltchageist Counterfeit Form","Poltchageist Artisan Form","Sinistcha Unremarkable Form","Sinistcha Masterpiece Form","Okidogi","Munkidori","Fezandipiti","Ogerpon Teal Mask","Ogerpon Wellspring Mask","Ogerpon Hearthflame Mask","Ogerpon Cornerstone Mask","Archaludon","Hydrapple","Gouging Fire","Raging Bolt","Iron Boulder","Iron Crown","Terapagos Normal Form","Terapagos Terastal Form","Terapagos Stellar Form","Pecharunt",
 
-    # 🔹 Abréviations et codes
+    # Abréviations et codes
     "[RH]", "[RB]", "[PSH]", "[CD]", "[GBL]", "[WA]", "[E]", "[MM]", "[RD]", "[RW]", "[GP]", "[CS]",
     
-    # 🔹 Événements officiels
+    # Événements officiels
     "Mega Sharpedo Raid Day",
     "Kanto Celebration",
     "Dynamax Trubbish during Max Monday",
-    "Great League and Retro Cup: Great League Edition | Tales of Transformation",
-    "Trubbish Spotlight Hour",
-    "Palkia (Origin Forme) Raid Hour",
-    "Flabébé Community Day",
-    "Pokémon Concierge Celebration",
-    "Mega Kanto Starters in Mega Raids",
-    "Ultra League and Summer Cup: Great League Edition | Tales of Transformation",
-    "Gothita Spotlight Hour",
-    "Mega Latias and Mega Latios Raid Hour",
-    "Psychic Spectacular: Taken Over",
-    "Shadow Groudon Raid Weekend",
-    "Dynamax Chansey during Max Monday",
-    "Mega Gardevoir, Latias, Latios, and Gallade in Mega Raids",
-    "Master League: Mega Edition and Willpower Cup: Great League Edition | Tales of Transformation",
-    "Hoothoot Spotlight Hour",
-    "Steel Skyline Spotlight Hour",
-    "Completely Normal Raid Hour",
-    "GO Battle Week-end: Tales of Transformation",
-    "in 5-star raid battles",
-    "Tales of Transformation",
-    "Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation",
-    "City Safari: Bangkok",
-    "City Safari: Amsterdam",
-    "City Safari: Cancún",
-    "City Safari: Valencia",
-    "City Safari: Vancouver",
-    "Legendary Celebration: Sword & Shield",
-    "Winter Celebration",
-    "Year-End Celebration",
-
-    # 🔹 Termes techniques / bonus
-    "5-star", "Legendary", "Mythical", "XP", "Candy", "XL Candy",
-    "Double XP", "Double Candy", "Double Stardust", "Shiny", "Hatch Distance",
-    "Timed Research", "PvP", "Lure Module", "Incense", "Catch", "Evolve",
-    
-    # ⚔️ Raids
-    "Raid", "Five Star", "Ultra", "Master", "Great", "Cup", "Edition",
-    
-    # 🌟 Événements
-    "Spotlight", "Community", "Day", "Hour", "Event",
-    "Celebration", "Research", "Pass GO", "Bonus",
-    "Wild Area", "Safari",
-    
-    # 🍬 Objets & bonus XP / Stardust
-    "Lucky", "Egg", "Hatch",
-    
-    # ❄️ Saisons & périodes spéciales
-    "Winter", "Autumn", "Summer", "Holiday", "Legend",
-    
-    # Ajoute ici tous les noms Pokémon ou termes que tu veux protéger
+    # … tu peux garder le reste de ta liste ici …
 ]
 
 def protect_names(text):
@@ -117,8 +62,12 @@ def translate_line(line, translator):
 
     # Traduction automatique si la ligne contient encore des mots anglais
     if re.search(r'[A-Za-z]', line):
-        translated = translator.translate(line, src='en', dest='fr').text
-        line = translated
+        try:
+            translated = translator.translate(line, src='en', dest='fr').text
+            line = translated
+        except Exception as e:
+            print(f"⚠️ Erreur de traduction pour la ligne : {line}")
+            print("Erreur :", e)
 
     # Restaurer les noms protégés
     line = restore_names(line, protected_map)
@@ -140,9 +89,7 @@ def main():
     print("Application des traductions ligne par ligne...")
 
     translator = Translator()
-    translated_lines = []
-    for line in ics_lines:
-        translated_lines.append(translate_line(line, translator))
+    translated_lines = [translate_line(line, translator) for line in ics_lines]
 
     os.makedirs("calendar", exist_ok=True)
     output_file = "calendar/gocal_fr.ics"
