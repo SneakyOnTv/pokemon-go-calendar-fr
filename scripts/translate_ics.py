@@ -42,7 +42,7 @@ PROTECTED_NAMES = [
     # … tu peux garder le reste de ta liste ici …
 ]
 
-# Créer une map globale des protections : chaque nom → placeholder unique
+# Créer une map globale des protections
 PROTECTED_MAP_GLOBAL = {name: f"__PROTECTED_{i}__" for i, name in enumerate(PROTECTED_NAMES)}
 
 PUSHOVER_USER = os.getenv("PUSHOVER_USER")
@@ -52,7 +52,6 @@ PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 # FONCTIONS
 # =========================
 def unfold_ics(ics_content):
-    """Déplie les lignes iCalendar multi-lignes"""
     lines = ics_content.splitlines()
     unfolded = []
     for line in lines:
@@ -63,72 +62,49 @@ def unfold_ics(ics_content):
     return "\n".join(unfolded)
 
 def protect_text(text):
-    """Remplace tous les noms sensibles par leurs placeholders"""
     for name, placeholder in PROTECTED_MAP_GLOBAL.items():
         text = text.replace(name, placeholder)
     return text
 
 def restore_text(text):
-    """Remet les noms originaux à partir des placeholders"""
     for name, placeholder in PROTECTED_MAP_GLOBAL.items():
         text = text.replace(placeholder, name)
     return text
 
 def translate_text(text, translator):
-    """
-    Traduction robuste : 
-    - Applique d'abord le dictionnaire TRANSLATIONS
-    - Préserve les Pokémon et abréviations
-    - Utilise Google Translate seulement sur le reste
-    """
-    original = text
-
-    # 1️⃣ Appliquer le dictionnaire TRANSLATIONS mot/phrase par mot/phrase
-    # On trie par longueur décroissante pour éviter les conflits (ex: 'raid' vs 'raid battles')
+    # 1️⃣ Appliquer le dictionnaire TRANSLATIONS
     for en in sorted(TRANSLATIONS.keys(), key=len, reverse=True):
         fr = TRANSLATIONS[en]
-        # Remplacer uniquement si le mot anglais est présent, insensible à la casse
         pattern = re.compile(re.escape(en), flags=re.IGNORECASE)
         text = pattern.sub(fr, text)
 
-    # 2️⃣ Identifier les segments à traduire automatiquement (hors placeholders)
-    segments = re.split(r"(__PROTECTED_\d+__)", text)  # ne pas traduire les Pokémon
+    # 2️⃣ Segmenter pour protéger les placeholders
+    segments = re.split(r"(__PROTECTED_\d+__)", text)
+
+    # 3️⃣ Traduire automatiquement uniquement les segments non protégés
     for i, seg in enumerate(segments):
         if seg.startswith("__PROTECTED_") or not re.search(r"[A-Za-z]{2,}", seg):
-            continue  # segment protégé ou pas de texte anglais à traduire
+            continue
         try:
             translated_seg = translator.translate(seg, src='en', dest='fr').text
             segments[i] = translated_seg
         except Exception as e:
             print(f"⚠️ Erreur traduction automatique segment : {seg}\n{e}")
 
-    # 3️⃣ Recomposer le texte avec tous les segments
+    # 4️⃣ Recomposer le texte et restaurer les placeholders
     text = "".join(segments)
-
-    # 4️⃣ Restaurer les placeholders si nécessaire
     text = restore_text(text)
-
     return text
 
 def translate_field_line(line, translator):
-    """
-    Traduit les champs iCalendar sensibles :
-    SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES
-    """
     if ":" not in line:
         return line
-
     key, value = line.split(":", 1)
     TEXT_FIELDS = ["SUMMARY", "DESCRIPTION", "COMMENT", "LOCATION", "CATEGORIES"]
-
     if key.upper() in TEXT_FIELDS:
-        # Décoder les échappements iCal
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
-        # Protéger les noms sensibles
         value_protected = protect_text(value_decoded)
-        # Traduire
         translated = translate_text(value_protected, translator)
-        # Réencoder iCal
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
     else:
@@ -161,7 +137,6 @@ def main():
         send_pushover("❌ Échec génération ICS : téléchargement impossible")
         return
 
-    # Déplier lignes iCalendar
     ics_unfolded = unfold_ics(r.text)
     ics_lines = ics_unfolded.splitlines()
 
