@@ -6,11 +6,14 @@ import re
 from translations import TRANSLATIONS
 from googletrans import Translator
 
+# =========================
+# CONFIGURATION
+# =========================
 ICS_URL = "https://github.com/othyn/go-calendar/releases/latest/download/gocal.ics"
 
-# Liste de mots ou noms à protéger pour ne pas être traduits
+# PROTECTED_NAMES vide, à compléter plus tard
 PROTECTED_NAMES = [
-     # 🐾 Pokémon Génération 1 Kanto (001–151)
+          # 🐾 Pokémon Génération 1 Kanto (001–151)
     "Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀","Nidorina","Nidoqueen","Nidoran♂","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch’d","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew",
     # 🐾 Pokémon Génération 2 Johto (152–251)
     "Chikorita","Bayleef","Meganium","Cyndaquil","Quilava","Typhlosion","Totodile","Croconaw","Feraligatr","Sentret","Furret","Hoothoot","Noctowl","Ledyba","Ledian","Spinarak","Ariados","Crobat","Chinchou","Lanturn","Pichu","Cleffa","Igglybuff","Togepi","Togetic","Natu","Xatu","Mareep","Flaaffy","Ampharos","Bellossom","Marill","Azumarill","Sudowoodo","Politoed","Hoppip","Skiploom","Jumpluff","Aipom","Sunkern","Sunflora","Yanma","Wooper","Quagsire","Espeon","Umbreon","Murkrow","Slowking","Misdreavus","Unown","Wobbuffet","Girafarig","Pineco","Forretress","Dunsparce","Gligar","Steelix","Snubbull","Granbull","Qwilfish","Scizor","Shuckle","Heracross","Sneasel","Teddiursa","Ursaring","Slugma","Magcargo","Swinub","Piloswine","Corsola","Remoraid","Octillery","Delibird","Mantine","Skarmory","Houndour","Houndoom","Kingdra","Phanpy","Donphan","Porygon2","Stantler","Smeargle","Tyrogue","Hitmontop","Smoochum","Elekid","Magby","Miltank","Blissey","Raikou","Entei","Suicune","Larvitar","Pupitar","Tyranitar","Lugia","Ho-oh","Celebi",
@@ -39,6 +42,13 @@ PROTECTED_NAMES = [
     # … tu peux garder le reste de ta liste ici …
 ]
 
+# Pushover - récupérer les clés depuis les variables d'environnement
+PUSHOVER_USER = os.getenv("PUSHOVER_USER")
+PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
+
+# =========================
+# FONCTIONS
+# =========================
 def protect_names(text):
     protected_map = {}
     for idx, name in enumerate(PROTECTED_NAMES):
@@ -53,7 +63,6 @@ def restore_names(text, protected_map):
     return text
 
 def translate_line(line, translator):
-    # Protéger les noms avant traduction
     line, protected_map = protect_names(line)
 
     # Remplacer par les traductions définies
@@ -69,10 +78,26 @@ def translate_line(line, translator):
             print(f"⚠️ Erreur de traduction pour la ligne : {line}")
             print("Erreur :", e)
 
-    # Restaurer les noms protégés
     line = restore_names(line, protected_map)
     return line
 
+def send_pushover(message):
+    if not PUSHOVER_USER or not PUSHOVER_TOKEN:
+        print("⚠️ Pushover non configuré (USER/TOKEN manquants)")
+        return
+    try:
+        requests.post("https://api.pushover.net/1/messages.json", data={
+            "token": PUSHOVER_TOKEN,
+            "user": PUSHOVER_USER,
+            "message": message
+        })
+        print("📩 Notification Pushover envoyée")
+    except Exception as e:
+        print("⚠️ Erreur lors de l'envoi Pushover :", e)
+
+# =========================
+# MAIN
+# =========================
 def main():
     print("📥 Téléchargement du fichier ICS...")
     try:
@@ -80,13 +105,14 @@ def main():
         r.raise_for_status()
         content_type = r.headers.get('Content-Type', '')
         if 'text' not in content_type.lower() and 'ical' not in content_type.lower():
-            print(f"⚠️ Avertissement : type de contenu inattendu : {content_type}")
+            print(f"⚠️ Type de contenu inattendu : {content_type}")
     except requests.RequestException as e:
         print("❌ Erreur lors du téléchargement du fichier ICS :", e)
+        send_pushover("❌ Échec génération ICS : téléchargement impossible")
         return
 
     ics_lines = r.text.splitlines()
-    print("✏️ Application des traductions ligne par ligne...")
+    print("✏️ Traduction ligne par ligne...")
 
     translator = Translator()
     translated_lines = []
@@ -95,8 +121,7 @@ def main():
             translated_lines.append(translate_line(line, translator))
         except Exception as e:
             print(f"⚠️ Ligne ignorée à cause d'une erreur : {line}")
-            print("Erreur :", e)
-            translated_lines.append(line)  # fallback : garder la ligne originale
+            translated_lines.append(line)
 
     os.makedirs("calendar", exist_ok=True)
     output_file = "calendar/gocal_fr.ics"
@@ -105,10 +130,11 @@ def main():
 
     # Vérification rapide du fichier ICS
     if translated_lines and translated_lines[0].startswith("BEGIN:VCALENDAR") and translated_lines[-1].startswith("END:VCALENDAR"):
-        print(f"✅ Fichier ICS généré avec succès dans {output_file}")
+        print(f"✅ Fichier ICS généré dans {output_file}")
+        send_pushover(f"✅ Fichier ICS traduit généré avec succès : {output_file}")
     else:
-        print(f"⚠️ Attention : le fichier ICS peut être invalide ! Vérifie {output_file}")
+        print(f"⚠️ Fichier ICS généré mais peut être invalide ! Vérifie {output_file}")
+        send_pushover(f"⚠️ Fichier ICS généré mais invalide : {output_file}")
 
 if __name__ == "__main__":
     main()
-
