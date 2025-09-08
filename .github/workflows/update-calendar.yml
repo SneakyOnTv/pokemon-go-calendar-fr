@@ -28,39 +28,40 @@ jobs:
           pip install --upgrade -r requirements.txt --quiet
 
       # 4️⃣ Créer le dossier calendar si inexistant
-      - run: mkdir -p calendar
+      - name: Créer dossier calendar
+        run: mkdir -p calendar
 
       # 5️⃣ Générer le calendrier FR
       - name: Générer le calendrier FR
-        run: python scripts/translate_ics.py
+        id: generate
+        run: |
+          set -e  # stoppe le workflow si erreur
+          python scripts/translate_ics.py
 
-      # 6️⃣ Commit et push avec gestion simple des conflits
-      - name: Commit et push calendrier
+      # 6️⃣ Commit et push calendrier FR
+      - name: Commit & push calendrier
+        if: steps.generate.conclusion == 'success'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add calendar/gocal_fr.ics
-          git commit -m "MàJ calendrier FR" || echo "Rien à commit"
+          git diff-index --quiet HEAD || git commit -m "MàJ calendrier FR"
           git pull --rebase origin main || echo "Pas de rebase nécessaire"
           git push origin main
 
-      # 7️⃣ Déploiement GitHub Pages (si index.html ou page HTML existe)
+      # 7️⃣ Déploiement GitHub Pages
       - name: Déploiement GitHub Pages
+        if: steps.generate.conclusion == 'success'
         uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # racine du repo contenant index.html
+          publish_dir: ./  # racine du repo
           publish_branch: gh-pages
           force_orphan: true
 
-      # 8️⃣ Notification dans les logs GitHub
-      - name: Notification de succès dans GitHub
-        if: success()
-        run: echo "::notice title=Calendrier FR::✅ Auto MàJ calendrier FR réussie !"
-
-      # 9️⃣ Notification Pushover
-      - name: Notification push Pushover
-        if: success()
+      # 8️⃣ Notification Pushover succès
+      - name: Notification Pushover succès
+        if: steps.generate.conclusion == 'success'
         env:
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
@@ -68,5 +69,18 @@ jobs:
           curl -s \
             --form-string "token=${PUSHOVER_TOKEN}" \
             --form-string "user=${PUSHOVER_USER}" \
-            --form-string "message=📅Calendrier PoGo FR → Auto M.A.J réussie ! ✅" \
+            --form-string "message=📅 Calendrier PoGo FR → Auto M.A.J réussie ! ✅" \
+            https://api.pushover.net/1/messages.json
+
+      # 9️⃣ Notification Pushover erreur
+      - name: Notification Pushover erreur
+        if: failure()
+        env:
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+        run: |
+          curl -s \
+            --form-string "token=${PUSHOVER_TOKEN}" \
+            --form-string "user=${PUSHOVER_USER}" \
+            --form-string "message=⚠️ Erreur lors de la génération du calendrier PoGo FR !" \
             https://api.pushover.net/1/messages.json
