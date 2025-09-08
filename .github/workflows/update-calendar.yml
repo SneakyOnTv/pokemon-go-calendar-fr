@@ -11,6 +11,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       # 1️⃣ Checkout du dépôt
       - uses: actions/checkout@v4
@@ -20,7 +21,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Installer toutes les dépendances Python
+      # 3️⃣ Installer les dépendances Python
       - name: Installer les dépendances
         run: |
           python -m pip install --upgrade pip --quiet
@@ -29,31 +30,28 @@ jobs:
       # 4️⃣ Créer le dossier calendar si inexistant
       - run: mkdir -p calendar
 
-      # 5️⃣ Lancer le script Python pour traduire le calendrier
+      # 5️⃣ Générer le calendrier FR
       - name: Générer le calendrier FR
         run: python scripts/translate_ics.py
 
-      # 6️⃣ Synchroniser avec la branche main
-      - name: Commit et push avec gestion des conflits
+      # 6️⃣ Commit et push avec gestion simple des conflits
+      - name: Commit et push calendrier
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add calendar/gocal_fr.ics
           git commit -m "MàJ calendrier FR" || echo "Rien à commit"
-          git fetch origin main
-          git rebase origin/main || git rebase --abort
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/SneakyOnTv/pokemon-go-calendar-fr.git main
+          git pull --rebase origin main || echo "Pas de rebase nécessaire"
+          git push origin main
 
-      # 7️⃣ Créer ou mettre à jour la release et uploader ICS
-      - name: Créer/MàJ release et upload ICS
-        uses: ncipollo/release-action@v1
+      # 7️⃣ Déploiement GitHub Pages (si index.html ou page HTML existe)
+      - name: Déploiement GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
         with:
-          tag: v1.0.0
-          name: Calendrier FR
-          allowUpdates: true
-          artifact: calendar/gocal_fr.ics
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # racine du repo contenant index.html
+          publish_branch: gh-pages
+          force_orphan: true
 
       # 8️⃣ Notification dans les logs GitHub
       - name: Notification de succès dans GitHub
@@ -68,7 +66,7 @@ jobs:
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
         run: |
           curl -s \
-          --form-string "token=${PUSHOVER_TOKEN}" \
-          --form-string "user=${PUSHOVER_USER}" \
-          --form-string "message=📅Calendrier PoGo FR → Auto M.A.J réussie ! ✅" \
-          https://api.pushover.net/1/messages.json
+            --form-string "token=${PUSHOVER_TOKEN}" \
+            --form-string "user=${PUSHOVER_USER}" \
+            --form-string "message=📅Calendrier PoGo FR → Auto M.A.J réussie ! ✅" \
+            https://api.pushover.net/1/messages.json
