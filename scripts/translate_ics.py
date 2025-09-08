@@ -48,7 +48,11 @@ PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 # FONCTIONS
 # =========================
 def unfold_ics(ics_content):
-    """Déplie les lignes iCalendar pour que chaque propriété soit sur une seule ligne."""
+    """
+    Déplie les lignes iCalendar pour que chaque propriété soit sur une seule ligne.
+    Les lignes qui commencent par un espace ou une tabulation
+    sont la continuation de la ligne précédente.
+    """
     lines = ics_content.splitlines()
     unfolded = []
     for line in lines:
@@ -56,7 +60,7 @@ def unfold_ics(ics_content):
             unfolded[-1] += line[1:]
         else:
             unfolded.append(line)
-    return unfolded
+    return "\n".join(unfolded)
 
 def protect_names(text):
     protected_map = {}
@@ -72,40 +76,47 @@ def restore_names(text, protected_map):
     return text
 
 def translate_text(text, translator):
-    """Traduit un texte en français en utilisant le dictionnaire et Google Translate."""
-    text, protected_map = protect_names(text)
-
-    # Traduction via dictionnaire
+    """
+    Traduit un texte avec le dictionnaire manuel puis Google Translate si nécessaire.
+    """
+    original = text
+    # Remplacer par les traductions définies
     for en, fr in TRANSLATIONS.items():
         text = text.replace(en, fr)
 
-    # Traduction automatique si reste de l'anglais
+    # Traduction automatique si la ligne contient encore des mots anglais
     if re.search(r'[A-Za-z]{2,}', text):
         try:
-            text = translator.translate(text, src='en', dest='fr').text
+            translated = translator.translate(text, src='en', dest='fr').text
+            text = translated
         except Exception as e:
-            print(f"⚠️ Erreur de traduction : {text}")
+            print(f"⚠️ Erreur de traduction pour : {original}")
             print("Erreur :", e)
-
-    text = restore_names(text, protected_map)
     return text
 
 def translate_field_line(line, translator):
     """
-    Traduit tous les champs texte d'une ligne ICS.
-    Les champs texte sont : SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES, etc.
+    Traduit proprement les champs iCalendar sensibles aux retours à la ligne :
+    SUMMARY, DESCRIPTION, COMMENT, LOCATION, CATEGORIES
     """
     if ":" not in line:
         return line
 
     key, value = line.split(":", 1)
-
-    # Liste des champs à traduire
     TEXT_FIELDS = ["SUMMARY", "DESCRIPTION", "COMMENT", "LOCATION", "CATEGORIES"]
 
     if key.upper() in TEXT_FIELDS:
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
+        value_decoded, protected_map = protect_names(value_decoded)
+
         translated = translate_text(value_decoded, translator)
+        translated = restore_names(translated, protected_map)
+
+        # Nettoyage des espaces ou backslashes introduits par la traduction
+        translated = re.sub(r"\\\s*n", "\\n", translated)
+        translated = re.sub(r"\s*\\,", "\\,", translated)
+
+        # Réencoder pour iCalendar
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
     else:
@@ -141,11 +152,13 @@ def main():
         send_pushover("❌ Échec génération ICS : téléchargement impossible")
         return
 
-    ics_lines = unfold_ics(r.text)
+    # Déplier les lignes iCalendar
+    ics_unfolded = unfold_ics(r.text)
+    ics_lines = ics_unfolded.splitlines()
+
+    print("✏️ Traduction ligne par ligne...")
     translator = Translator()
     translated_lines = []
-
-    print("✏️ Traduction de tous les champs texte...")
     for line in ics_lines:
         try:
             translated_lines.append(translate_field_line(line, translator))
