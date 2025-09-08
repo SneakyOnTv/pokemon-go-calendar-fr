@@ -1,1 +1,69 @@
-<h1>Test GitHub Pages</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon GO - Calendrier Filtrable</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; color: #333; }
+  h1 { color: #ef5350; }
+  .container { max-width: 700px; margin: auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  .tag { margin-bottom: 12px; }
+  .tag label { margin-left: 8px; font-weight: bold; }
+  button { margin-top: 15px; padding: 10px 15px; background: #ef5350; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+  button:hover { background: #d32f2f; }
+  #linkContainer { margin-top: 15px; word-break: break-all; }
+  #lexique { margin-top: 25px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Pokémon GO - Sélection des événements</h1>
+  <p>Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
+
+  <div class="tag">
+    <input type="checkbox" id="RH" name="tags" value="RH">
+    <label for="RH">Red Hour [RH]</label>
+  </div>
+
+  <div class="tag">
+    <input type="checkbox" id="CD" name="tags" value="CD">
+    <label for="CD">Community Day [CD]</label>
+  </div>
+
+  <div class="tag">
+    <input type="checkbox" id="GBL" name="tags" value="GBL">
+    <label for="GBL">Go Battle League [GBL]</label>
+  </div>
+
+  <button onclick="generateLink()">Générer mon calendrier</button>
+
+  <p id="linkContainer"></p>
+
+  <div id="lexique">
+    <h3>Lexique des tags :</h3>
+    <p>[RH] → Red Hour : événements spéciaux où certains Pokémon apparaissent plus souvent.</p>
+    <p>[CD] → Community Day : Journée communautaire avec un Pokémon vedette et bonus spéciaux.</p>
+    <p>[GBL] → Go Battle League : Ligues de combat PvP avec différentes règles et récompenses.</p>
+  </div>
+</div>
+
+<script>
+function generateLink() {
+  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
+                            .map(e => e.value);
+  if(selectedTags.length === 0) {
+    alert("Veuillez cocher au moins un événement !");
+    return;
+  }
+  
+  // Exemple de lien ICS statique pour le moment
+  const baseURL = "https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics?tags=";
+  const finalURL = baseURL + selectedTags.join(",");
+
+  document.getElementById("linkContainer").innerHTML = 
+    `Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>`;
+}
+</script>
+
+</body>
+</html>
