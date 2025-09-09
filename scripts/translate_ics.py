@@ -122,7 +122,7 @@ def main():
     ics_unfolded = unfold_ics(r.text)
     
     # 🔹 Modifier nom et description du calendrier
-    ics_unfolded = re.sub(r"X-WR-CALNAME:.*", "X-WR-CALNAME:Calendrier PoGo Fr", ics_unfolded)
+    ics_unfolded = re.sub(r"X-WR-CALNAME:.*", "X-WR-CALNAME:Calendrier PoGo Fr by SneakyOnTv", ics_unfolded)
     ics_unfolded = re.sub(r"X-WR-CALDESC:.*", "X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv", ics_unfolded)
 
     ics_lines = ics_unfolded.splitlines()
