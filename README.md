@@ -8,9 +8,13 @@ Il inclut : événements spéciaux, Journées Communauté, raids, bonus XP x2, P
 
 ---
 
+Bientot Disponible en cour... ===> https://sneakyontv.github.io/pokemon-go-calendar-fr/
+
+---
+
 ## 🔗 Lien d’abonnement
 
-https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics 
+.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
 
 > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.  
 
@@ -43,7 +47,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 
 
    **6. Coller le lien du calendrier dans le serveur**  
-https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
 
             > ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
 <img src="images/6.png" width="200" />
@@ -56,7 +60,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 
 ### Android (Google Agenda)
 Télécharge le fichier :
-https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+.[Lien Fichier Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
 
 Ouvre le fichier téléchargé
 Clique dessus depuis la barre de notifications ou depuis ton dossier Téléchargements.
@@ -75,7 +79,7 @@ Les événements sont maintenant importés dans ton agenda et prêts à être co
 1. Ouvrir Google Agenda sur PC → « Autres agendas » → **+ → À partir de l’URL**  
 2. Coller le lien :  
 
-https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
 
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
@@ -85,7 +89,7 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 1. Ajouter un calendrier → **À partir d’Internet**  
 2. Coller le lien webcal
 
-https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics
+.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
 
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
@@ -121,8 +125,10 @@ https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/go
 
 - Traduction
 - M.a.j des nouveau pokemon
+- creation d'un page dedier
+- selection des evenements, [RH] , [GBL] ect
 - Amélioration des catégories
-- Ajout de rappels personnalisés supplémentaires    
+- Ajout de rappels personnalisés supplémentaires
 
 ---
 
