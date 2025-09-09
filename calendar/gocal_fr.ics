@@ -10,7 +10,7 @@ X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:mega-sharpedo-raid-day-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RD] Mega Sharpedo Raid Journée
+SUMMARY:[RD] Mega Sharpedo Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/mega-Sharpedo-raid-Journée-september-2025/
 URL:https://leekduck.com/events/mega-sharpedo-raid-day-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-07-mega-sharpedo-raid-day-september-2025/mega-sharpedo-raid-day.jpg
@@ -18,7 +18,7 @@ DTSTART:20250907T140000
 DTEND:20250907T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Mega Sharpedo Raid Journée
+DESCRIPTION:[RD] Mega Sharpedo Raid Day
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -40,7 +40,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:farfetchd-mr-mime-kangaskhan-tauros-showcase
 DTSTAMP:20250908T002957Z
-SUMMARY:[PS] Farfetch'd\, Mr. Mime\, Kangaskhan\, and Tauros PokéStop Showcases
+SUMMARY:[PS] Farfetch'd\, M. Mime\, Kangourex\, and Tauros PokéStop Showcases
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/farfetchd-mr-mime-Kangourex-Tauros-showcase/
 URL:https://leekduck.com/events/farfetchd-mr-mime-kangaskhan-tauros-showcase/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokestop-showcases-default.jpg
@@ -48,14 +48,14 @@ DTSTART;VALUE=DATE:20250906
 DTEND;VALUE=DATE:20250907
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PS] Farfetch'd\, Mr. Mime\, Kangaskhan\, and Tauros PokéStop Showcases
+DESCRIPTION:[PS] Farfetch'd\, M. Mime\, Kangourex\, and Tauros PokéStop Showcases
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-08
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM] Dynamax Trubbish during Max MonJournée
+SUMMARY:[MM] Dynamax Trubbish during Max Monday
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-08/
 URL:https://leekduck.com/events/max-mondays-2025-09-08/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
@@ -63,7 +63,7 @@ DTSTART:20250908T180000
 DTEND:20250908T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Trubbish during Max MonJournée
+DESCRIPTION:[MM] Dynamax Trubbish during Max Monday
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -100,7 +100,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-09
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] Trubbish Vedette Hour
+SUMMARY:[PSH] Heure Vedette Miasmax
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-09/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-09/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
@@ -108,14 +108,14 @@ DTSTART:20250909T180000
 DTEND:20250909T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Trubbish Vedette Hour
+DESCRIPTION:[PSH] Heure Vedette Miasmax
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250910
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH] Palkia (Origin Forme) Raid Hour
+SUMMARY:[RH] Heure de Raids Palkia (Forme Originelle)
 DESCRIPTION:Starts at 17:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20250910/
 URL:https://leekduck.com/events/raidhour20250910/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
@@ -123,14 +123,14 @@ DTSTART:20250910T170000
 DTEND:20250910T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Palkia (Origin Forme) Raid Hour
+DESCRIPTION:[RH] Heure de Raids Palkia (Forme Originelle)
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:venusaur-charizard-blastoise-showcase
 DTSTAMP:20250908T002957Z
-SUMMARY:[PS] Venusaur\, Charizard\, and Blastoise PokéStop Showcases
+SUMMARY:[PS] Florizarre\, Dracaufeu\, and Tortank PokéStop Showcases
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Florizarre-Dracaufeu-Tortank-showcase/
 URL:https://leekduck.com/events/venusaur-charizard-blastoise-showcase/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokestop-showcases-default.jpg
@@ -138,14 +138,14 @@ DTSTART;VALUE=DATE:20250908
 DTEND;VALUE=DATE:20250910
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PS] Venusaur\, Charizard\, and Blastoise PokéStop Showcases
+DESCRIPTION:[PS] Florizarre\, Dracaufeu\, and Tortank PokéStop Showcases
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:september-communityday2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CD] Flabébé Communauté Journée
+SUMMARY:[CD] Journée Communauté Flabébé
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/september-CommunautéJournée2025/
 URL:https://leekduck.com/events/september-communityday2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-14-september-communityday2025/september-cd-2025-flabebe.jpg
@@ -153,7 +153,7 @@ DTSTART:20250914T140000
 DTEND:20250914T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] Flabébé Communauté Journée
+DESCRIPTION:[CD] Journée Communauté Flabébé
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -205,7 +205,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-pidgeot-gyarados-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Mega Pidgeot and Mega Gyarados in Mega Raids
+SUMMARY:[RB] Mega Roucarnage and Mega Léviator in Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Roucarnage-Léviator-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-pidgeot-gyarados-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -213,7 +213,7 @@ DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Pidgeot and Mega Gyarados in Mega Raids
+DESCRIPTION:[RB] Mega Roucarnage and Mega Léviator in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -235,7 +235,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-16
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] Gothita Vedette Hour
+SUMMARY:[PSH] Heure Vedette Scrutella
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-16/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-16/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
@@ -243,14 +243,14 @@ DTSTART:20250916T180000
 DTEND:20250916T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Gothita Vedette Hour
+DESCRIPTION:[PSH] Heure Vedette Scrutella
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250917
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH] Mega Latias and Mega Latios Raid Hour
+SUMMARY:[RH] Heure de Raids Méga-Latias et Méga-Latios
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20250917/
 URL:https://leekduck.com/events/raidhour20250917/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
@@ -258,7 +258,7 @@ DTSTART:20250917T180000
 DTEND:20250917T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Mega Latias and Mega Latios Raid Hour
+DESCRIPTION:[RH] Heure de Raids Méga-Latias et Méga-Latios
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -280,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shadow-groudon-raid-weekend-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RW] Shadow Groudon Raid Weekend
+SUMMARY:[RW] Week-end de Raids Groudon Obscur
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Groudon-raid-weekend-2025/
 URL:https://leekduck.com/events/shadow-groudon-raid-weekend-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-20-shadow-groudon-raid-weekend-2025/groudon-shadow-raid-weekend-2025.jpg?v2
@@ -288,14 +288,14 @@ DTSTART;VALUE=DATE:20250920
 DTEND;VALUE=DATE:20250921
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RW] Shadow Groudon Raid Weekend
+DESCRIPTION:[RW] Week-end de Raids Groudon Obscur
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-22
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM] Dynamax Chansey during Max MonJournée
+SUMMARY:[MM] Leveinard Dynamax pendant le Lundi Max
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-22/
 URL:https://leekduck.com/events/max-mondays-2025-09-22/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
@@ -303,14 +303,14 @@ DTSTART:20250922T180000
 DTEND:20250922T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Chansey during Max MonJournée
+DESCRIPTION:[MM] Leveinard Dynamax pendant le Lundi Max
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-psychic-dragon-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Mega Gardevoir\, Latias\, Latios\, and Gallade in Mega Raids
+SUMMARY:[RB] Méga-Gardevoir\, Méga-Latias\, Méga-Latios et Gallame en Méga-Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-psychic-dragon-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-psychic-dragon-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -318,7 +318,7 @@ DTSTART;VALUE=DATE:20250916
 DTEND;VALUE=DATE:20250923
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Gardevoir\, Latias\, Latios\, and Gallade in Mega Raids
+DESCRIPTION:[RB] Méga-Gardevoir\, Méga-Latias\, Méga-Latios et Gallame en Méga-Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -340,7 +340,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-23
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] Hoothoot Vedette Hour
+SUMMARY:[PSH] Heure Vedette Hoothoot
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-23/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-23/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
@@ -348,7 +348,7 @@ DTSTART:20250923T180000
 DTEND:20250923T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Hoothoot Vedette Hour
+DESCRIPTION:[PSH] Heure Vedette Hoothoot
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -475,7 +475,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-29
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM] Dynamax Beldum during Max MonJournée
+SUMMARY:[MM] Dynamax Terhal during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-29/
 URL:https://leekduck.com/events/max-mondays-2025-09-29/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
@@ -483,14 +483,14 @@ DTSTART:20250929T180000
 DTEND:20250929T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Beldum during Max MonJournée
+DESCRIPTION:[MM] Dynamax Terhal during Max MonJournée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Mega Kangaskhan and Mega Lopunny in Mega Raids
+SUMMARY:[RB] Mega Kangourex and Mega Lockpin in Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Kangourex-Lockpin-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -498,7 +498,7 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Kangaskhan and Mega Lopunny in Mega Raids
+DESCRIPTION:[RB] Mega Kangourex and Mega Lockpin in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -520,7 +520,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-30
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] Aron Vedette Hour
+SUMMARY:[PSH] Galekid Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-30/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-30/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
@@ -528,7 +528,7 @@ DTSTART:20250930T180000
 DTEND:20250930T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Aron Vedette Hour
+DESCRIPTION:[PSH] Galekid Vedette Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -580,7 +580,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-steel-fighting-in-mega-raids-september-october-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Mega Steelix\, Scizor\, and Lucario in Mega Raids
+SUMMARY:[RB] Mega Steelix\, Cizayox\, and Lucario in Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-steel-fighting-in-mega-Raids-september-october-2025/
 URL:https://leekduck.com/events/mega-steel-fighting-in-mega-raids-september-october-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -588,7 +588,7 @@ DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Steelix\, Scizor\, and Lucario in Mega Raids
+DESCRIPTION:[RB] Mega Steelix\, Cizayox\, and Lucario in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
