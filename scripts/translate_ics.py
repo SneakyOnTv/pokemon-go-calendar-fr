@@ -34,10 +34,6 @@ PROTECTED_NAMES = [
     # Abréviations et codes
     "[RH]", "[RB]", "[PSH]", "[CD]", "[GBL]", "[WA]", "[E]", "[MM]", "[RD]", "[RW]", "[GP]", "[CS]",
     
-    # Événements officiels
-    "Mega Sharpedo Raid Day",
-    "Kanto Celebration",
-    "Dynamax Trubbish during Max Monday",
     # … tu peux garder le reste de ta liste ici …
 ]
 
