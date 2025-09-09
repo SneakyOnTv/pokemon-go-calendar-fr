@@ -94,13 +94,10 @@ TRANSLATIONS = {
         "[MM] Dynamax Pikachu during Max Monday": "[MM] Dynamax Pikachu pendant Lundi Max",
         "[PSH] Eevee Spotlight Hour": "[PSH] Heure de Projecteur sur Évoli",
         "[WA] Pokémon GO Wild Area: Osaka": "[WA] Zone Sauvage Pokémon GO : Osaka",
-        "[PS] Venusaur\, Charizard\, and Blastoise PokéStop Showcases": "[PS] Vitrines PokéStop Florizarre, Dracaufeu et Tortank",
+        "[PS] Venusaur, Charizard, and Blastoise PokéStop Showcases": "[PS] Vitrines PokéStop Florizarre, Dracaufeu et Tortank",
 
 
 
-
-
-      
       # 🎁 Bonus
       "Candy for Catch x2": "Bonbons pour Capture x2",
       "Candy for Transfer x2": "Bonbons pour Transfert x2",
