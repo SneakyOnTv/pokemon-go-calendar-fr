@@ -14,7 +14,7 @@ Bientot Disponible en cour... ===> https://sneakyontv.github.io/pokemon-go-calen
 
 ## 🔗 Lien d’abonnement
 
-.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
+[Lien abonnement Calendrier PoGo FR](https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics)
 
 > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.  
 
@@ -47,7 +47,7 @@ Bientot Disponible en cour... ===> https://sneakyontv.github.io/pokemon-go-calen
 
 
    **6. Coller le lien du calendrier dans le serveur**  
-.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
+.[Lien abonnement Calendrier PoGo FR](https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics).
 
             > ⚠️ Important : Copier **tout l’URL https jusqu’au `.ics`**.
 <img src="images/6.png" width="200" />
@@ -60,7 +60,7 @@ Bientot Disponible en cour... ===> https://sneakyontv.github.io/pokemon-go-calen
 
 ### Android (Google Agenda)
 Télécharge le fichier :
-.[Lien Fichier Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
+.[Lien Fichier Calendrier PoGo FR](https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics).
 
 Ouvre le fichier téléchargé
 Clique dessus depuis la barre de notifications ou depuis ton dossier Téléchargements.
@@ -79,7 +79,7 @@ Les événements sont maintenant importés dans ton agenda et prêts à être co
 1. Ouvrir Google Agenda sur PC → « Autres agendas » → **+ → À partir de l’URL**  
 2. Coller le lien :  
 
-.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
+.[Lien abonnement Calendrier PoGo FR](https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics).
 
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
@@ -89,7 +89,7 @@ Les événements sont maintenant importés dans ton agenda et prêts à être co
 1. Ajouter un calendrier → **À partir d’Internet**  
 2. Coller le lien webcal
 
-.[Lien abonnement Calendrier PoGo FR](https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/gocal_fr.ics).
+.[Lien abonnement Calendrier PoGo FR](https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics).
 
             > ⚠️ Important : Copie **tout l’URL htpps jusqu’au `.ics`**.
 
