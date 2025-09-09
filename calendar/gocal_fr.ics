@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:spatie/icalendar-generator
 NAME:GO Calendar - Everything
 X-WR-CALNAME:GO Calendar - Everything
-DESCRIPTION:All Pokémon GO Événements\, in your local time\, auto-updated et sourced from Leek Duck.
+DESCRIPTION:All Pokémon GO Événements\, dans your local time\, auto-updated et sourced from Leek Duck.
 X-WR-CALDESC:All Pokémon GO events\, in your local time\, auto-updated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
@@ -160,7 +160,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-pidgeot-gyarados-in-mega-raids-september-2025
 DTSTAMP:20250909T002835Z
-SUMMARY:[RB] Mega Roucarnage et Mega Léviator in Mega Raids
+SUMMARY:[RB] Mega Roucarnage et Mega Léviator dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Roucarnage-Léviator-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-pidgeot-gyarados-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -168,7 +168,7 @@ DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Roucarnage et Mega Léviator in Mega Raids
+DESCRIPTION:[RB] Mega Roucarnage et Mega Léviator dans Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -280,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_master-league-mega-edition_willpower-cup-great-league-edition
 DTSTAMP:20250909T002835Z
-SUMMARY:[GBL] Maître Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
+SUMMARY:[GBL] Master Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_master-Ligue-mega-Édition_willpower-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_master-league-mega-edition_willpower-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
@@ -288,7 +288,7 @@ DTSTART;VALUE=DATE:20250916
 DTEND;VALUE=DATE:20250923
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Maître Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
+DESCRIPTION:[GBL] Master Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -445,7 +445,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-in-mega-raids-september-2025
 DTSTAMP:20250909T002835Z
-SUMMARY:[RB] Mega Kangourex et Mega Lockpin in Mega Raids
+SUMMARY:[RB] Mega Kangourex et Mega Lockpin dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Kangourex-Lockpin-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -453,7 +453,7 @@ DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Kangourex et Mega Lockpin in Mega Raids
+DESCRIPTION:[RB] Mega Kangourex et Mega Lockpin dans Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -535,7 +535,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-steel-fighting-in-mega-raids-september-october-2025
 DTSTAMP:20250909T002835Z
-SUMMARY:[RB] Mega Steelix\, Cizayox\, et Lucario in Mega Raids
+SUMMARY:[RB] Mega Steelix\, Cizayox\, et Lucario dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-steel-fighting-in-mega-Raids-september-october-2025/
 URL:https://leekduck.com/events/mega-steel-fighting-in-mega-raids-september-october-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
@@ -543,7 +543,7 @@ DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Steelix\, Cizayox\, et Lucario in Mega Raids
+DESCRIPTION:[RB] Mega Steelix\, Cizayox\, et Lucario dans Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -805,7 +805,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league
 DTSTAMP:20250909T002835Z
-SUMMARY:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Maître Ligue
+SUMMARY:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Master Ligue
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_catch-Coupe-tales-of-transformation-Super-Édition_ultra-Ligue_master-Ligue/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
@@ -813,7 +813,7 @@ DTSTART;VALUE=DATE:20251125
 DTEND;VALUE=DATE:20251202
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Maître Ligue
+DESCRIPTION:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Master Ligue
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
