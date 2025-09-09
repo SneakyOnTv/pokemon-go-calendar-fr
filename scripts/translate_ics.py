@@ -3,7 +3,6 @@
 import requests
 import os
 import re
-from translations import TRANSLATIONS
 from googletrans import Translator
 
 # =========================
@@ -41,9 +40,23 @@ PROTECTED_NAMES = [
     "Dynamax Trubbish during Max Monday",
     # … tu peux garder le reste de ta liste ici …
 ]
-
 # Créer une map globale des protections
 PROTECTED_MAP_GLOBAL = {name: f"__PROTECTED_{i}__" for i, name in enumerate(PROTECTED_NAMES)}
+
+# Traductions fixes
+TRANSLATIONS = {
+    "GO Pass": "Passe GO",
+    "GO Fest": "GO Fest",
+    "Community Day": "Journée Communauté",
+    "Raid Hour": "Heure de Raid",
+    "Mega Raid": "Méga-Raid",
+    "Legendary Raid": "Raid Légendaire",
+    "Event": "Événement",
+    "Research Breakthrough": "Percée de Recherche",
+    "Spotlight Hour": "Heure Spotlight",
+    "XP": "PX",
+    # … ajoute toutes les traductions nécessaires …
+}
 
 PUSHOVER_USER = os.getenv("PUSHOVER_USER")
 PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
