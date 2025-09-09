@@ -69,18 +69,36 @@ def restore_text(text):
         text = text.replace(placeholder, name)
     return text
 
-def translate_text(text):
-    # 1️⃣ Appliquer uniquement le dictionnaire TRANSLATIONS
+def translate_text(text, translator=None):
+    # 1️⃣ Appliquer le dictionnaire TRANSLATIONS
     for en in sorted(TRANSLATIONS.keys(), key=len, reverse=True):
         fr = TRANSLATIONS[en]
         pattern = re.compile(re.escape(en), flags=re.IGNORECASE)
         text = pattern.sub(fr, text)
 
-    # 2️⃣ Restaurer les placeholders
-    text = restore_text(text)
-    return text
+    # 2️⃣ Remplacer tous les " and " par " et "
+    text = text.replace(" and ", " et ")
 
-def translate_field_line(line):
+    # 3️⃣ Protéger les placeholders pour la traduction auto
+    text_protected = protect_text(text)
+
+    # 4️⃣ Traduire automatiquement si un traducteur est fourni
+    if translator:
+        segments = re.split(r"(__PROTECTED_\d+__)", text_protected)
+        for i, seg in enumerate(segments):
+            if seg.startswith("__PROTECTED_") or not re.search(r"[A-Za-z]{2,}", seg):
+                continue
+            try:
+                translated_seg = translator.translate(seg, src='en', dest='fr').text
+                segments[i] = translated_seg
+            except Exception as e:
+                print(f"⚠️ Erreur traduction auto segment : {seg}\n{e}")
+        text_protected = "".join(segments)
+
+    # 5️⃣ Restaurer les placeholders
+    return restore_text(text_protected)
+
+def translate_field_line(line, translator=None):
     if ":" not in line:
         return line
     key, value = line.split(":", 1)
@@ -88,7 +106,7 @@ def translate_field_line(line):
     if key.upper() in TEXT_FIELDS:
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
         value_protected = protect_text(value_decoded)
-        translated = translate_text(value_protected)
+        translated = translate_text(value_protected, translator=translator)
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
     else:
