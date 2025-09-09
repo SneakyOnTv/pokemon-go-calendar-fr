@@ -3,7 +3,7 @@
 import requests
 import os
 import re
-from googletrans import Translator
+from translations import TRANSLATIONS
 
 # =========================
 # CONFIGURATION
@@ -40,23 +40,8 @@ PROTECTED_NAMES = [
     "Dynamax Trubbish during Max Monday",
     # … tu peux garder le reste de ta liste ici …
 ]
-# Créer une map globale des protections
-PROTECTED_MAP_GLOBAL = {name: f"__PROTECTED_{i}__" for i, name in enumerate(PROTECTED_NAMES)}
 
-# Traductions fixes
-TRANSLATIONS = {
-    "GO Pass": "Passe GO",
-    "GO Fest": "GO Fest",
-    "Community Day": "Journée Communauté",
-    "Raid Hour": "Heure de Raid",
-    "Mega Raid": "Méga-Raid",
-    "Legendary Raid": "Raid Légendaire",
-    "Event": "Événement",
-    "Research Breakthrough": "Percée de Recherche",
-    "Spotlight Hour": "Heure Spotlight",
-    "XP": "PX",
-    # … ajoute toutes les traductions nécessaires …
-}
+PROTECTED_MAP_GLOBAL = {name: f"__PROTECTED_{i}__" for i, name in enumerate(PROTECTED_NAMES)}
 
 PUSHOVER_USER = os.getenv("PUSHOVER_USER")
 PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
@@ -84,32 +69,18 @@ def restore_text(text):
         text = text.replace(placeholder, name)
     return text
 
-def translate_text(text, translator):
-    # 1️⃣ Appliquer le dictionnaire TRANSLATIONS
+def translate_text(text):
+    # 1️⃣ Appliquer uniquement le dictionnaire TRANSLATIONS
     for en in sorted(TRANSLATIONS.keys(), key=len, reverse=True):
         fr = TRANSLATIONS[en]
         pattern = re.compile(re.escape(en), flags=re.IGNORECASE)
         text = pattern.sub(fr, text)
 
-    # 2️⃣ Segmenter pour protéger les placeholders
-    segments = re.split(r"(__PROTECTED_\d+__)", text)
-
-    # 3️⃣ Traduire automatiquement uniquement les segments non protégés
-    for i, seg in enumerate(segments):
-        if seg.startswith("__PROTECTED_") or not re.search(r"[A-Za-z]{2,}", seg):
-            continue
-        try:
-            translated_seg = translator.translate(seg, src='en', dest='fr').text
-            segments[i] = translated_seg
-        except Exception as e:
-            print(f"⚠️ Erreur traduction automatique segment : {seg}\n{e}")
-
-    # 4️⃣ Recomposer le texte et restaurer les placeholders
-    text = "".join(segments)
+    # 2️⃣ Restaurer les placeholders
     text = restore_text(text)
     return text
 
-def translate_field_line(line, translator):
+def translate_field_line(line):
     if ":" not in line:
         return line
     key, value = line.split(":", 1)
@@ -117,7 +88,7 @@ def translate_field_line(line, translator):
     if key.upper() in TEXT_FIELDS:
         value_decoded = value.replace("\\n", "\n").replace("\\,", ",")
         value_protected = protect_text(value_decoded)
-        translated = translate_text(value_protected, translator)
+        translated = translate_text(value_protected)
         translated_encoded = translated.replace("\n", "\\n").replace(",", "\\,")
         return f"{key}:{translated_encoded}"
     else:
@@ -154,11 +125,10 @@ def main():
     ics_lines = ics_unfolded.splitlines()
 
     print("✏️ Traduction ligne par ligne...")
-    translator = Translator()
     translated_lines = []
     for line in ics_lines:
         try:
-            translated_lines.append(translate_field_line(line, translator))
+            translated_lines.append(translate_field_line(line))
         except Exception as e:
             print(f"⚠️ Ligne ignorée : {line}\n{e}")
             translated_lines.append(line)
