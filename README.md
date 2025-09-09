@@ -154,7 +154,7 @@ Il inclut : événements spéciaux, Journées Communauté, raids, bonus XP x2, P
 
 ## 📸 Aperçu du calendrier Pokémon GO
 
-<img src="images/IMG_07.png" width="200" /> <img src="images/IMG_10.png" width="200" /> <img src="images/IMG_25.png" width="200" />
+<img src="images/IMG_07.png" width="200" /> <img src="images/IMG_25.png" width="200" /> <img src="images/IMG_10.png" width="200" /> 
 
 💡 Astuce : Les événements apparaissent en **points colorés**, et tu peux cliquer sur un jour pour voir tous les détails et horaires.
 
