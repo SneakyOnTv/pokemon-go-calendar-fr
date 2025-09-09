@@ -71,30 +71,28 @@
 <body>
 <div class="container">
   <h1>Pokémon GO — Sélection des événements</h1>
-  <p class="intro">Cochez ce que vous voulez inclure, cliquez sur <strong>Générer mon calendrier</strong>. Le fichier ICS personnalisé sera généré en temps réel par le service dynamique.</p>
+  <p class="intro">Cochez ce que vous voulez inclure, puis cliquez sur <strong>Générer mon calendrier</strong>. Le fichier ICS personnalisé sera généré dynamiquement.</p>
 
-  <!-- 🔹 Tags grid (abréviation first) -->
   <div class="tags-grid">
     <div class="tag"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Heure de Raid</label></div>
     <div class="tag"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
     <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Heure Vedette Pokémon</label></div>
-    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
-    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] GO Battle League</label></div>
-    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
+    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Journée Communautaire</label></div>
+    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] Ligue de Combat GO</label></div>
+    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Zone Sauvage</label></div>
     <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Événement</label></div>
-    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
+    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Lundi Max</label></div>
     <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
     <div class="tag"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
-    <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Plus / Global Play</label></div>
-    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] City Safari</label></div>
-    <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
+    <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Pass</label></div>
+    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] Safari en Ville</label></div>
+    <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Histoires de Transformation</label></div>
   </div>
 
   <button onclick="generateLink()">Générer mon calendrier</button>
 
   <div id="linkContainer"></div>
 
-  <!-- Lexique -->
   <div id="lexique">
     <h3>Lexique des tags</h3>
     <table>
@@ -109,10 +107,10 @@
         <tr><td>[GBL]</td><td>GO Battle League</td><td>Ligue de Combat GO</td><td>Combats PvP avec règles et récompenses.</td></tr>
         <tr><td>[WA]</td><td>Wild Area</td><td>Zone Sauvage</td><td>Apparitions spéciales dans la nature.</td></tr>
         <tr><td>[E]</td><td>Event</td><td>Événement</td><td>Événement global ou local.</td></tr>
-        <tr><td>[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux.</td></tr>
-        <tr><td>[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Concentrée sur un Pokémon en raids.</td></tr>
+        <tr><td>[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux le lundi.</td></tr>
+        <tr><td>[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Raids intensifs sur un Pokémon spécifique.</td></tr>
         <tr><td>[RW]</td><td>Raid Weekend</td><td>Week-end de Raids</td><td>Raids intensifs sur plusieurs jours.</td></tr>
-        <tr><td>[GP]</td><td>GO Plus / Global Play</td><td>GO Plus / Jeu Global</td><td>Bonus liés au GO Plus ou à des événements globaux.</td></tr>
+        <tr><td>[GP]</td><td>GO Plus / Global Play</td><td>GO Pass</td><td>Bonus liés au GO Pass ou à des événements globaux.</td></tr>
         <tr><td>[CS]</td><td>City Safari</td><td>Safari en Ville</td><td>Événement spécial dans certaines villes.</td></tr>
         <tr><td>[S]</td><td>Tales of Transformation</td><td>Histoires de Transformation</td><td>Événement spécial thématique (raids, études, bonus temporaires).</td></tr>
       </tbody>
@@ -121,34 +119,15 @@
 </div>
 
 <script>
-/*
-  IMPORTANT:
-  - Replace SERVICE_URL with your deployed Vercel app URL, e.g.
-    const SERVICE_URL = "https://your-vercel-app.vercel.app/api/calendar";
-  - Then commit this index HTML into your GitHub Pages repo (replacing the previous index).
-*/
-
-const SERVICE_URL_PLACEHOLDER = "https://REPLACE_WITH_YOUR_VERCEL_APP.vercel.app/api/calendar";
+const SERVICE_URL = "https://REPLACE_WITH_YOUR_VERCEL_APP.vercel.app/api/calendar";
 
 function generateLink() {
-  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
-                            .map(e => e.value);
-  if (selectedTags.length === 0) {
-    alert("Veuillez cocher au moins un événement !");
-    return;
-  }
-
-  const serviceUrl = SERVICE_URL_PLACEHOLDER;
-  const finalURL = `${serviceUrl}?tags=${selectedTags.join(",")}`;
-
-  const html = `
-    <div>
-      <p>Voici votre lien ICS (généré dynamiquement) :</p>
-      <p style="word-break:break-all"><a href="${finalURL}" target="_blank" rel="noopener">${finalURL}</a></p>
-      <p>Astuce : copiez ce lien et utilisez-le dans l'abonnement de votre calendrier (iOS/Android).</p>
-    </div>`;
-  document.getElementById("linkContainer").innerHTML = html;
+  const selected = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(cb => cb.value);
+  if(selected.length === 0) { alert("Veuillez sélectionner au moins un tag."); return; }
+  const url = SERVICE_URL + "?tags=" + encodeURIComponent(selected.join(","));
+  document.getElementById("linkContainer").innerHTML = `<a href="${url}" target="_blank">Télécharger mon calendrier filtré</a>`;
 }
 </script>
+
 </body>
 </html>
