@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon GO - Calendrier Dynamique</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; color: #333; }
+  h1 { color: #ef5350; }
+  .container { max-width: 700px; margin: auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  .tag { margin-bottom: 12px; }
+  .tag label { margin-left: 8px; font-weight: bold; }
+  button { margin-top: 15px; padding: 10px 15px; background: #ef5350; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+  button:hover { background: #d32f2f; }
+  #linkContainer { margin-top: 15px; word-break: break-all; }
+  #lexique { margin-top: 25px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Pokémon GO - Sélection des événements</h1>
+  <p>Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
+
+  <!-- Exemple d'événements -->
+  <div class="tag">
+    <input type="checkbox" id="RH" name="tags" value="RH">
+    <label for="RH">[RH] Heure de Raid</label>
+  </div>
+  <div class="tag">
+    <input type="checkbox" id="CD" name="tags" value="CD">
+    <label for="CD">[CD] Community Day</label>
+  </div>
+  <div class="tag">
+    <input type="checkbox" id="GBL" name="tags" value="GBL">
+    <label for="GBL">[GBL] Go Battle League</label>
+  </div>
+
+  <button onclick="generateLink()">Générer mon calendrier</button>
+  <p id="linkContainer"></p>
+
+  <div id="lexique">
+    <h3>Lexique des tags :</h3>
+    <p>[RH] → Raid Hour → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
+    <p>[CD] → Community Day → Journée communautaire avec un Pokémon vedette et bonus spéciaux.</p>
+    <p>[GBL] → Go Battle League → Ligues de combat PvP avec différentes règles et récompenses.</p>
+  </div>
+</div>
+
+<script>
+async function generateLink() {
+  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
+                            .map(e => e.value);
+
+  if(selectedTags.length === 0) {
+    alert("Veuillez cocher au moins un événement !");
+    return;
+  }
+
+  try {
+    // Appel de l'API dynamique
+    const response = await fetch(`/api/calendar?tags=${encodeURIComponent(selectedTags.join(','))}`);
+    if (!response.ok) throw new Error('Erreur lors de la génération du calendrier');
+    
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+
+    document.getElementById("linkContainer").innerHTML = 
+      `Voici votre lien ICS : <a href="${url}" target="_blank">Télécharger le calendrier</a>`;
+  } catch (error) {
+    console.error(error);
+    alert("Impossible de générer le calendrier. Vérifiez la console pour plus d'infos.");
+  }
+}
+</script>
+</body>
+</html>
