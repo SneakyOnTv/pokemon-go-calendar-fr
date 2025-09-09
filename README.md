@@ -1,7 +1,7 @@
 # 📅 Calendrier Pokémon GO – FR
 **Dépôt : SneakyOnTv/pokemon-go-calendar-fr**
 
-Un calendrier **Pokémon GO** entièrement traduit en français, qui se met automatiquement à jour à partir de la source officielle : 
+Un calendrier **Pokémon GO** entièrement traduit en français, qui se met automatiquement à jour à partir de la source officielle : <br>
  [GO Calendar (gocal.ics)](https://github.com/othyn/go-calendar).  
  
 Il inclut : événements spéciaux, Journées Communauté, raids, bonus XP x2, Poussière d’étoiles x2, et plus encore.
