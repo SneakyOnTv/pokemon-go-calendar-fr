@@ -7,6 +7,8 @@ on:
     - cron: "0 10 * * *"   # 12h00 Paris
     - cron: "0 16 * * *"   # 18h00 Paris
     - cron: "1 22 * * *"   # 00h01 Paris
+    - cron: "30 4 * * *"    # 06h30 Paris
+
 
 jobs:
   build-and-deploy:
