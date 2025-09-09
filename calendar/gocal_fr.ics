@@ -3,22 +3,22 @@ VERSION:2.0
 PRODID:spatie/icalendar-generator
 NAME:GO Calendar - Everything
 X-WR-CALNAME:GO Calendar - Everything
-DESCRIPTION:Tous les Pokémon Go Événes\, dans votre temps local\, mis à jour automatiquement et provenant de Leek Duck.
+DESCRIPTION:All Pokémon GO Événements\, in your local time\, auto-updated and sourced from Leek Duck.
 X-WR-CALDESC:All Pokémon GO events\, in your local time\, auto-updated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:mega-sharpedo-raid-day-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RD]MégaSharpedoJour de raid
-DESCRIPTION:Commence à 14h00\, se termine à 17h00.\n\nhttps://leekduck.com/événements/mega-sharpedo-raid-ay-septembember-2025/
+SUMMARY:[RD] Mega Sharpedo Raid Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/mega-Sharpedo-raid-Journée-september-2025/
 URL:https://leekduck.com/events/mega-sharpedo-raid-day-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-07-mega-sharpedo-raid-day-september-2025/mega-sharpedo-raid-day.jpg
 DTSTART:20250907T140000
 DTEND:20250907T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD]MégaSharpedoJour de raid
+DESCRIPTION:[RD] Mega Sharpedo Raid Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 UID:kanto-celebration-2025
 DTSTAMP:20250908T002957Z
 SUMMARY:[E] Kanto Celebration
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/kanto-cenlebration-2025/
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/kanto-celebration-2025/
 URL:https://leekduck.com/events/kanto-celebration-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-02-kanto-celebration-2025/kanto-celebration.jpg
 DTSTART;VALUE=DATE:20250902
@@ -40,825 +40,825 @@ END:VEVENT
 BEGIN:VEVENT
 UID:farfetchd-mr-mime-kangaskhan-tauros-showcase
 DTSTAMP:20250908T002957Z
-SUMMARY:[Ps] farfetch'd\,Mr. Mime\, Kangaskhan\, etTaurosPokéstop présente
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/farfetchd-mr-mime-kangaskhan-tauros-showcase/
+SUMMARY:[PS] Farfetch'd\, Mr. Mime\, Kangaskhan\, and Tauros PokéStop Showcases
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/farfetchd-mr-mime-Kangourex-Tauros-showcase/
 URL:https://leekduck.com/events/farfetchd-mr-mime-kangaskhan-tauros-showcase/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokestop-showcases-default.jpg
 DTSTART;VALUE=DATE:20250906
 DTEND;VALUE=DATE:20250907
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[Ps] farfetch'd\,Mr. Mime\, Kangaskhan\, etTaurosPokéstop présente
+DESCRIPTION:[PS] Farfetch'd\, Mr. Mime\, Kangaskhan\, and Tauros PokéStop Showcases
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-08
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM]DynamaxTrubbishPendant le lundi maximum
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/max-mondays-2025-09-08/
+SUMMARY:[MM] Dynamax Trubbish during Max MonJournée
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-08/
 URL:https://leekduck.com/events/max-mondays-2025-09-08/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
 DTSTART:20250908T180000
 DTEND:20250908T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM]DynamaxTrubbishPendant le lundi maximum
+DESCRIPTION:[MM] Dynamax Trubbish during Max MonJournée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kanto-starters-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB]Mega Kanto démarreurs en méga-raids
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/mega-kanto-starters-in-mega-raids-september-2025/
+SUMMARY:[RB] Starters de Kanto en Méga-Raids
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-kanto-starters-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-kanto-starters-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250909
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB]Mega Kanto démarreurs en méga-raids
+DESCRIPTION:[RB] Starters de Kanto en Méga-Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_retro-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Grande ligue et coupe rétro: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_retro-cup-great-league-dition/
+SUMMARY:[GBL] Super Ligue et Coupe Rétro : Édition Super Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_retro-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_retro-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
 DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250909
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Grande ligue et coupe rétro: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue et Coupe Rétro : Édition Super Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-09
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] TrubbishSpotlight Heure
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/pokemonspotlighthour2025-09-09/
+SUMMARY:[PSH] Trubbish Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-09/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-09/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
 DTSTART:20250909T180000
 DTEND:20250909T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] TrubbishSpotlight Heure
+DESCRIPTION:[PSH] Trubbish Vedette Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250910
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH] Palkia(Origine forme) Heure de Raid
-DESCRIPTION:Commence à 17h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/raidhour20250910/
+SUMMARY:[RH] Palkia (Origin Forme) Raid Hour
+DESCRIPTION:Starts at 17:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20250910/
 URL:https://leekduck.com/events/raidhour20250910/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
 DTSTART:20250910T170000
 DTEND:20250910T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Palkia(Origine forme) Heure de Raid
+DESCRIPTION:[RH] Palkia (Origin Forme) Raid Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:venusaur-charizard-blastoise-showcase
 DTSTAMP:20250908T002957Z
-SUMMARY:[PS]Venusaur\, Charizard\, etBlastoisePokéstop présente
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/venusaur-charizard-blastoise-showcase/
+SUMMARY:[PS] Venusaur\, Charizard\, and Blastoise PokéStop Showcases
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Florizarre-Dracaufeu-Tortank-showcase/
 URL:https://leekduck.com/events/venusaur-charizard-blastoise-showcase/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokestop-showcases-default.jpg
 DTSTART;VALUE=DATE:20250908
 DTEND;VALUE=DATE:20250910
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PS]Venusaur\, Charizard\, etBlastoisePokéstop présente
+DESCRIPTION:[PS] Venusaur\, Charizard\, and Blastoise PokéStop Showcases
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:september-communityday2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CD] FlabébéJournée Communauté
-DESCRIPTION:Commence à 14h00\, se termine à 17h00.\n\nhttps://leekduck.com/événements/september-communityday2025/
+SUMMARY:[CD] Flabébé Communauté Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/september-CommunautéJournée2025/
 URL:https://leekduck.com/events/september-communityday2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-14-september-communityday2025/september-cd-2025-flabebe.jpg
 DTSTART:20250914T140000
 DTEND:20250914T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] FlabébéJournée Communauté
+DESCRIPTION:[CD] Flabébé Communauté Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-concierge-celebration
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Célébration du concierge Pokémon
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/pokemon-concierge-celebration/
+SUMMARY:[E] Célébration Pokémon Concierge
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-concierge-celebration/
 URL:https://leekduck.com/events/pokemon-concierge-celebration/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-09-pokemon-concierge-celebration/pokemon-concierge-celebration.jpg
 DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250914
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Célébration du concierge Pokémon
+DESCRIPTION:[E] Célébration Pokémon Concierge
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-15
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM]DynamaxAbraPendant le lundi maximum
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/max-mondays-2025-09-15/
+SUMMARY:[MM] Dynamax Abra during Max MonJournée
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-15/
 URL:https://leekduck.com/events/max-mondays-2025-09-15/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
 DTSTART:20250915T180000
 DTEND:20250915T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM]DynamaxAbraPendant le lundi maximum
+DESCRIPTION:[MM] Dynamax Abra during Max MonJournée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:palkia-in-5-star-raid-battles-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Palkiadans des batailles de raid 5 étoiles
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/palkia-in-5-star-raid-battles-september-2025/
+SUMMARY:[RB] Palkia dans un raid 5 étoiles
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Palkia-in-5-star-raid-battles-september-2025/
 URL:https://leekduck.com/events/palkia-in-5-star-raid-battles-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/palkiaraid.jpg
 DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Palkiadans des batailles de raid 5 étoiles
+DESCRIPTION:[RB] Palkia dans un raid 5 étoiles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-pidgeot-gyarados-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB]MégaPidgeotet mégaGyaradosdans les raids de la méga
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/mega-pidgeot-gyarados-in-mega-raids-september-2025/
+SUMMARY:[RB] Mega Pidgeot and Mega Gyarados in Mega Raids
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Roucarnage-Léviator-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-pidgeot-gyarados-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB]MégaPidgeotet mégaGyaradosdans les raids de la méga
+DESCRIPTION:[RB] Mega Pidgeot and Mega Gyarados in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_ultra-league_summer-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Ultra League and Summer Cup: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_ultra-league_summer-cup-great-league-dition/
+SUMMARY:[GBL] Ultra Ligue et Coupe Été : Édition Super Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_ultra-Ligue_summer-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_summer-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
 DTSTART;VALUE=DATE:20250909
 DTEND;VALUE=DATE:20250916
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Ultra League and Summer Cup: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Ultra Ligue et Coupe Été : Édition Super Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-16
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] GothitaSpotlight Heure
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/pokemonspotlighthour2025-09-16/
+SUMMARY:[PSH] Gothita Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-16/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-16/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
 DTSTART:20250916T180000
 DTEND:20250916T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] GothitaSpotlight Heure
+DESCRIPTION:[PSH] Gothita Vedette Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250917
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH]MégaLatiaset mégaLatiosHeure de Raid
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/raidhour20250917/
+SUMMARY:[RH] Mega Latias and Mega Latios Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20250917/
 URL:https://leekduck.com/events/raidhour20250917/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
 DTSTART:20250917T180000
 DTEND:20250917T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH]MégaLatiaset mégaLatiosHeure de Raid
+DESCRIPTION:[RH] Mega Latias and Mega Latios Raid Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:psychic-spectacular-taken-over-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Spectaculaire psychique: pris en charge
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/psychic-spectacular-taken-over-2025/
+SUMMARY:[E] Spectacle Psy : Pris en Main
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/psychic-spectacular-taken-over-2025/
 URL:https://leekduck.com/events/psychic-spectacular-taken-over-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-16-psychic-spectacular-taken-over-2025/psychic-spectacular-taken-over-2025.jpg
 DTSTART;VALUE=DATE:20250916
 DTEND;VALUE=DATE:20250921
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Spectaculaire psychique: pris en charge
+DESCRIPTION:[E] Spectacle Psy : Pris en Main
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-groudon-raid-weekend-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RW]OmbreGroudonWeek-end de raid
-DESCRIPTION:Commence à 06h00\, se termine à 22h00.\n\nhttps://leekduck.com/événements/shadow-groudon-raid-weekend-2025/
+SUMMARY:[RW] Shadow Groudon Raid Weekend
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Groudon-raid-weekend-2025/
 URL:https://leekduck.com/events/shadow-groudon-raid-weekend-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-20-shadow-groudon-raid-weekend-2025/groudon-shadow-raid-weekend-2025.jpg?v2
 DTSTART;VALUE=DATE:20250920
 DTEND;VALUE=DATE:20250921
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RW]OmbreGroudonWeek-end de raid
+DESCRIPTION:[RW] Shadow Groudon Raid Weekend
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-22
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM]DynamaxChanseyPendant le lundi maximum
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/max-mondays-2025-09-22/
+SUMMARY:[MM] Dynamax Chansey during Max MonJournée
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-22/
 URL:https://leekduck.com/events/max-mondays-2025-09-22/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
 DTSTART:20250922T180000
 DTEND:20250922T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM]DynamaxChanseyPendant le lundi maximum
+DESCRIPTION:[MM] Dynamax Chansey during Max MonJournée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-psychic-dragon-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB]MégaGardevoir\, Latias\, Latios\, etGalladedans les raids de la méga
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/mega-psychic-dragon-in-mega-raids-september-2025/
+SUMMARY:[RB] Mega Gardevoir\, Latias\, Latios\, and Gallade in Mega Raids
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-psychic-dragon-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-psychic-dragon-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20250916
 DTEND;VALUE=DATE:20250923
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB]MégaGardevoir\, Latias\, Latios\, etGalladedans les raids de la méga
+DESCRIPTION:[RB] Mega Gardevoir\, Latias\, Latios\, and Gallade in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_master-league-mega-edition_willpower-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Master League: Mega Edition et Willpower Cup: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_master-alegue-mega-edition_willpower-cup-great-league-dition/
+SUMMARY:[GBL] Maître Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_master-Ligue-mega-Édition_willpower-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_master-league-mega-edition_willpower-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
 DTSTART;VALUE=DATE:20250916
 DTEND;VALUE=DATE:20250923
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Master League: Mega Edition et Willpower Cup: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Maître Ligue : Édition Méga et Coupe Volonté : Édition Super Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-23
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] HoothootSpotlight Heure
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/pokemonspotlighthour2025-09-23/
+SUMMARY:[PSH] Hoothoot Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-23/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-23/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
 DTSTART:20250923T180000
 DTEND:20250923T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] HoothootSpotlight Heure
+DESCRIPTION:[PSH] Hoothoot Vedette Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20250924
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH] Dialga(Origine forme) Heure de Raid
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/raidhour20250924/
+SUMMARY:[RH] Dialga (Origin Forme) Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20250924/
 URL:https://leekduck.com/events/raidhour20250924/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
 DTSTART:20250924T180000
 DTEND:20250924T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Dialga(Origine forme) Heure de Raid
+DESCRIPTION:[RH] Dialga (Origin Forme) Raid Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:completely-normal-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Complètement normal
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/complely-normal-2025/
+SUMMARY:[E] Completely Normal
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Événement Complètement normal-2025/
 URL:https://leekduck.com/events/completely-normal-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250927
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Complètement normal
+DESCRIPTION:[E] Completely Normal
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-bangkok-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CS]Bangkok\, Thaïlande - Pokémon Go City Safari
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-city-safari-bangkok-2025/
+SUMMARY:[CS] Bangkok\, Thailand - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-bangkok-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-bangkok-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-27-pokemon-go-city-safari-bangkok-2025/city-safari-bangkok-2025.jpg
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS]Bangkok\, Thaïlande - Pokémon Go City Safari
+DESCRIPTION:[CS] Bangkok\, Thailand - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-amsterdam-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CS]Amsterdam\, Pays-Bas - Pokémon Go City Safari
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-city-safari-amsterdam-2025/
+SUMMARY:[CS] Amsterdam\, Netherlands - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-amsterdam-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-amsterdam-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-27-pokemon-go-city-safari-amsterdam-2025/city-safari-amsterdam-2025.jpg
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS]Amsterdam\, Pays-Bas - Pokémon Go City Safari
+DESCRIPTION:[CS] Amsterdam\, Netherlands - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-valencia-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CS]Valence\, Espagne - Pokémon Go City Safari
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-city-safari-valencia-2025/
+SUMMARY:[CS] Valencia\, Spain - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-valencia-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-valencia-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-27-pokemon-go-city-safari-valencia-2025/city-safari-valencia-2025.jpg
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS]Valence\, Espagne - Pokémon Go City Safari
+DESCRIPTION:[CS] Valencia\, Spain - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-cancun-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CS]CANCún\, Mexique - Pokémon Go City Safari
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-city-safari-cancun-2025/
+SUMMARY:[CS] Cancún\, Mexico - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-cancun-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-cancun-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-27-pokemon-go-city-safari-cancun-2025/city-safari-cancun-2025.jpg
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS]CANCún\, Mexique - Pokémon Go City Safari
+DESCRIPTION:[CS] Cancún\, Mexico - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-vancouver-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CS]Vancouver\, Canada - Pokémon Go City Safari
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-city-safari-vancouver-2025/
+SUMMARY:[CS] Vancouver\, Canada - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-vancouver-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-vancouver-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-27-pokemon-go-city-safari-vancouver-2025/city-safari-vancouver-2025.jpg
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS]Vancouver\, Canada - Pokémon Go City Safari
+DESCRIPTION:[CS] Vancouver\, Canada - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-raid-day-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RD]Jour de raid méga
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/mega-raid-ay-septembember-2025/
+SUMMARY:[RD] Mega Raid Journée
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-raid-Journée-september-2025/
 URL:https://leekduck.com/events/mega-raid-day-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART:20250928T100000
 DTEND:20250928T200000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD]Jour de raid méga
+DESCRIPTION:[RD] Mega Raid Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-29
 DTSTAMP:20250908T002957Z
-SUMMARY:[MM]DynamaxBeldumPendant le lundi maximum
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/max-mondays-2025-09-29/
+SUMMARY:[MM] Dynamax Beldum during Max MonJournée
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-29/
 URL:https://leekduck.com/events/max-mondays-2025-09-29/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
 DTSTART:20250929T180000
 DTEND:20250929T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MM]DynamaxBeldumPendant le lundi maximum
+DESCRIPTION:[MM] Dynamax Beldum during Max MonJournée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-in-mega-raids-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB]MégaKangaskhanet mégaLopunnydans les raids de la méga
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/mega-kangaskhan-lopunny-in-mega-raids-september-2025/
+SUMMARY:[RB] Mega Kangaskhan and Mega Lopunny in Mega Raids
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Kangourex-Lockpin-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB]MégaKangaskhanet mégaLopunnydans les raids de la méga
+DESCRIPTION:[RB] Mega Kangaskhan and Mega Lopunny in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-1
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-1/
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-1/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-1/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20250930
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-30
 DTSTAMP:20250908T002957Z
-SUMMARY:[PSH] AronSpotlight Heure
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/pokemonspotlighthour2025-09-30/
+SUMMARY:[PSH] Aron Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-30/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-30/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
 DTSTART:20250930T180000
 DTEND:20250930T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] AronSpotlight Heure
+DESCRIPTION:[PSH] Aron Vedette Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251001
 DTSTAMP:20250908T002957Z
-SUMMARY:[RH] Dialga(Origine forme) Heure de Raid
-DESCRIPTION:Commence à 18h00\, se termine à 19h00.\n\nhttps://leekduck.com/événements/raidhour20251001/
+SUMMARY:[RH] Dialga (Origin Forme) Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251001/
 URL:https://leekduck.com/events/raidhour20251001/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
 DTSTART:20251001T180000
 DTEND:20251001T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RH] Dialga(Origine forme) Heure de Raid
+DESCRIPTION:[RH] Dialga (Origin Forme) Raid Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-september-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[GP]PASSE GO: septembre
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/go-pass-septembember-2025/
+SUMMARY:[GP] GO Pass: September
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-september-2025/
 URL:https://leekduck.com/events/go-pass-september-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-02-go-pass-september-2025/go-pass-september-2025.jpg
 DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GP]PASSE GO: septembre
+DESCRIPTION:[GP] GO Pass: September
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dialga-in-5-star-raid-battles-september-october-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB] Dialgadans des batailles de raid 5 étoiles
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/dialga-in-5-star-raid-battles-september-october-2025/
+SUMMARY:[RB] Dialga dans un raid 5 étoiles
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Dialga-in-5-star-raid-battles-september-october-2025/
 URL:https://leekduck.com/events/dialga-in-5-star-raid-battles-september-october-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/dialgaraids.jpg
 DTSTART;VALUE=DATE:20250923
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB] Dialgadans des batailles de raid 5 étoiles
+DESCRIPTION:[RB] Dialga dans un raid 5 étoiles
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-steel-fighting-in-mega-raids-september-october-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[RB]MégaSteelix\, Scizor\, etLucariodans les raids de la méga
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/mega-teel-fighting-in-mega-raids-september-october-2025/
+SUMMARY:[RB] Mega Steelix\, Scizor\, and Lucario in Mega Raids
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-steel-fighting-in-mega-Raids-september-october-2025/
 URL:https://leekduck.com/events/mega-steel-fighting-in-mega-raids-september-october-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RB]MégaSteelix\, Scizor\, etLucariodans les raids de la méga
+DESCRIPTION:[RB] Mega Steelix\, Scizor\, and Lucario in Mega Raids
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_fantasy-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Great League and Fantasy Cup: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_fantasy-cup-great-league-idition/
+SUMMARY:[GBL] Super Ligue and Fantasy Coupe: Super Ligue Édition | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_fantasy-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_fantasy-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
 DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Great League and Fantasy Cup: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue and Fantasy Coupe: Super Ligue Édition | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:steel-skyline-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Skyline en acier
-DESCRIPTION:Commence à 10h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/steel-skyline-2025/
+SUMMARY:[E] Steel Skyline
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/steel-skyline-2025/
 URL:https://leekduck.com/events/steel-skyline-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20250930
 DTEND;VALUE=DATE:20251007
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Skyline en acier
+DESCRIPTION:[E] Steel Skyline
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CD]Journée d'octobre Communauté
-DESCRIPTION:Commence à 14h00\, se termine à 17h00.\n\nhttps://leekduck.com/événements/october-communityday2025/
+SUMMARY:[CD] October Communauté Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/october-CommunautéJournée2025/
 URL:https://leekduck.com/events/october-communityday2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
 DTSTART:20251012T140000
 DTEND:20251012T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD]Journée d'octobre Communauté
+DESCRIPTION:[CD] October Communauté Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Ultra League and Jungle Cup: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_ultra-league_jungle-cup-great-legue-edition/
+SUMMARY:[GBL] Ultra Ligue and Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_ultra-Ligue_jungle-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
 DTSTART;VALUE=DATE:20251007
 DTEND;VALUE=DATE:20251014
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Ultra League and Jungle Cup: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Ultra Ligue and Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xp-celebration-event-2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Célébration PX
-DESCRIPTION:Commence à 13h00\, se termine à 23h59.\n\nhttps://leekduck.com/événements/px-celebration-événements-2025/
+SUMMARY:[E] Celebration XP
+DESCRIPTION:Starts at 13:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/xp-celebration-Événement-2025/
 URL:https://leekduck.com/events/xp-celebration-event-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-08-25-xp-celebration-event-2025/xp-event.jpg
 DTSTART;VALUE=DATE:20250825
 DTEND;VALUE=DATE:20251014
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Célébration PX
+DESCRIPTION:[E] Celebration XP
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_master-premier_great-league-remix
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Master Premier et Great League Remix |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_master-premier_great-ague-remix/
+SUMMARY:[GBL] Master Premier and Super Ligue Remix | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_master-premier_Super-Ligue-remix/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_master-premier_great-league-remix/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
 DTSTART;VALUE=DATE:20251014
 DTEND;VALUE=DATE:20251021
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Master Premier et Great League Remix |Contes de transformation
+DESCRIPTION:[GBL] Master Premier and Super Ligue Remix | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-battle-weekend-tales-of-transformation
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Go Battle Weekend: Contes de transformation
-DESCRIPTION:Commence à 00h00\, se termine à 23h59.\n\nhttps://leekduck.com/événements/go-battle-weekend-tales-of-transformation/
+SUMMARY:[E] GO Battle Weekend: Transformations fabuleuses
+DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/go-battle-weekend-tales-of-transformation/
 URL:https://leekduck.com/events/go-battle-weekend-tales-of-transformation/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20251025
 DTEND;VALUE=DATE:20251026
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Go Battle Weekend: Contes de transformation
+DESCRIPTION:[E] GO Battle Weekend: Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-2
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
-DESCRIPTION:Commence à 20h00\, se termine à 20h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_ultra-league_master-ague-split-2/
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-2/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-2/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20251021
 DTEND;VALUE=DATE:20251028
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_halloween-cup-great-league-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Grande ligue et coupe d'Halloween: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 21h00\, se termine à 21h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_halloween-cup-great-league-idition/
+SUMMARY:[GBL] Super Ligue and Halloween Coupe: Super Ligue Édition | Transformations fabuleuses
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_halloween-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_halloween-cup-great-league-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
 DTSTART;VALUE=DATE:20251028
 DTEND;VALUE=DATE:20251104
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Grande ligue et coupe d'Halloween: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue and Halloween Coupe: Super Ligue Édition | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-wild-area-2025-nagasaki-japan
 DTSTAMP:20250908T002957Z
-SUMMARY:[WA]Pokémon Go Wild Area: Nagasaki
-DESCRIPTION:Commence à 00h00\, se termine à 08h00.\n\nhttps://leekduck.com/événements/pokemon-go-wild-area-2025-nagasaki-japan/
+SUMMARY:[WA] Pokémon GO Wild Area: Nagasaki
+DESCRIPTION:Starts at 00:00\, ends at 08:00.\n\nhttps://leekduck.com/Événements/pokemon-go-wild-area-2025-nagasaki-japan/
 URL:https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-11-07-pokemon-go-wild-area-2025-nagasaki-japan/wild-area-2025-nagasaki-key-art.jpg
 DTSTART;VALUE=DATE:20251107
 DTEND;VALUE=DATE:20251109
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[WA]Pokémon Go Wild Area: Nagasaki
+DESCRIPTION:[WA] Pokémon GO Wild Area: Nagasaki
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Ultra League and Jungle Cup: Great League Edition |Contes de transformation
-DESCRIPTION:Commence à 21h00\, se termine à 21h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2//
+SUMMARY:[GBL] Ultra Ligue and Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_ultra-Ligue_jungle-Coupe-Super-Ligue-Édition-2/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
 DTSTART;VALUE=DATE:20251104
 DTEND;VALUE=DATE:20251111
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Ultra League and Jungle Cup: Great League Edition |Contes de transformation
+DESCRIPTION:[GBL] Ultra Ligue and Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-wild-area-2025-global
 DTSTAMP:20250908T002957Z
-SUMMARY:[WA]Pokémon Go Wild Area: Global
-DESCRIPTION:Commence à 10h00\, se termine à 18h00.\n\nhttps://leekduck.com/événements/pokemon-go-wild-area-2025-obal//
+SUMMARY:[WA] Pokémon GO Wild Area: Global
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-wild-area-2025-global/
 URL:https://leekduck.com/events/pokemon-go-wild-area-2025-global/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-11-15-pokemon-go-wild-area-2025-global/wild-area-2025-global-key-art.jpg
 DTSTART;VALUE=DATE:20251115
 DTEND;VALUE=DATE:20251116
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[WA]Pokémon Go Wild Area: Global
+DESCRIPTION:[WA] Pokémon GO Wild Area: Global
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-3
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
-DESCRIPTION:Commence à 21h00\, se termine à 21h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_great-league_ultra-league_master-laague-split-3/
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-3/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-3/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20251111
 DTEND;VALUE=DATE:20251118
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Grande ligue\, Ultra League et Master League |Contes de transformation
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, and Master Ligue | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]2025 Championship Series Cup and Master League: Mega Edition |Contes de transformation
-DESCRIPTION:Commence à 21h00\, se termine à 21h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_2025-championship-series-cup_master-ague-mega-édition/
+SUMMARY:[GBL] 2025 Championship Series Coupe and Master Ligue: Mega Édition | Transformations fabuleuses
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_2025-championship-series-Coupe_master-Ligue-mega-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
 DTSTART;VALUE=DATE:20251118
 DTEND;VALUE=DATE:20251125
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]2025 Championship Series Cup and Master League: Mega Edition |Contes de transformation
+DESCRIPTION:[GBL] 2025 Championship Series Coupe and Master Ligue: Mega Édition | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2025
 DTSTAMP:20250908T002957Z
-SUMMARY:[CD]Journée de novembre Communauté
-DESCRIPTION:Commence à 14h00\, se termine à 17h00.\n\nhttps://leekduck.com/événements/november-communityday2025/
+SUMMARY:[CD] November Communauté Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/november-CommunautéJournée2025/
 URL:https://leekduck.com/events/november-communityday2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
 DTSTART:20251130T140000
 DTEND:20251130T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD]Journée de novembre Communauté
+DESCRIPTION:[CD] November Communauté Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:trade-days-tales-of-transformation
 DTSTAMP:20250908T002957Z
-SUMMARY:[E]Jours de commerce |Contes de transformation
-DESCRIPTION:Commence à 00h00\, se termine à 23h59.\n\nhttps://leekduck.com/événements/trade-days-tales-of-transformation/
+SUMMARY:[E] Échange Journées | Transformations fabuleuses
+DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/Échange-Journées-tales-of-transformation/
 URL:https://leekduck.com/events/trade-days-tales-of-transformation/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-07-trade-days-tales-of-transformation/trade-days.jpg
 DTSTART;VALUE=DATE:20250907
 DTEND;VALUE=DATE:20251130
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E]Jours de commerce |Contes de transformation
+DESCRIPTION:[E] Échange Journées | Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-20-tales-of-transformation
 DTSTAMP:20250908T002957Z
-SUMMARY:[S] Contes de transformation
-DESCRIPTION:Commence à 10h00\, se termine à 10h00.\n\nhttps://leekduck.com/événements/season-20-tales-of-transformation/
+SUMMARY:[S] Transformations fabuleuses
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-20-tales-of-transformation/
 URL:https://leekduck.com/events/season-20-tales-of-transformation/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-09-02-season-20-tales-of-transformation/season-20-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20250902
 DTEND;VALUE=DATE:20251202
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[S] Contes de transformation
+DESCRIPTION:[S] Transformations fabuleuses
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league
 DTSTAMP:20250908T002957Z
-SUMMARY:[GBL]Catch Cup: Tales of Transformation: Great Edition\, Ultra League et Master League |Contes de transformation
-DESCRIPTION:Commence à 21h00\, se termine à 21h00.\n\nhttps://leekduck.com/événements/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-aligue/
+SUMMARY:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Maître Ligue
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_catch-Coupe-tales-of-transformation-Super-Édition_ultra-Ligue_master-Ligue/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-24-tales-of-transformation.jpg
 DTSTART;VALUE=DATE:20251125
 DTEND;VALUE=DATE:20251202
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[GBL]Catch Cup: Tales of Transformation: Great Edition\, Ultra League et Master League |Contes de transformation
+DESCRIPTION:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Maître Ligue
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
