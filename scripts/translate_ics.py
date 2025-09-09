@@ -56,6 +56,9 @@ def translate_text(text, translator=None):
     # 2️⃣ Remplacer tous les " and " par " et "
     text = text.replace(" and ", " et ")
 
+    # 3️⃣ Remplacer tous les " in " par " dans "
+    text = text.replace(" in ", " dans ")
+
     # 3️⃣ Protéger les placeholders pour la traduction auto
     text_protected = protect_text(text)
 
@@ -72,7 +75,7 @@ def translate_text(text, translator=None):
                 print(f"⚠️ Erreur traduction auto segment : {seg}\n{e}")
         text_protected = "".join(segments)
 
-    # 5️⃣ Restaurer les placeholders
+    # 6️⃣ Restaurer les placeholders
     return restore_text(text_protected)
 
 def translate_field_line(line, translator=None):
