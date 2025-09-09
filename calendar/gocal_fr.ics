@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
 NAME:GO Calendar - Everything
-X-WR-CALNAME:Calendrier PoGo Fr
+X-WR-CALNAME:Calendrier PoGo Fr by SneakyOnTv
 DESCRIPTION:All Pokémon GO Événements\, dans your local time\, auto-updated et sourced from Leek Duck.
 X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
