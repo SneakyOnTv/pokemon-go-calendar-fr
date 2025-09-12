@@ -4,97 +4,32 @@
 <meta charset="UTF-8">
 <title>Pokémon GO - Calendrier Filtrable</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  h1 {
-    text-align: center;
-    color: #222;
-    margin-bottom: 5px;
-  }
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 25px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  }
-  .intro { text-align: center; margin-bottom: 10px; font-size: 0.95em; color:#555; }
-  .intro span { display:block; margin-top:5px; font-size:0.9em; color:#666; }
+  body { font-family: Arial, sans-serif; margin:30px; background:#f8f9fa; color:#333; }
+  .container { max-width:900px; margin:auto; padding:25px; background:#fff; border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.2); }
+  .header-box { padding:15px; border:2px solid #1565c0; border-radius:12px; background:#e3f2fd; margin-bottom:20px; text-align:center; }
+  .header-box h1 { margin:0; color:#1565c0; }
+  .header-box p { margin:5px 0 0; font-size:0.95em; color:#222; }
+  .tags-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:12px; margin-bottom:20px; }
+  .tag { padding:12px; border-radius:10px; display:flex; align-items:center; border:2px solid #000; transition:transform 0.2s, box-shadow 0.3s; cursor:pointer; }
+  .tag input { transform: scale(1.2); margin-right:8px; }
+  .tag label { font-weight:bold; cursor:pointer; }
+  .tag:hover { transform:scale(1.05); box-shadow:0 0 20px 5px rgba(21,101,192,0.6); border-color:#1565c0; }
 
-  /* Grille de tags */
-  .tags-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    margin-bottom: 20px;
-  }
-  .tag {
-    padding: 12px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s, box-shadow 0.3s, border-color 0.3s;
-    border: 2px solid #000;
-    cursor: pointer;
-  }
-  .tag input { transform: scale(1.2); margin-right: 8px; }
-  .tag label { font-weight: bold; cursor: pointer; }
+  button { display:block; margin:20px auto; padding:12px 20px; background:#1565c0; color:white; border:none; border-radius:8px; cursor:pointer; font-size:16px; font-weight:bold; transition:0.3s; }
+  button:hover { background:#0d47a1; transform:scale(1.03); }
 
-  /* Hover stylisé */
-  .tag:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px 5px rgba(21,101,192,0.6);
-    border-color: #1565c0;
-  }
+  #linkContainer { margin-top:20px; text-align:center; font-size:0.95em; }
+  #linkContainer div { display:inline-block; background:#f1f1f1; padding:10px; border-radius:8px; }
+  #linkContainer a { color:#1565c0; text-decoration:none; font-weight:bold; }
+  #linkContainer a:hover { text-decoration:underline; }
+  #linkContainer button { background:#1565c0; color:white; border:none; border-radius:5px; padding:5px 10px; margin-top:10px; cursor:pointer; display:block; margin-left:auto; margin-right:auto; }
 
-  button {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background: #1565c0;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-  }
-  button:hover { background: #0d47a1; transform: scale(1.03); }
-
-  #linkContainer { margin-top: 20px; text-align: center; font-size: 0.95em; word-break: break-word; }
-  #linkContainer div {
-    background:#f1f1f1;
-    padding:10px;
-    border-radius:8px;
-    display:inline-block;
-  }
-  #linkContainer button {
-    background:#1565c0;
-    color:white;
-    border:none;
-    border-radius:5px;
-    padding:5px 10px;
-    margin-left:10px;
-    cursor:pointer;
-    font-size:0.85em;
-  }
-  #linkContainer button:hover { background:#0d47a1; }
-  #linkContainer a { color: #1565c0; text-decoration: none; font-weight: bold; }
-  #linkContainer a:hover { text-decoration: underline; }
-
-  /* Lexique */
-  #lexique { margin-top: 35px; overflow-x:auto; }
-  #lexique h3 { margin-bottom: 12px; color: #444; text-align: center; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.9em; min-width:700px; }
-  table th, table td { border: 1px solid #ddd; padding: 10px; text-align: left; transition: background 0.3s; }
-  table th { background: #1565c0; color: white; text-align: center; }
-  table tr:hover { cursor: pointer; }
+  #lexique { margin-top:35px; overflow-x:auto; }
+  #lexique h3 { margin-bottom:12px; color:#444; text-align:center; }
+  table { width:100%; border-collapse:collapse; font-size:0.9em; min-width:700px; border:2px solid #000; }
+  table th, table td { border:1px solid #000; padding:10px; text-align:left; transition:background 0.3s; }
+  table th { background:#1565c0; color:white; text-align:center; }
+  table tr:hover { cursor:pointer; }
 
   /* Couleurs tags / lexique harmonisées */
   .tag-RH, .lex-RH { background-color:#ffebee; }
@@ -111,9 +46,9 @@
   .tag-GP, .lex-GP { background-color:#b3e5fc; }
   .tag-CS, .lex-CS { background-color:#ffe082; }
 
-  .highlight { outline: 3px solid #1565c0; transition: outline 0.3s; }
+  .highlight { outline:3px solid #1565c0; transition:outline 0.3s; }
 
-  /* Badge abréviations */
+  /* Badges abréviations */
   .abbr-RH { background:#ffebee; padding:2px 6px; border-radius:4px; }
   .abbr-RB { background:#ffe0b2; padding:2px 6px; border-radius:4px; }
   .abbr-PSH { background:#e1f5fe; padding:2px 6px; border-radius:4px; }
@@ -128,19 +63,17 @@
   .abbr-GP { background:#b3e5fc; padding:2px 6px; border-radius:4px; }
   .abbr-CS { background:#ffe082; padding:2px 6px; border-radius:4px; }
 
-  footer { margin-top: 40px; text-align:center; color:#666; font-size:0.9em; }
-
+  footer { margin-top:40px; text-align:center; color:#666; font-size:0.9em; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Pokémon GO - Sélection des événements</h1>
-  <p class="intro">
-    Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.<br>
-    <span>Si vous êtes sur mobile, cliquez sur le lien ICS : vous serez redirigé pour ajouter le calendrier directement. Vous pouvez modifier le titre, choisir la couleur, activer les alertes et voir le détail de l'abonnement. Sur iPhone, cliquez sur "Ajouter" en haut à droite pour ajouter le calendrier.</span>
-  </p>
+  <div class="header-box">
+    <h1>Pokémon GO - Sélection des événements</h1>
+    <p>Cochez les événements à inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.<br>
+    <span>Sur mobile, cliquez sur le lien ICS pour ajouter le calendrier directement. Modifiez le titre, choisissez la couleur, activez les alertes et cliquez sur "Ajouter".</span></p>
+  </div>
 
-  <!-- Grille de tags -->
   <div class="tags-grid">
     <div class="tag tag-RH"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Raid Hour</label></div>
     <div class="tag tag-RB"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
@@ -160,7 +93,6 @@
   <button onclick="generateLink()">Générer mon calendrier</button>
   <p id="linkContainer"></p>
 
-  <!-- Lexique -->
   <div id="lexique">
     <h3>Lexique des tags</h3>
     <table>
@@ -189,46 +121,53 @@
 </div>
 
 <script>
-function generateLink() {
-  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e => e.value);
-  if(selectedTags.length === 0) { alert("Veuillez cocher au moins un événement !"); return; }
-  const baseURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=";
-  const finalURL = baseURL + encodeURIComponent(selectedTags.join(","));
-  const container = document.getElementById("linkContainer");
-  container.innerHTML = `<div>Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>
-  <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
+function generateLink(){
+  const selectedTags=Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e=>e.value);
+  if(selectedTags.length===0){ alert("Veuillez cocher au moins un événement !"); return; }
+  const baseURL="https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=";
+  const finalURL=baseURL + encodeURIComponent(selectedTags.join(","));
+  const container=document.getElementById("linkContainer");
+  container.innerHTML=`<div>
+    <p>Voici votre lien ICS :</p>
+    <a href="${finalURL}" target="_blank">${finalURL}</a>
+    <button onclick="copyLink('${finalURL}')">Copier le lien</button>
+  </div>`;
 }
-function copyLink(url) {
+
+function copyLink(url){
   navigator.clipboard.writeText(url).then(()=>alert("Lien copié !")).catch(()=>alert("Impossible de copier le lien."));
 }
 
-document.querySelectorAll('.tag, .clickable-row').forEach(el=>{
-  el.addEventListener('mouseenter', ()=>highlightTag(el.dataset.tag,true));
-  el.addEventListener('mouseleave', ()=>highlightTag(el.dataset.tag,false));
+// Surbrillance tags lors hover tr
+document.querySelectorAll('.clickable-row').forEach(row=>{
+  row.addEventListener('mouseenter', ()=>highlightTag(row.dataset.tag,true));
+  row.addEventListener('mouseleave', ()=>highlightTag(row.dataset.tag,false));
 });
 
 function highlightTag(tag,state){
   if(!tag) return;
-  document.querySelectorAll(`[data-tag="${tag}"]`).forEach(el=>{
-    if(state) el.classList.add('highlight'); else el.classList.remove('highlight');
+  document.querySelectorAll(`.tag-${tag}`).forEach(el=>{
+    if(state){ el.classList.add('highlight'); el.style.transform="scale(1.05)"; } 
+    else { el.classList.remove('highlight'); el.style.transform="scale(1)"; }
   });
 }
 
-document.querySelectorAll('.clickable-row').forEach(row => {
-  row.addEventListener('click', () => {
-    const tag = row.dataset.tag;
-    const checkbox = document.getElementById(tag);
-    if(checkbox) checkbox.checked = !checkbox.checked;
-    const rows = document.querySelectorAll(`.lex-${tag}`);
-    rows.forEach(r => { if(checkbox.checked) r.classList.add('highlight'); else r.classList.remove('highlight'); });
+// Clic sur tr = coche / décoche la checkbox
+document.querySelectorAll('.clickable-row').forEach(row=>{
+  row.addEventListener('click', ()=>{
+    const tag=row.dataset.tag;
+    const checkbox=document.getElementById(tag);
+    if(checkbox) checkbox.checked=!checkbox.checked;
   });
 });
 
-document.querySelectorAll('input[name="tags"]').forEach(checkbox=>{
-  checkbox.addEventListener('change',()=>{
-    const tag=checkbox.id;
-    const rows=document.querySelectorAll(`.lex-${tag}`);
-    rows.forEach(r=>{ if(checkbox.checked) r.classList.add('highlight'); else r.classList.remove('highlight'); });
+// Checkbox modifie lexique highlight
+document.querySelectorAll('input[name="tags"]').forEach(cb=>{
+  cb.addEventListener('change', ()=>{
+    const tag=cb.id;
+    document.querySelectorAll(`.lex-${tag}`).forEach(r=>{
+      if(cb.checked) r.classList.add('highlight'); else r.classList.remove('highlight');
+    });
   });
 });
 </script>
