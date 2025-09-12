@@ -5,15 +5,18 @@
 <title>Pokémon GO - Calendrier Dynamique</title>
 <style>
   body { font-family: Arial, sans-serif; margin:30px; background:#f8f9fa; color:#333; }
-  h1 { text-align:center; color:#222; margin:0; }
+  h1, h2, h3, p, ol, td, th { margin:0; padding:0; }
   .container { max-width:950px; margin:auto; padding:25px; background:#fff; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-  .section { padding:15px; border:1px solid #ccc; border-radius:12px; margin-bottom:20px; background:#fafafa; }
-  .section h2 { margin-top:0; margin-bottom:8px; color:#1565c0; font-size:1.2em; }
-  .section p, .section ol { margin:0; font-size:0.95em; line-height:1.5; }
+  
+  /* Sections encadrées */
+  .section { padding:20px; border-radius:12px; margin-bottom:20px; text-align:center; background:#e3f2fd; border:1px solid #90caf9; }
+  .section h2 { margin-bottom:10px; color:#1565c0; font-size:1.4em; }
+  .section p, .section ol { font-size:0.95em; line-height:1.5; text-align:left; display:inline-block; max-width:850px; }
+  .section ol { margin-top:10px; text-align:left; }
 
   /* Grille des tags */
-  .tags-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
-  .tag { padding:12px; border-radius:10px; display:flex; align-items:center; transition:0.3s; border:2px solid #000; cursor:pointer; }
+  .tags-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; justify-items:center; }
+  .tag { padding:12px; border-radius:10px; display:flex; align-items:center; justify-content:center; text-align:center; transition:0.3s; border:2px solid #000; cursor:pointer; min-height:50px; box-sizing:border-box; }
   .tag input { transform:scale(1.2); margin-right:8px; }
   .tag label { font-weight:bold; cursor:pointer; }
   .tag:hover { transform:scale(1.05); box-shadow:0 0 12px rgba(0,150,255,0.6); }
@@ -28,10 +31,10 @@
   #linkContainer button { background:#1565c0; color:white; border:none; border-radius:5px; padding:5px 10px; cursor:pointer; font-size:0.85em; }
 
   /* Lexique */
-  #lexique { margin-top:35px; overflow-x:auto; border:1px solid #000; border-radius:10px; }
+  #lexique { margin-top:35px; overflow-x:auto; border:2px solid #000; border-radius:10px; }
   #lexique h3 { margin-bottom:12px; color:#444; text-align:center; padding-top:10px; }
-  table { width:100%; border-collapse:collapse; font-size:0.9em; min-width:700px; }
-  table th, table td { border:1px solid #000; padding:10px; text-align:left; transition:background 0.3s; }
+  table { width:100%; border-collapse:collapse; font-size:0.95em; min-width:700px; text-align:center; }
+  table th, table td { border:1px solid #000; padding:10px; text-align:center; transition:background 0.3s; }
   table th { background:#1565c0; color:white; text-align:center; }
   table tr:hover { cursor:pointer; }
 
@@ -53,7 +56,7 @@
   .highlight { outline:3px solid #1565c0; transition: outline 0.3s; }
 
   /* Abbr badges */
-  .abbr { padding:2px 6px; border-radius:4px; font-weight:bold; }
+  .abbr { padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block; }
 
   /* Signature */
   footer { margin-top:40px; text-align:center; color:#666; font-size:0.9em; }
