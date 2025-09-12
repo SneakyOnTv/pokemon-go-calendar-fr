@@ -2,130 +2,88 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Pokémon GO - Calendrier Filtrable</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pokémon GO - Calendrier Dynamique</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  h1 {
-    color: #ef5350;
-    text-align: center;
-  }
-  .container {
-    max-width: 880px;
-    margin: auto;
-    padding: 22px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  }
-  .intro { text-align: center; margin-bottom: 18px; }
-  .tags-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    margin-bottom: 18px;
-  }
-  .tag {
-    background: linear-gradient(180deg,#fff,#fbfbfb);
-    padding: 12px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #ececec;
-    transition: transform .12s ease, box-shadow .12s ease;
-  }
-  .tag:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.04); }
-  .tag input { transform: scale(1.2); margin-left: 4px; }
-  .tag label { font-weight: 700; cursor: pointer; color:#333; }
-
-  button {
-    display: block;
-    margin: 12px auto;
-    padding: 12px 20px;
-    background: #ef5350;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-  }
+  body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; color: #333; }
+  h1 { color: #ef5350; }
+  .container { max-width: 800px; margin: auto; padding: 25px; background: #fff; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.12); }
+  .tag-container { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+  .tag { background: #ef5350; color: #fff; padding: 8px 12px; border-radius: 6px; display: flex; align-items: center; cursor: pointer; }
+  .tag input { margin-right: 6px; }
+  button { margin-top: 10px; padding: 12px 18px; background: #ef5350; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
   button:hover { background: #d32f2f; }
-
-  #linkContainer { margin-top: 16px; text-align:center; word-break:break-all; font-size:0.95em; }
-
-  #lexique { margin-top: 28px; }
-  #lexique h3 { margin-bottom: 12px; text-align:center; }
-  table { width: 100%; border-collapse: collapse; font-size:0.92em; }
-  th, td { padding: 10px; border: 1px solid #e9e9e9; text-align:left; }
-  th { background:#ef5350; color:#fff; font-weight:700; text-align:center; }
-  tr:nth-child(even) { background:#fbfbfb; }
+  #linkContainer { margin-top: 15px; word-break: break-all; font-weight: bold; }
+  #lexique { margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 12px; }
+  #lexique p { margin: 6px 0; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Pokémon GO — Sélection des événements</h1>
-  <p class="intro">Cochez ce que vous voulez inclure, puis cliquez sur <strong>Générer mon calendrier</strong>. Le fichier ICS personnalisé sera généré dynamiquement.</p>
+  <h1>Pokémon GO - Sélection des événements</h1>
+  <p>Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
 
-  <div class="tags-grid">
+  <div class="tag-container">
     <div class="tag"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Heure de Raid</label></div>
-    <div class="tag"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
-    <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Heure Vedette Pokémon</label></div>
-    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Journée Communautaire</label></div>
-    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] Ligue de Combat GO</label></div>
-    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Zone Sauvage</label></div>
-    <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Événement</label></div>
-    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Lundi Max</label></div>
+    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
+    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] Go Battle League</label></div>
+    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
+    <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Pokémon Spotlight Hour</label></div>
+    <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Événement spécial</label></div>
+    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
     <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
     <div class="tag"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
-    <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Pass</label></div>
-    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] Safari en Ville</label></div>
-    <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Histoires de Transformation</label></div>
+    <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] Passe GO</label></div>
+    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] Catch Special</label></div>
+    <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
   </div>
 
   <button onclick="generateLink()">Générer mon calendrier</button>
 
-  <div id="linkContainer"></div>
+  <p id="linkContainer"></p>
 
   <div id="lexique">
-    <h3>Lexique des tags</h3>
-    <table>
-      <thead>
-        <tr><th>Abréviation</th><th>Anglais</th><th>Français</th><th>Description</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>[RH]</td><td>Raid Hour</td><td>Heure de Raid</td><td>Raids spéciaux concentrés sur un Pokémon.</td></tr>
-        <tr><td>[RB]</td><td>Raid Boss</td><td>Boss de Raid</td><td>Pokémon disponible en tant que boss de raid.</td></tr>
-        <tr><td>[PSH]</td><td>Pokémon Spotlight Hour</td><td>Heure Vedette Pokémon</td><td>Apparition accrue d’un Pokémon spécifique.</td></tr>
-        <tr><td>[CD]</td><td>Community Day</td><td>Journée Communautaire</td><td>Événement avec un Pokémon vedette et des bonus spéciaux.</td></tr>
-        <tr><td>[GBL]</td><td>GO Battle League</td><td>Ligue de Combat GO</td><td>Combats PvP avec règles et récompenses.</td></tr>
-        <tr><td>[WA]</td><td>Wild Area</td><td>Zone Sauvage</td><td>Apparitions spéciales dans la nature.</td></tr>
-        <tr><td>[E]</td><td>Event</td><td>Événement</td><td>Événement global ou local.</td></tr>
-        <tr><td>[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux le lundi.</td></tr>
-        <tr><td>[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Raids intensifs sur un Pokémon spécifique.</td></tr>
-        <tr><td>[RW]</td><td>Raid Weekend</td><td>Week-end de Raids</td><td>Raids intensifs sur plusieurs jours.</td></tr>
-        <tr><td>[GP]</td><td>GO Plus / Global Play</td><td>GO Pass</td><td>Bonus liés au GO Pass ou à des événements globaux.</td></tr>
-        <tr><td>[CS]</td><td>City Safari</td><td>Safari en Ville</td><td>Événement spécial dans certaines villes.</td></tr>
-        <tr><td>[S]</td><td>Tales of Transformation</td><td>Histoires de Transformation</td><td>Événement spécial thématique (raids, études, bonus temporaires).</td></tr>
-      </tbody>
-    </table>
+    <h3>Lexique des tags :</h3>
+    <p>[RH] → Raid Hour → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
+    <p>[CD] → Community Day → Journée communautaire avec un Pokémon vedette et bonus spéciaux.</p>
+    <p>[GBL] → Go Battle League → Ligues de combat PvP avec différentes règles et récompenses.</p>
+    <p>[WA] → Wild Area → Zones spéciales avec Pokémon rares et bonus.</p>
+    <p>[PSH] → Pokémon Spotlight Hour → Pokémon mis en avant pendant 1 heure avec bonus.</p>
+    <p>[E] → Événement spécial → Événements uniques ou temporaires.</p>
+    <p>[MM] → Max Monday → Événements Dynamax hebdomadaires.</p>
+    <p>[RD] → Raid Day → Journée spéciale de raids avec Pokémon spécifiques.</p>
+    <p>[RW] → Raid Weekend → Raids spéciaux sur le week-end.</p>
+    <p>[GP] → Passe GO → Bonus liés au Pass GO de la période en cours.</p>
+    <p>[CS] → Catch Special → Objectifs de capture spéciaux.</p>
+    <p>[S] → Tales of Transformation → Événement saison 20 : Tales of Transformation.</p>
   </div>
 </div>
 
 <script>
-const SERVICE_URL = "https://REPLACE_WITH_YOUR_VERCEL_APP.vercel.app/api/calendar";
+async function generateLink() {
+  const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
+                            .map(e => e.value);
 
-function generateLink() {
-  const selected = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(cb => cb.value);
-  if(selected.length === 0) { alert("Veuillez sélectionner au moins un tag."); return; }
-  const url = SERVICE_URL + "?tags=" + encodeURIComponent(selected.join(","));
-  document.getElementById("linkContainer").innerHTML = `<a href="${url}" target="_blank">Télécharger mon calendrier filtré</a>`;
+  if (selectedTags.length === 0) {
+    alert("Veuillez cocher au moins un événement !");
+    return;
+  }
+
+  const apiBase = "https://pokemon-go-calendar-fr.vercel.app/api/calendar";
+  const apiURL = apiBase + "?tags=" + encodeURIComponent(selectedTags.join(","));
+
+  try {
+    const response = await fetch(apiURL);
+    if (!response.ok) throw new Error("Erreur lors de la génération du calendrier");
+
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+
+    const linkContainer = document.getElementById("linkContainer");
+    linkContainer.innerHTML = `Voici votre lien ICS : <a href="${url}" download="pokemon-go.ics">Télécharger le calendrier filtré</a>`;
+  } catch (error) {
+    console.error(error);
+    alert("Une erreur est survenue, veuillez réessayer !");
+  }
 }
 </script>
 
