@@ -26,6 +26,7 @@ Téléchargez directement le calendrier complet (sans filtrage) :
 👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">gocal_fr.ics</a>  
 
 > ⚠️ Copiez **tout le lien jusqu’au `.ics`** pour l’ajouter à votre application Calendrier.
+> `https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics`
 
 ---
 
@@ -39,11 +40,12 @@ Téléchargez directement le calendrier complet (sans filtrage) :
    <img src="images/4.png" width="200" />  
 
 3. **Coller le lien ICS**  
-   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>  
+   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>
+   > `https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics` 
    <img src="images/6.png" width="200" />  
 
-4. **Valider** → Le calendrier apparaît dans l’app Calendrier.  
-5. **Configurer les alertes** : matin pour événements journée entière, 30–45 min avant pour les raids.
+5. **Valider** → Le calendrier apparaît dans l’app Calendrier.  
+6. **Configurer les alertes** : matin pour événements journée entière, 30–45 min avant pour les raids.
 
 ---
 
@@ -51,23 +53,26 @@ Téléchargez directement le calendrier complet (sans filtrage) :
 
 **Méthode 1 : Import manuel**  
 1. Télécharger le fichier :  
-   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>  
-2. Ouvrir depuis Notifications ou Téléchargements.  
-3. Ajouter le calendrier → **Tout ajouter**.
+   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>
+   > `https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics`
+3. Ouvrir depuis Notifications ou Téléchargements.  
+4. Ajouter le calendrier → **Tout ajouter**.
 
 **Méthode 2 : Via l’URL (recommandée)**  
 1. Sur PC, ouvrez Google Agenda → **Autres agendas → + → À partir de l’URL**  
 2. Coller le lien :  
-   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>  
-3. Ajouter → synchronisation automatique sur mobile.
+   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>
+   > `https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics`
+4. Ajouter → synchronisation automatique sur mobile.
 
 ---
 
 ### Outlook
 1. Ajouter un calendrier → **À partir d’Internet**  
 2. Coller le lien :  
-   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>  
-3. Valider.
+   👉 <a href="https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics" target="_blank">Lien calendrier complet ICS</a>
+   > `https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics` 
+4. Valider.
 
 ---
 
