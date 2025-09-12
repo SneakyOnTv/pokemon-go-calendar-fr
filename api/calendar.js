@@ -1,4 +1,4 @@
-const ICS_URL = "https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/calendar.ics";
+const ICS_URL = "https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics";
 
 module.exports = async function handler(req, res) {
   try {
