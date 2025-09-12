@@ -42,7 +42,21 @@
 
   /* Lexique */
   #lexique { margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 12px; }
-  #lexique p { margin: 6px 0; }
+  #lexique p { margin: 6px 0; padding: 6px 10px; border-radius: 8px; color: white; font-weight: bold; }
+  .lex-RH { background-color: #d32f2f; }
+  .lex-RB { background-color: #f57c00; }
+  .lex-PSH { background-color: #0288d1; }
+  .lex-CD { background-color: #388e3c; }
+  .lex-GBL { background-color: #7b1fa2; }
+  .lex-WA { background-color: #fbc02d; color:#333; }
+  .lex-E { background-color: #c2185b; }
+  .lex-S { background-color: #6d4c41; }
+  .lex-MM { background-color: #009688; }
+  .lex-RD { background-color: #f06292; }
+  .lex-RW { background-color: #8e24aa; }
+  .lex-GP { background-color: #1976d2; }
+  .lex-CS { background-color: #455a64; }
+
   .highlight { outline: 3px solid #1565c0; border-radius: 6px; transition: outline 0.3s; }
 </style>
 </head>
@@ -97,19 +111,7 @@ function generateLink() {
   document.getElementById("linkContainer").innerHTML = `Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>`;
 }
 
-// Hover tags ↔ lexique
-document.querySelectorAll('.tag, .lexique p').forEach(el=>{
-  el.addEventListener('mouseenter', ()=>highlightTag(el.dataset.tag,true));
-  el.addEventListener('mouseleave', ()=>highlightTag(el.dataset.tag,false));
-});
-function highlightTag(tag,state){
-  if(!tag) return;
-  document.querySelectorAll(`[data-tag="${tag}"], .lex-${tag}`).forEach(el=>{
-    if(state) el.classList.add('highlight'); else el.classList.remove('highlight');
-  });
-}
-
-// Synchronisation click ↔ lexique
+// Synchronisation tag ↔ lexique
 document.querySelectorAll('.tag input').forEach(cb=>{
   cb.addEventListener('change',()=>{
     const tag=cb.id;
