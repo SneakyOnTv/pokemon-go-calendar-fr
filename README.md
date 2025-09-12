@@ -111,8 +111,6 @@ Pour obtenir le calendrier complet sans filtrage :
 ## 🚀 Améliorations futures
 
 - Mise à jour automatique des nouveaux Pokémon  
-- Filtre par événement ([RH], [GBL], etc.)  
-- Page web interactive pour sélectionner les événements  
 - Catégories améliorées et rappels personnalisés
 
 ---
