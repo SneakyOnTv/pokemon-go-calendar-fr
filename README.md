@@ -2,7 +2,7 @@
 **Dépôt : [SneakyOnTv/pokemon-go-calendar-fr](https://github.com/SneakyOnTv/pokemon-go-calendar-fr)**
 
 Un calendrier **Pokémon GO** entièrement traduit en français, mis à jour automatiquement à partir de la source officielle :  
-<a href="https://github.com/othyn/go-calendar" target="_blank">GO Calendar (gocal.ics)</a>
+[GO Calendar (gocal.ics)](https://github.com/othyn/go-calendar)
 
 Il inclut : événements spéciaux, Journées Communauté, raids, bonus XP x2, Poussière d’étoiles x2, et plus encore.
 
