@@ -5,7 +5,13 @@ const ICS_URL = "https://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calenda
 export default async function handler(req, res) {
   try {
     const { tags } = req.query;
-    const selectedTags = tags ? tags.split(",") : [];
+
+    if (!tags) {
+      res.status(400).send("Veuillez fournir au moins un tag.");
+      return;
+    }
+
+    const selectedTags = tags.split(",");
 
     // Récupérer le fichier ICS depuis GitHub
     const response = await fetch(ICS_URL);
@@ -13,29 +19,23 @@ export default async function handler(req, res) {
       res.status(500).send("Impossible de récupérer le calendrier.");
       return;
     }
-    const icsData = await response.text();
+    let icsData = await response.text();
 
-    // Découper les événements
+    // Filtrer les événements selon les tags sélectionnés
     const events = icsData.split("BEGIN:VEVENT");
-
-    // Filtrer les événements selon les tags
     const filteredEvents = events.filter((event, index) => {
-      if (index === 0) return true; // conserver l'en-tête VCALENDAR
-      return selectedTags.length === 0 || selectedTags.some(tag => event.includes(`[${tag}]`));
+      if (index === 0) return true; // garder l'entête ICS
+      return selectedTags.some(tag => event.includes(tag));
     });
-
     const finalICS = filteredEvents.join("BEGIN:VEVENT");
-    
-    // S'assurer que le fichier commence et finit correctement
-    const fullICS = finalICS.includes("END:VCALENDAR") ? finalICS : finalICS + "\nEND:VCALENDAR";
 
     // Envoyer le ICS filtré
     res.setHeader("Content-Type", "text/calendar;charset=utf-8");
     res.setHeader("Content-Disposition", "attachment; filename=pokemon-go-calendar.ics");
-    res.status(200).send(fullICS);
+    res.status(200).send(finalICS);
 
   } catch (err) {
-    console.error("Erreur API calendar.js:", err);
+    console.error(err);
     res.status(500).send("Erreur interne du serveur.");
   }
 }
