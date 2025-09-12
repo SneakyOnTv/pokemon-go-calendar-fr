@@ -199,7 +199,7 @@
 function generateLink() {
   const selectedTags = Array.from(document.querySelectorAll('.tags-grid input:checked')).map(e=>e.id);
   if(selectedTags.length===0){alert("Veuillez cocher au moins un événement !"); return;}
-  const finalURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=" + selectedTags.join(",");
+  const finalURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=" + selectedTags.join(",").replace(/%2C/g, ",");
   const container = document.getElementById("linkContainer");
   container.innerHTML = `<div style="text-align:center;">Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a><br>
   <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
