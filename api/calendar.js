@@ -1,40 +1,82 @@
+// api/calendar.js
+// Endpoint serverless (Vercel) — renvoie le .ics filtré par tags
+// Exemple : /api/calendar?tags=RH,CD
+
 const ICS_URL = "https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics";
 
-module.exports = async function handler(req, res) {
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+module.exports = async (req, res) => {
   try {
-    const { tags } = req.query;
+    const tagsParam = (req.query && (req.query.tags || req.query.tag)) || "";
+    const rawTags = tagsParam
+      .toString()
+      .split(",")
+      .map(t => t.trim())
+      .filter(Boolean);
 
-    if (!tags) {
-      res.status(400).send("Veuillez fournir au moins un tag.");
-      return;
+    // Récupérer le ICS traduit (gocal_fr.ics) depuis GitHub Pages
+    const r = await fetch(ICS_URL);
+    if (!r.ok) {
+      console.error("Erreur fetch ICS :", r.status, r.statusText);
+      return res.status(502).send("Impossible de récupérer le calendrier depuis GitHub.");
+    }
+    const ics = await r.text();
+
+    // Chercher le début des événements
+    const firstEventIndex = ics.search(/BEGIN:VEVENT/i);
+    if (firstEventIndex === -1) {
+      // Aucun VEVENT trouvé -> renvoyer le fichier complet
+      res.setHeader("Content-Type", "text/calendar; charset=utf-8");
+      res.setHeader("Content-Disposition", `attachment; filename="gocal_all.ics"`);
+      return res.status(200).send(ics);
     }
 
-    const selectedTags = tags.split(",");
+    const header = ics.slice(0, firstEventIndex);
+    const eventsText = ics.slice(firstEventIndex);
 
-    // Récupérer le fichier ICS depuis GitHub avec fetch natif Vercel
-    const response = await fetch(ICS_URL);
-    if (!response.ok) {
-      res.status(500).send("Impossible de récupérer le calendrier depuis GitHub.");
-      return;
+    // Extraire chaque bloc VEVENT (BEGIN:VEVENT ... END:VEVENT)
+    const events = eventsText.match(/BEGIN:VEVENT[\s\S]*?END:VEVENT/gmi) || [];
+
+    // Si aucun tag fourni, on renvoie tout
+    let outputEvents;
+    if (rawTags.length === 0) {
+      outputEvents = events;
+    } else {
+      // Construire regex pour matcher strictement [TAG] (insensible à la casse / espaces)
+      const tagRegexes = rawTags.map(tag => {
+        const escaped = escapeRegExp(tag);
+        return new RegExp(`\\[\\s*${escaped}\\s*\\]`, "i");
+      });
+
+      outputEvents = events.filter(ev => {
+        return tagRegexes.some(rx => rx.test(ev));
+      });
     }
 
-    let icsData = await response.text();
+    // Assembler le ICS de sortie
+    let output = header;
+    if (!output.endsWith("\n")) output += "\n";
+    for (const ev of outputEvents) {
+      output += ev;
+      if (!ev.endsWith("\n")) output += "\n";
+    }
+    if (!/END:VCALENDAR/i.test(output)) output += "END:VCALENDAR\n";
 
-    // Filtrer les événements selon les tags sélectionnés
-    const events = icsData.split("BEGIN:VEVENT");
-    const filteredEvents = events.filter((event, index) => {
-      if (index === 0) return true; // garder l'entête ICS
-      return selectedTags.some(tag => event.includes(tag));
-    });
-    const finalICS = filteredEvents.join("BEGIN:VEVENT");
+    // Nom de fichier utile
+    const safeName = rawTags.length ? rawTags.join("-").replace(/[^a-zA-Z0-9-_]/g, "_") : "all";
+    const filename = `gocal_${safeName}.ics`;
 
-    // Envoyer le ICS filtré
-    res.setHeader("Content-Type", "text/calendar;charset=utf-8");
-    res.setHeader("Content-Disposition", "attachment; filename=pokemon-go-calendar.ics");
-    res.status(200).send(finalICS);
+    res.setHeader("Content-Type", "text/calendar; charset=utf-8");
+    res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
+    // cache court côté CDN / edge
+    res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=300");
 
+    return res.status(200).send(output);
   } catch (err) {
-    console.error("Erreur calendar.js :", err);
-    res.status(500).send("Erreur interne du serveur.");
+    console.error("ERROR /api/calendar:", err);
+    return res.status(500).send("Erreur interne du serveur.");
   }
 };
