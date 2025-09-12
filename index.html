@@ -174,8 +174,8 @@
 function generateLink() {
   const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e => e.value);
   if(selectedTags.length === 0) { alert("Veuillez cocher au moins un événement !"); return; }
-  const baseURL = "https://sneakyontv.github.io/pokemon-go-calendar-fr/calendar/gocal_fr.ics?tags=";
-  const finalURL = baseURL + selectedTags.join(",");
+  const baseURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=";
+  const finalURL = baseURL + encodeURIComponent(selectedTags.join(","));
   const container = document.getElementById("linkContainer");
   container.innerHTML = `<div>Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>
   <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
