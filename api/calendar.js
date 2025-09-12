@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+
 
 const ICS_URL = "https://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calendar/gocal_fr.ics";
 
