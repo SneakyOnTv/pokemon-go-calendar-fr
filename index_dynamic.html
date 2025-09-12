@@ -2,62 +2,93 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Pokémon GO - Calendrier Dynamique Pro</title>
+<title>Pokémon GO - Calendrier Dynamique</title>
 <style>
   body { font-family: Arial, sans-serif; margin: 30px; background-color: #f8f9fa; color: #333; }
-  h1 { color: #ef5350; text-align: center; }
+  h1 { text-align: center; color: #222; }
   .container { max-width: 900px; margin: auto; padding: 25px; background: #fff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-  p { text-align: center; margin-bottom: 20px; }
+  p { margin-bottom: 20px; text-align: center; }
 
-  /* Tags dynamiques */
-  .tag-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
-  .tag {
-    display: flex; align-items: center; gap: 6px;
-    padding: 10px 14px; border-radius: 12px; cursor: pointer; font-weight: bold;
-    transition: transform 0.2s, box-shadow 0.2s;
+  /* Grille de tags */
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
-  .tag input { transform: scale(1.2); }
-  .tag:hover { transform: translateY(-2px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+  .tag {
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #000; /* contour noir */
+    font-weight: bold;
+  }
+  .tag input { margin-right: 6px; transform: scale(1.2); }
 
-  /* Badges */
-  .badge { padding: 2px 6px; border-radius: 6px; font-size: 0.85em; font-weight: bold; color: white; }
-  .badge-RH { background-color: #d32f2f; }
-  .badge-RB { background-color: #f57c00; }
-  .badge-PSH { background-color: #0288d1; }
-  .badge-CD { background-color: #388e3c; }
-  .badge-GBL { background-color: #7b1fa2; }
-  .badge-WA { background-color: #fbc02d; color:#333; }
-  .badge-E { background-color: #c2185b; }
-  .badge-S { background-color: #6d4c41; }
-  .badge-MM { background-color: #009688; }
-  .badge-RD { background-color: #f06292; }
-  .badge-RW { background-color: #8e24aa; }
-  .badge-GP { background-color: #1976d2; }
-  .badge-CS { background-color: #455a64; }
+  /* Couleurs tags / badges harmonisés */
+  .tag-RH, .lex-RH { background-color:#ffebee; }
+  .tag-RB, .lex-RB { background-color:#ffe0b2; }
+  .tag-PSH, .lex-PSH { background-color:#e1f5fe; }
+  .tag-CD, .lex-CD { background-color:#e8f5e9; }
+  .tag-GBL, .lex-GBL { background-color:#f3e5f5; }
+  .tag-WA, .lex-WA { background-color:#fff9c4; }
+  .tag-E, .lex-E { background-color:#fce4ec; }
+  .tag-S, .lex-S { background-color:#d7ccc8; }
+  .tag-MM, .lex-MM { background-color:#c8e6c9; }
+  .tag-RD, .lex-RD { background-color:#ffccbc; }
+  .tag-RW, .lex-RW { background-color:#d1c4e9; }
+  .tag-GP, .lex-GP { background-color:#b3e5fc; }
+  .tag-CS, .lex-CS { background-color:#ffe082; }
 
-  button { display: block; margin: 20px auto; padding: 12px 20px; background: #ef5350; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.3s; }
-  button:hover { background: #d32f2f; }
+  button {
+    padding: 12px 20px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+  }
+  button:hover { background:#0d47a1; }
 
-  #linkContainer { text-align: center; margin-top: 15px; font-weight: bold; word-break: break-word; }
+  #linkContainer { text-align:center; font-size:0.95em; word-break: break-all; margin-top: 15px; }
+  #linkContainer a { color: #1565c0; font-weight:bold; text-decoration:none; }
+  #linkContainer a:hover { text-decoration:underline; }
 
   /* Lexique */
-  #lexique { margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 12px; }
-  #lexique p { margin: 6px 0; padding: 6px 10px; border-radius: 8px; color: white; font-weight: bold; }
-  .lex-RH { background-color: #d32f2f; }
-  .lex-RB { background-color: #f57c00; }
-  .lex-PSH { background-color: #0288d1; }
-  .lex-CD { background-color: #388e3c; }
-  .lex-GBL { background-color: #7b1fa2; }
-  .lex-WA { background-color: #fbc02d; color:#333; }
-  .lex-E { background-color: #c2185b; }
-  .lex-S { background-color: #6d4c41; }
-  .lex-MM { background-color: #009688; }
-  .lex-RD { background-color: #f06292; }
-  .lex-RW { background-color: #8e24aa; }
-  .lex-GP { background-color: #1976d2; }
-  .lex-CS { background-color: #455a64; }
+  #lexique { margin-top: 35px; overflow-x:auto; font-size: 0.9em; }
+  #lexique h3 { text-align:center; margin-bottom:12px; }
+  table { width:100%; border-collapse: collapse; min-width:700px; }
+  table th, table td { border:1px solid #ddd; padding:10px; text-align:left; transition: background 0.3s; }
+  table th { background:#1565c0; color:white; text-align:center; }
+  table tr:nth-child(even) { background:#f9f9f9; }
+  table tr:hover { background:#f1f1f1; cursor:pointer; }
 
-  .highlight { outline: 3px solid #1565c0; border-radius: 6px; transition: outline 0.3s; }
+  .abbr-RH { background:#ffebee; padding:2px 6px; border-radius:4px; }
+  .abbr-RB { background:#ffe0b2; padding:2px 6px; border-radius:4px; }
+  .abbr-PSH { background:#e1f5fe; padding:2px 6px; border-radius:4px; }
+  .abbr-CD { background:#e8f5e9; padding:2px 6px; border-radius:4px; }
+  .abbr-GBL { background:#f3e5f5; padding:2px 6px; border-radius:4px; }
+  .abbr-WA { background:#fff9c4; padding:2px 6px; border-radius:4px; }
+  .abbr-E { background:#fce4ec; padding:2px 6px; border-radius:4px; }
+  .abbr-S { background:#d7ccc8; padding:2px 6px; border-radius:4px; }
+  .abbr-MM { background:#c8e6c9; padding:2px 6px; border-radius:4px; }
+  .abbr-RD { background:#ffccbc; padding:2px 6px; border-radius:4px; }
+  .abbr-RW { background:#d1c4e9; padding:2px 6px; border-radius:4px; }
+  .abbr-GP { background:#b3e5fc; padding:2px 6px; border-radius:4px; }
+  .abbr-CS { background:#ffe082; padding:2px 6px; border-radius:4px; }
+
+  /* Highlight dynamique */
+  .highlight { outline:3px solid #1565c0; transition: outline 0.3s; }
+
+  /* Signature */
+  footer { margin-top:40px; text-align:center; color:#666; font-size:0.9em; }
 </style>
 </head>
 <body>
@@ -65,59 +96,86 @@
   <h1>Pokémon GO - Sélection des événements</h1>
   <p>Cochez les événements que vous voulez inclure dans votre calendrier, puis cliquez sur <strong>Générer mon calendrier</strong>.</p>
 
+  <!-- Tags -->
   <div class="tag-container">
-    <div class="tag tag-RH" data-tag="RH"><input type="checkbox" id="RH" name="tags" value="RH"><span class="badge badge-RH">RH</span> Heure de Raid</div>
-    <div class="tag tag-RB" data-tag="RB"><input type="checkbox" id="RB" name="tags" value="RB"><span class="badge badge-RB">RB</span> Raid Boss</div>
-    <div class="tag tag-PSH" data-tag="PSH"><input type="checkbox" id="PSH" name="tags" value="PSH"><span class="badge badge-PSH">PSH</span> Heure vedette Pokémon</div>
-    <div class="tag tag-CD" data-tag="CD"><input type="checkbox" id="CD" name="tags" value="CD"><span class="badge badge-CD">CD</span> Journée Communauté</div>
-    <div class="tag tag-GBL" data-tag="GBL"><input type="checkbox" id="GBL" name="tags" value="GBL"><span class="badge badge-GBL">GBL</span> Ligue de Combat GO</div>
-    <div class="tag tag-WA" data-tag="WA"><input type="checkbox" id="WA" name="tags" value="WA"><span class="badge badge-WA">WA</span> Zone Sauvage</div>
-    <div class="tag tag-E" data-tag="E"><input type="checkbox" id="E" name="tags" value="E"><span class="badge badge-E">E</span> Événement spécial</div>
-    <div class="tag tag-S" data-tag="S"><input type="checkbox" id="S" name="tags" value="S"><span class="badge badge-S">S</span> Tales of Transformation</div>
-    <div class="tag tag-MM" data-tag="MM"><input type="checkbox" id="MM" name="tags" value="MM"><span class="badge badge-MM">MM</span> Lundi Max</div>
-    <div class="tag tag-RD" data-tag="RD"><input type="checkbox" id="RD" name="tags" value="RD"><span class="badge badge-RD">RD</span> Journée de Raids</div>
-    <div class="tag tag-RW" data-tag="RW"><input type="checkbox" id="RW" name="tags" value="RW"><span class="badge badge-RW">RW</span> Raid Weekend</div>
-    <div class="tag tag-GP" data-tag="GP"><input type="checkbox" id="GP" name="tags" value="GP"><span class="badge badge-GP">GP</span> Passe GO</div>
-    <div class="tag tag-CS" data-tag="CS"><input type="checkbox" id="CS" name="tags" value="CS"><span class="badge badge-CS">CS</span> City Safari</div>
+    <div class="tag tag-RH"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Raid Hour</label></div>
+    <div class="tag tag-RB"><input type="checkbox" id="RB" name="tags" value="RB"><label for="RB">[RB] Raid Boss</label></div>
+    <div class="tag tag-PSH"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Pokémon Spotlight Hour</label></div>
+    <div class="tag tag-CD"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
+    <div class="tag tag-GBL"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] GO Battle League</label></div>
+    <div class="tag tag-WA"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
+    <div class="tag tag-E"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Event</label></div>
+    <div class="tag tag-S"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
+    <div class="tag tag-MM"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
+    <div class="tag tag-RD"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
+    <div class="tag tag-RW"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
+    <div class="tag tag-GP"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] GO Pass</label></div>
+    <div class="tag tag-CS"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] City Safari</label></div>
   </div>
 
   <button onclick="generateLink()">Générer mon calendrier</button>
   <p id="linkContainer"></p>
 
+  <!-- Lexique -->
   <div id="lexique">
-    <h3>Lexique des tags :</h3>
-    <p class="lex-RH">[RH] → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
-    <p class="lex-RB">[RB] → Raid Boss : Pokémon disponible en tant que boss de raid.</p>
-    <p class="lex-PSH">[PSH] → Heure vedette Pokémon : Apparition accrue d’un Pokémon spécifique.</p>
-    <p class="lex-CD">[CD] → Journée Communauté : Événement avec un Pokémon vedette et bonus spéciaux.</p>
-    <p class="lex-GBL">[GBL] → Ligue de Combat GO : Combats PvP avec règles et récompenses.</p>
-    <p class="lex-WA">[WA] → Zone Sauvage : Apparitions spéciales dans la nature.</p>
-    <p class="lex-E">[E] → Événement spécial : Événements uniques ou temporaires.</p>
-    <p class="lex-S">[S] → Tales of Transformation : Événement saison 20.</p>
-    <p class="lex-MM">[MM] → Lundi Max : Raids Dynamax hebdomadaires.</p>
-    <p class="lex-RD">[RD] → Journée de Raids : Raids concentrés sur un Pokémon spécifique.</p>
-    <p class="lex-RW">[RW] → Raid Weekend : Raids spéciaux sur le week-end.</p>
-    <p class="lex-GP">[GP] → Passe GO : Bonus liés au Pass GO de la période en cours.</p>
-    <p class="lex-CS">[CS] → City Safari : Événements spéciaux en ville.</p>
+    <h3>Lexique des tags</h3>
+    <table>
+      <thead>
+        <tr><th>Abréviation</th><th>Nom anglais</th><th>Nom français</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr class="lex-RH"><td class="abbr-RH">[RH]</td><td>Raid Hour</td><td>Heure de Raid</td><td>Raids spéciaux concentrés sur un Pokémon.</td></tr>
+        <tr class="lex-RB"><td class="abbr-RB">[RB]</td><td>Raid Boss</td><td>Boss de Raid</td><td>Pokémon disponible en tant que boss de raid.</td></tr>
+        <tr class="lex-PSH"><td class="abbr-PSH">[PSH]</td><td>Pokémon Spotlight Hour</td><td>Heure vedette Pokémon</td><td>Apparition accrue d’un Pokémon spécifique.</td></tr>
+        <tr class="lex-CD"><td class="abbr-CD">[CD]</td><td>Community Day</td><td>Journée Communautaire</td><td>Événement avec un Pokémon vedette et bonus spéciaux.</td></tr>
+        <tr class="lex-GBL"><td class="abbr-GBL">[GBL]</td><td>GO Battle League</td><td>Ligue de Combat GO</td><td>Combats PvP avec règles et récompenses.</td></tr>
+        <tr class="lex-WA"><td class="abbr-WA">[WA]</td><td>Wild Area</td><td>Zone Sauvage</td><td>Apparitions spéciales dans la nature.</td></tr>
+        <tr class="lex-E"><td class="abbr-E">[E]</td><td>Event</td><td>Événement</td><td>Événement global ou local.</td></tr>
+        <tr class="lex-S"><td class="abbr-S">[S]</td><td>Tales of Transformation</td><td>Transformation fabuleuse</td><td>Événement spécial avec Pokémon et mécaniques uniques.</td></tr>
+        <tr class="lex-MM"><td class="abbr-MM">[MM]</td><td>Max Monday</td><td>Lundi Max</td><td>Raids Dynamax spéciaux.</td></tr>
+        <tr class="lex-RD"><td class="abbr-RD">[RD]</td><td>Raid Day</td><td>Journée de Raids</td><td>Raids concentrés sur un Pokémon.</td></tr>
+        <tr class="lex-RW"><td class="abbr-RW">[RW]</td><td>Raid Weekend</td><td>Week-end de Raids</td><td>Raids intensifs sur plusieurs jours.</td></tr>
+        <tr class="lex-GP"><td class="abbr-GP">[GP]</td><td>GO Pass</td><td>Passe GO</td><td>Bonus liés au Pass GO de la période en cours.</td></tr>
+        <tr class="lex-CS"><td class="abbr-CS">[CS]</td><td>City Safari</td><td>Safari en Ville</td><td>Événement spécial en ville.</td></tr>
+      </tbody>
+    </table>
   </div>
+
+  <footer>by SneakyOnTv</footer>
 </div>
 
 <script>
 function generateLink() {
   const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e => e.value);
-  if(selectedTags.length===0){alert("Veuillez cocher au moins un événement !"); return;}
-  const apiBase = "https://pokemon-go-calendar-fr.vercel.app/api/calendar";
-  const finalURL = apiBase + "?tags=" + encodeURIComponent(selectedTags.join(","));
-  document.getElementById("linkContainer").innerHTML = `Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>`;
+  if (selectedTags.length === 0) { alert("Veuillez cocher au moins un événement !"); return; }
+  const baseURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=";
+  const finalURL = baseURL + encodeURIComponent(selectedTags.join(","));
+  const container = document.getElementById("linkContainer");
+  container.innerHTML = `<div>Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>
+  <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
+}
+function copyLink(url) {
+  navigator.clipboard.writeText(url).then(()=>alert("Lien copié !")).catch(()=>alert("Impossible de copier le lien."));
+}
+
+// Hover dynamique tag ↔ lexique
+document.querySelectorAll('.tag, .lex-RH, .lex-RB, .lex-PSH, .lex-CD, .lex-GBL, .lex-WA, .lex-E, .lex-S, .lex-MM, .lex-RD, .lex-RW, .lex-GP, .lex-CS').forEach(el=>{
+  el.addEventListener('mouseenter', ()=>highlightTag(el.dataset.tag,true));
+  el.addEventListener('mouseleave', ()=>highlightTag(el.dataset.tag,false));
+});
+function highlightTag(tag,state){
+  if(!tag) return;
+  document.querySelectorAll(`[data-tag="${tag}"]`).forEach(el=>{
+    if(state) el.classList.add('highlight'); else el.classList.remove('highlight');
+  });
 }
 
 // Synchronisation tag ↔ lexique
-document.querySelectorAll('.tag input').forEach(cb=>{
-  cb.addEventListener('change',()=>{
-    const tag=cb.id;
-    document.querySelectorAll(`.lex-${tag}`).forEach(el=>{
-      cb.checked ? el.classList.add('highlight') : el.classList.remove('highlight');
-    });
+document.querySelectorAll('input[name="tags"]').forEach(checkbox=>{
+  checkbox.addEventListener('change',()=>{
+    const tag=checkbox.id;
+    const rows=document.querySelectorAll(`.lex-${tag}`);
+    rows.forEach(r=>{ if(checkbox.checked) r.classList.add('highlight'); else r.classList.remove('highlight'); });
   });
 });
 </script>
