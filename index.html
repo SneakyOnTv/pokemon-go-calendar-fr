@@ -173,10 +173,15 @@
 <script>
 function generateLink() {
   const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked')).map(e => e.value);
-  if(selectedTags.length === 0) { alert("Veuillez cocher au moins un événement !"); return; }
+  if (selectedTags.length === 0) {
+    alert("Veuillez cocher au moins un événement !");
+    return;
+  }
+
   const baseURL = "https://pokemon-go-calendar-fr.vercel.app/api/calendar?tags=";
   const finalURL = baseURL + encodeURIComponent(selectedTags.join(","));
   const container = document.getElementById("linkContainer");
+
   container.innerHTML = `<div>Voici votre lien ICS : <a href="${finalURL}" target="_blank">${finalURL}</a>
   <button onclick="copyLink('${finalURL}')">Copier le lien</button></div>`;
 }
@@ -204,7 +209,6 @@ document.querySelectorAll('.clickable-row').forEach(row => {
     const tag = row.dataset.tag;
     const checkbox = document.getElementById(tag);
     if(checkbox) checkbox.checked = !checkbox.checked;
-    // Synchronisation tag ↔ lexique
     const rows = document.querySelectorAll(`.lex-${tag}`);
     rows.forEach(r => {
       if(checkbox.checked) r.classList.add('highlight'); else r.classList.remove('highlight');
@@ -212,7 +216,7 @@ document.querySelectorAll('.clickable-row').forEach(row => {
   });
 });
 
-// Synchronisation tag ↔ lexique pour cocher directement depuis la grille
+// Synchronisation tag ↔ lexique
 document.querySelectorAll('input[name="tags"]').forEach(checkbox => {
   checkbox.addEventListener('change', () => {
     const tag = checkbox.id;
@@ -223,5 +227,6 @@ document.querySelectorAll('input[name="tags"]').forEach(checkbox => {
   });
 });
 </script>
+
 </body>
 </html>
