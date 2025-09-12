@@ -24,16 +24,16 @@
 
   <div class="tag-container">
     <div class="tag"><input type="checkbox" id="RH" name="tags" value="RH"><label for="RH">[RH] Heure de Raid</label></div>
-    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Community Day</label></div>
-    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] Go Battle League</label></div>
-    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Wild Area</label></div>
-    <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Pokémon Spotlight Hour</label></div>
+    <div class="tag"><input type="checkbox" id="CD" name="tags" value="CD"><label for="CD">[CD] Journée Communauté</label></div>
+    <div class="tag"><input type="checkbox" id="GBL" name="tags" value="GBL"><label for="GBL">[GBL] Ligue de Combat GO</label></div>
+    <div class="tag"><input type="checkbox" id="WA" name="tags" value="WA"><label for="WA">[WA] Zone Sauvage</label></div>
+    <div class="tag"><input type="checkbox" id="PSH" name="tags" value="PSH"><label for="PSH">[PSH] Heure vedette Pokémon</label></div>
     <div class="tag"><input type="checkbox" id="E" name="tags" value="E"><label for="E">[E] Événement spécial</label></div>
-    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Max Monday</label></div>
-    <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Raid Day</label></div>
+    <div class="tag"><input type="checkbox" id="MM" name="tags" value="MM"><label for="MM">[MM] Lundi Max</label></div>
+    <div class="tag"><input type="checkbox" id="RD" name="tags" value="RD"><label for="RD">[RD] Journée de Raids</label></div>
     <div class="tag"><input type="checkbox" id="RW" name="tags" value="RW"><label for="RW">[RW] Raid Weekend</label></div>
     <div class="tag"><input type="checkbox" id="GP" name="tags" value="GP"><label for="GP">[GP] Passe GO</label></div>
-    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] Catch Special</label></div>
+    <div class="tag"><input type="checkbox" id="CS" name="tags" value="CS"><label for="CS">[CS] City Safari</label></div>
     <div class="tag"><input type="checkbox" id="S" name="tags" value="S"><label for="S">[S] Tales of Transformation</label></div>
   </div>
 
@@ -43,47 +43,37 @@
 
   <div id="lexique">
     <h3>Lexique des tags :</h3>
-    <p>[RH] → Raid Hour → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
-    <p>[CD] → Community Day → Journée communautaire avec un Pokémon vedette et bonus spéciaux.</p>
-    <p>[GBL] → Go Battle League → Ligues de combat PvP avec différentes règles et récompenses.</p>
-    <p>[WA] → Wild Area → Zones spéciales avec Pokémon rares et bonus.</p>
-    <p>[PSH] → Pokémon Spotlight Hour → Pokémon mis en avant pendant 1 heure avec bonus.</p>
-    <p>[E] → Événement spécial → Événements uniques ou temporaires.</p>
-    <p>[MM] → Max Monday → Événements Dynamax hebdomadaires.</p>
-    <p>[RD] → Raid Day → Journée spéciale de raids avec Pokémon spécifiques.</p>
-    <p>[RW] → Raid Weekend → Raids spéciaux sur le week-end.</p>
-    <p>[GP] → Passe GO → Bonus liés au Pass GO de la période en cours.</p>
-    <p>[CS] → Catch Special → Objectifs de capture spéciaux.</p>
-    <p>[S] → Tales of Transformation → Événement saison 20 : Tales of Transformation.</p>
+    <p>[RH] → Heure de Raid : Raids spéciaux concentrés sur un Pokémon.</p>
+    <p>[CD] → Journée Communauté : Événement avec un Pokémon vedette et bonus spéciaux.</p>
+    <p>[GBL] → Ligue de Combat GO : Combats PvP avec règles et récompenses.</p>
+    <p>[WA] → Zone Sauvage : Apparitions spéciales dans la nature.</p>
+    <p>[PSH] → Heure vedette Pokémon : Pokémon mis en avant pendant 1 heure avec bonus.</p>
+    <p>[E] → Événement spécial : Événements uniques ou temporaires.</p>
+    <p>[MM] → Lundi Max : Raids Dynamax hebdomadaires.</p>
+    <p>[RD] → Journée de Raids : Raids concentrés sur un Pokémon spécifique.</p>
+    <p>[RW] → Raid Weekend : Raids spéciaux sur le week-end.</p>
+    <p>[GP] → Passe GO : Bonus liés au Pass GO de la période en cours.</p>
+    <p>[CS] → City Safari : Événements spéciaux en ville.</p>
+    <p>[S] → Tales of Transformation : Événement saison 20.</p>
   </div>
 </div>
 
 <script>
-async function generateLink() {
+function generateLink() {
   const selectedTags = Array.from(document.querySelectorAll('input[name="tags"]:checked'))
                             .map(e => e.value);
 
-  if (selectedTags.length === 0) {
+  if(selectedTags.length === 0) {
     alert("Veuillez cocher au moins un événement !");
     return;
   }
 
+  // Lien vers l'API Vercel
   const apiBase = "https://pokemon-go-calendar-fr.vercel.app/api/calendar";
   const apiURL = apiBase + "?tags=" + encodeURIComponent(selectedTags.join(","));
 
-  try {
-    const response = await fetch(apiURL);
-    if (!response.ok) throw new Error("Erreur lors de la génération du calendrier");
-
-    const blob = await response.blob();
-    const url = URL.createObjectURL(blob);
-
-    const linkContainer = document.getElementById("linkContainer");
-    linkContainer.innerHTML = `Voici votre lien ICS : <a href="${url}" download="pokemon-go.ics">Télécharger le calendrier filtré</a>`;
-  } catch (error) {
-    console.error(error);
-    alert("Une erreur est survenue, veuillez réessayer !");
-  }
+  const linkContainer = document.getElementById("linkContainer");
+  linkContainer.innerHTML = `Voici votre lien ICS : <a href="${apiURL}" target="_blank">Télécharger le calendrier filtré</a>`;
 }
 </script>
 
