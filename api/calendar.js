@@ -1,8 +1,6 @@
+const ICS_URL = "https://github.com/SneakyOnTv/pokemon-go-calendar-fr/releases/latest/download/calendar.ics";
 
-
-const ICS_URL = "https://raw.githubusercontent.com/SneakyOnTv/pokemon-go-calendar-fr/main/calendar/gocal_fr.ics";
-
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   try {
     const { tags } = req.query;
 
@@ -13,12 +11,13 @@ export default async function handler(req, res) {
 
     const selectedTags = tags.split(",");
 
-    // Récupérer le fichier ICS depuis GitHub
+    // Récupérer le fichier ICS depuis GitHub avec fetch natif Vercel
     const response = await fetch(ICS_URL);
     if (!response.ok) {
-      res.status(500).send("Impossible de récupérer le calendrier.");
+      res.status(500).send("Impossible de récupérer le calendrier depuis GitHub.");
       return;
     }
+
     let icsData = await response.text();
 
     // Filtrer les événements selon les tags sélectionnés
@@ -35,7 +34,7 @@ export default async function handler(req, res) {
     res.status(200).send(finalICS);
 
   } catch (err) {
-    console.error(err);
+    console.error("Erreur calendar.js :", err);
     res.status(500).send("Erreur interne du serveur.");
   }
-}
+};
