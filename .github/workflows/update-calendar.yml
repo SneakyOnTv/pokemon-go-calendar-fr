@@ -3,10 +3,10 @@ name: Génération & déploiement calendrier FR
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 4 * * *"    # 06h00 Paris
-    - cron: "0 10 * * *"   # 12h00 Paris
-    - cron: "0 16 * * *"   # 18h00 Paris
-    - cron: "1 22 * * *"   # 00h01 Paris
+  - cron: "0 3 * * *"    # 05h00 Paris (Maj & notif prête entre 05h40 a 06h00)
+  - cron: "0 9 * * *"    # 11h00 Paris (Maj & notif prête entre 11h40 a 12h00)
+  - cron: "0 15 * * *"   # 17h00 Paris (Maj & notif prête entre 17h40 a 18h00)
+  - cron: "1 21 * * *"   # 23h01 Paris (Maj & notif prête entre 23h40 a 00h00)
 
 
 jobs:
