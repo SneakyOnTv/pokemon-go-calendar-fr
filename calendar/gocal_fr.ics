@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:completely-normal-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Completely Normal
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Événement Complètement normal-2025/
 URL:https://leekduck.com/events/completely-normal-2025/
@@ -24,7 +24,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-bangkok-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CS] Bangkok\, Thailand - Pokémon GO City Safari
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-bangkok-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-bangkok-2025/
@@ -39,7 +39,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-amsterdam-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CS] Amsterdam\, Netherlands - Pokémon GO City Safari
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-amsterdam-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-amsterdam-2025/
@@ -54,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-valencia-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CS] Valencia\, Spain - Pokémon GO City Safari
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-valencia-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-valencia-2025/
@@ -69,7 +69,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-cancun-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CS] Cancún\, Mexico - Pokémon GO City Safari
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-cancun-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-cancun-2025/
@@ -84,7 +84,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-vancouver-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CS] Vancouver\, Canada - Pokémon GO City Safari
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-vancouver-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-vancouver-2025/
@@ -99,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-camerupt-raid-day-september-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RD] Mega Camérupt Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/mega-Camérupt-raid-Journée-september-2025/
 URL:https://leekduck.com/events/mega-camerupt-raid-day-september-2025/
@@ -113,8 +113,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:camerupt-dudunsparce-showcase
+DTSTAMP:20250927T002707Z
+SUMMARY:[PS] Camérupt et DuInsolourdo PokéStop Showcases
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Camérupt-duInsolourdo-showcase/
+URL:https://leekduck.com/events/camerupt-dudunsparce-showcase/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokestop-showcases-default.jpg
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PS] Camérupt et DuInsolourdo PokéStop Showcases
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:mega-kangaskhan-lopunny-in-mega-raids-september-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Kangourex et Mega Lockpin dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Kangourex-Lockpin-in-mega-Raids-september-2025/
 URL:https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-september-2025/
@@ -129,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-1
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-1/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-1/
@@ -144,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-09-30
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[PSH] Galekid Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-09-30/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-09-30/
@@ -159,7 +174,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251001
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RH] Dialga (Origin Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251001/
 URL:https://leekduck.com/events/raidhour20251001/
@@ -174,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-metagross-raid-day-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RD] Mega Métalosse Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/mega-Métalosse-raid-Journée-october-2025/
 URL:https://leekduck.com/events/mega-metagross-raid-day-october-2025/
@@ -189,7 +204,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-09-29
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[MM] Dynamax Terhal during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-09-29/
 URL:https://leekduck.com/events/max-mondays-2025-09-29/
@@ -204,7 +219,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-september-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GP] GO Pass: September
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-september-2025/
 URL:https://leekduck.com/events/go-pass-september-2025/
@@ -219,7 +234,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dialga-in-5-star-raid-battles-september-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Dialga dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Dialga-in-5-star-raid-battles-september-october-2025/
 URL:https://leekduck.com/events/dialga-in-5-star-raid-battles-september-october-2025/
@@ -234,7 +249,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-steel-fighting-in-mega-raids-september-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Steelix\, Cizayox\, et Lucario dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-steel-fighting-in-mega-Raids-september-october-2025/
 URL:https://leekduck.com/events/mega-steel-fighting-in-mega-raids-september-october-2025/
@@ -249,7 +264,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_fantasy-cup-great-league-edition
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Super Ligue et Fantasy Coupe: Super Ligue Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_fantasy-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_fantasy-cup-great-league-edition/
@@ -264,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-10-07
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[PSH] Grindur Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-10-07/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-10-07/
@@ -279,7 +294,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:steel-skyline-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Steel Skyline
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/steel-skyline-2025/
 URL:https://leekduck.com/events/steel-skyline-2025/
@@ -294,7 +309,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251008
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RH] Deoxys (Normal &amp\; Defense Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251008/
 URL:https://leekduck.com/events/raidhour20251008/
@@ -309,7 +324,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CD] Nucléos Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/october-CommunautéJournée2025/
 URL:https://leekduck.com/events/october-communityday2025/
@@ -324,7 +339,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-10-06
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[MM] Dynamax Rototaupe during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-10-06/
 URL:https://leekduck.com/events/max-mondays-2025-10-06/
@@ -339,7 +354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:deoxys-normal-defense-in-5-star-raid-battles-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Deoxys (Normal &amp\; Defense Forme) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Deoxys-normal-defense-in-5-star-raid-battles-october-2025/
 URL:https://leekduck.com/events/deoxys-normal-defense-in-5-star-raid-battles-october-2025/
@@ -354,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-sceptile-mega-blaziken-mega-swampert-in-mega-raids-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Jungko\, Mega Braségali\, et Mega LGaleking dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Jungko-mega-Braségali-mega-LGaleking-in-mega-Raids-october-2025/
 URL:https://leekduck.com/events/mega-sceptile-mega-blaziken-mega-swampert-in-mega-raids-october-2025/
@@ -369,7 +384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_ultra-Ligue_jungle-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition/
@@ -384,7 +399,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-10-14
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[PSH] Chlorobule Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-10-14/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-10-14/
@@ -399,7 +414,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xp-celebration-event-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Celebration XP
 DESCRIPTION:Starts at 13:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/xp-celebration-Événement-2025/
 URL:https://leekduck.com/events/xp-celebration-event-2025/
@@ -414,7 +429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251015
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RH] Deoxys (Attack &amp\; Speed Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251015/
 URL:https://leekduck.com/events/raidhour20251015/
@@ -429,7 +444,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:harvest-festival-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Harvest Festival
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/harvest-festival-2025/
 URL:https://leekduck.com/events/harvest-festival-2025/
@@ -444,13 +459,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-rayquaza-raid-day-november-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RD] Mega Rayquaza Raid Journée
-DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-Rayquaza-raid-Journée-november-2025/
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/mega-Rayquaza-raid-Journée-november-2025/
 URL:https://leekduck.com/events/mega-rayquaza-raid-day-november-2025/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-10-18-mega-rayquaza-raid-day-november-2025/mega-rayquaza-raid-day.jpg
-DTSTART:20251018T100000
-DTEND:20251018T200000
+DTSTART:20251018T140000
+DTEND:20251018T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[RD] Mega Rayquaza Raid Journée
@@ -459,7 +474,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-10-13
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[MM] Dynamax Croquine during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-10-13/
 URL:https://leekduck.com/events/max-mondays-2025-10-13/
@@ -474,7 +489,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-legends-za-celebration-event-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Pokémon Legends: Z-A Celebration Événement
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-legends-za-celebration-Événement-2025/
 URL:https://leekduck.com/events/pokemon-legends-za-celebration-event-2025/
@@ -489,7 +504,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:deoxys-attack-speed-in-5-star-raid-battles-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Deoxys (Attack &amp\; Speed Forme) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Deoxys-attack-speed-in-5-star-raid-battles-october-2025/
 URL:https://leekduck.com/events/deoxys-attack-speed-in-5-star-raid-battles-october-2025/
@@ -504,7 +519,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-mawile-mega-salamence-in-mega-raids-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Mysdibule et Mega Drattak dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Mysdibule-mega-Drattak-in-mega-Raids-october-2025/
 URL:https://leekduck.com/events/mega-mawile-mega-salamence-in-mega-raids-october-2025/
@@ -519,7 +534,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_master-premier_great-league-remix
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Master Premier et Super Ligue Remix | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_master-premier_Super-Ligue-remix/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_master-premier_great-league-remix/
@@ -534,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-10-21
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[PSH] Fantominus Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-10-21/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-10-21/
@@ -549,7 +564,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251022
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RH] Genesect Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251022/
 URL:https://leekduck.com/events/raidhour20251022/
@@ -564,7 +579,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-10-20
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[MM] Dynamax Fantominus during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-10-20/
 URL:https://leekduck.com/events/max-mondays-2025-10-20/
@@ -579,7 +594,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-battle-weekend-tales-of-transformation
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] GO Battle Weekend: Transformations fabuleuses
 DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/go-battle-weekend-tales-of-transformation/
 URL:https://leekduck.com/events/go-battle-weekend-tales-of-transformation/
@@ -594,7 +609,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2025-part-i
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Halloween 2025 Part I
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/halloween-2025-part-i/
 URL:https://leekduck.com/events/halloween-2025-part-i/
@@ -609,7 +624,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:genesect-douse-shock-in-5-star-raid-battles-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Genesect (Douse &amp\; Shock Drive) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Genesect-douse-shock-in-5-star-raid-battles-october-2025/
 URL:https://leekduck.com/events/genesect-douse-shock-in-5-star-raid-battles-october-2025/
@@ -624,7 +639,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-houndoom-mega-absol-in-mega-raids-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Démolosse et Mega Absol dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Démolosse-mega-Absol-in-mega-Raids-october-2025/
 URL:https://leekduck.com/events/mega-houndoom-mega-absol-in-mega-raids-october-2025/
@@ -639,7 +654,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-2
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Transformations fabuleuses
 DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-2/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-2/
@@ -654,7 +669,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-10-28
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[PSH] Sinistea Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-10-28/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-10-28/
@@ -669,7 +684,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251029
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RH] Giratina (Origin Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251029/
 URL:https://leekduck.com/events/raidhour20251029/
@@ -684,7 +699,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-10-27
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[MM] Dynamax Chovsourir during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-10-27/
 URL:https://leekduck.com/events/max-mondays-2025-10-27/
@@ -699,7 +714,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2025-part-ii
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Halloween 2025 Part II
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/halloween-2025-part-ii/
 URL:https://leekduck.com/events/halloween-2025-part-ii/
@@ -714,7 +729,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:giratina-altered-in-5-star-raid-battles-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Giratina (Altered Forme) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Giratina-altered-in-5-star-raid-battles-october-2025/
 URL:https://leekduck.com/events/giratina-altered-in-5-star-raid-battles-october-2025/
@@ -729,7 +744,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-gengar-mega-sableye-mega-banette-in-mega-raids-october-2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[RB] Mega Ectoplasma\, Mega Ténéfix\, et Mega Branette dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Ectoplasma-mega-Ténéfix-mega-Branette-in-mega-Raids-october-2025/
 URL:https://leekduck.com/events/mega-gengar-mega-sableye-mega-banette-in-mega-raids-october-2025/
@@ -744,7 +759,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_halloween-cup-great-league-edition
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Super Ligue et Halloween Coupe: Super Ligue Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_halloween-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_halloween-cup-great-league-edition/
@@ -759,7 +774,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-wild-area-2025-nagasaki-japan
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[WA] Pokémon GO Wild Area: Nagasaki
 DESCRIPTION:Starts at 00:00\, ends at 08:00.\n\nhttps://leekduck.com/Événements/pokemon-go-wild-area-2025-nagasaki-japan/
 URL:https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/
@@ -774,7 +789,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Ultra Ligue et Jungle Coupe: Super Ligue Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_ultra-Ligue_jungle-Coupe-Super-Ligue-Édition-2/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2/
@@ -789,7 +804,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-wild-area-2025-global
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[WA] Pokémon GO Wild Area: Global
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-wild-area-2025-global/
 URL:https://leekduck.com/events/pokemon-go-wild-area-2025-global/
@@ -804,7 +819,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_great-league_ultra-league_master-league-split-3
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Transformations fabuleuses
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_Super-Ligue_ultra-Ligue_master-Ligue-split-3/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-3/
@@ -819,7 +834,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] 2025 Championship Series Coupe et Master Ligue: Mega Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_2025-championship-series-Coupe_master-Ligue-mega-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition/
@@ -834,7 +849,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2025
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[CD] November Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/november-CommunautéJournée2025/
 URL:https://leekduck.com/events/november-communityday2025/
@@ -849,7 +864,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:trade-days-tales-of-transformation
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[E] Échange Journées | Transformations fabuleuses
 DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/Échange-Journées-tales-of-transformation/
 URL:https://leekduck.com/events/trade-days-tales-of-transformation/
@@ -864,7 +879,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-20-tales-of-transformation
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[S] Transformations fabuleuses
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-20-tales-of-transformation/
 URL:https://leekduck.com/events/season-20-tales-of-transformation/
@@ -879,7 +894,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league
-DTSTAMP:20250926T002801Z
+DTSTAMP:20250927T002707Z
 SUMMARY:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Master Ligue
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_catch-Coupe-tales-of-transformation-Super-Édition_ultra-Ligue_master-Ligue/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league/
