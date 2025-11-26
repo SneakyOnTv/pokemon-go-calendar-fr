@@ -8,68 +8,8 @@ X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
-UID:max-mondays-2025-11-24
-DTSTAMP:20251125T002854Z
-SUMMARY:[MM] Dynamax Évoli during Max MonJournée
-DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-11-24/
-URL:https://leekduck.com/events/max-mondays-2025-11-24/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
-DTSTART:20251124T180000
-DTEND:20251124T190000
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Évoli during Max MonJournée
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:dynamax-eevee-max-battle-weekend
-DTSTAMP:20251125T002854Z
-SUMMARY:[MB] Dynamax Évoli Max Battle Weekend
-DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/dynamax-Évoli-max-battle-weekend/
-URL:https://leekduck.com/events/dynamax-eevee-max-battle-weekend/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-11-21-dynamax-eevee-max-battle-weekend/dynamax-eevee-weekend.jpg
-DTSTART;VALUE=DATE:20251121
-DTEND;VALUE=DATE:20251124
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[MB] Dynamax Évoli Max Battle Weekend
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:heatran-in-5-star-raid-battles-november-2025
-DTSTAMP:20251125T002854Z
-SUMMARY:[RB] Heatran dans un raid 5 étoiles
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Heatran-in-5-star-raid-battles-november-2025/
-URL:https://leekduck.com/events/heatran-in-5-star-raid-battles-november-2025/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/heatran-raids.jpg
-DTSTART;VALUE=DATE:20251118
-DTEND;VALUE=DATE:20251125
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[RB] Heatran dans un raid 5 étoiles
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:mega-ampharos-manectric-in-mega-raids-november-2025
-DTSTAMP:20251125T002854Z
-SUMMARY:[RB] Mega Pharamp et Mega Élecsprint dans Mega Raids
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Pharamp-Élecsprint-in-mega-Raids-november-2025/
-URL:https://leekduck.com/events/mega-ampharos-manectric-in-mega-raids-november-2025/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
-DTSTART;VALUE=DATE:20251118
-DTEND;VALUE=DATE:20251125
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[RB] Mega Pharamp et Mega Élecsprint dans Mega Raids
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[GBL] 2025 Championship Series Coupe et Master Ligue: Mega Édition | Transformations fabuleuses
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_2025-championship-series-Coupe_master-Ligue-mega-Édition/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition/
@@ -84,7 +24,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2025-11-25
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[PSH] Baggiguane Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2025-11-25/
 URL:https://leekduck.com/events/pokemonspotlighthour2025-11-25/
@@ -99,7 +39,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20251126
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RH] Cobaltium\, Terrakium\, et Viridium Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20251126/
 URL:https://leekduck.com/events/raidhour20251126/
@@ -114,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-showcase-fighting-type
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[PS] Fighting-type PokéStop Showcases
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-showcase-fighting-type/
 URL:https://leekduck.com/events/pokemon-showcase-fighting-type/
@@ -129,7 +69,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CD] Picassaut Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/november-CommunautéJournée2025/
 URL:https://leekduck.com/events/november-communityday2025/
@@ -144,7 +84,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:final-justice-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[E] Final Justice
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/final-justice-2025/
 URL:https://leekduck.com/events/final-justice-2025/
@@ -159,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dynamax-lugia-max-battle-weekend
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[MB] Dynamax Lugia Max Battle Weekend
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/dynamax-Lugia-max-battle-weekend/
 URL:https://leekduck.com/events/dynamax-lugia-max-battle-weekend/
@@ -174,7 +114,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:trade-days-tales-of-transformation
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[E] Échange Journées | Transformations fabuleuses
 DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/Échange-Journées-tales-of-transformation/
 URL:https://leekduck.com/events/trade-days-tales-of-transformation/
@@ -189,7 +129,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2025-12-01
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[MM] Dynamax DarumGalekidd during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2025-12-01/
 URL:https://leekduck.com/events/max-mondays-2025-12-01/
@@ -204,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-november-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[GP] GO Pass: November
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-november-2025/
 URL:https://leekduck.com/events/go-pass-november-2025/
@@ -219,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-20-tales-of-transformation
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[S] Transformations fabuleuses
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-20-tales-of-transformation/
 URL:https://leekduck.com/events/season-20-tales-of-transformation/
@@ -234,7 +174,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cobalion-terrakion-virizion-in-5-star-raid-battles-november-december-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RB] Cobaltium\, Terrakium\, et Viridium dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Cobaltium-Terrakium-Viridium-in-5-star-raid-battles-november-december-2025/
 URL:https://leekduck.com/events/cobalion-terrakion-virizion-in-5-star-raid-battles-november-december-2025/
@@ -249,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-aerodactyl-medicham-garchomp-in-mega-raids-november-december-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RB] Mega Ptéra\, Mega Charmina\, et Mega Carchacrok dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Ptéra-Charmina-Carchacrok-in-mega-Raids-november-december-2025/
 URL:https://leekduck.com/events/mega-aerodactyl-medicham-garchomp-in-mega-raids-november-december-2025/
@@ -264,7 +204,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[GBL] Coupe Catch : Transformations fabuleuses : Édition Super\, Ultra Ligue et Master Ligue
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-tales-of-transformation_catch-Coupe-tales-of-transformation-Super-Édition_ultra-Ligue_master-Ligue/
 URL:https://leekduck.com/events/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league/
@@ -279,7 +219,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-latios-in-shadow-raids-november-december-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RB] Shadow Latios dans Shadow Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Latios-in-shadow-Raids-november-december-2025/
 URL:https://leekduck.com/events/shadow-latios-in-shadow-raids-november-december-2025/
@@ -294,7 +234,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:december-communityday2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CD] December Communauté Journée 2025
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/december-CommunautéJournée2025/
 URL:https://leekduck.com/events/december-communityday2025/
@@ -308,8 +248,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:journey-to-paldea
+DTSTAMP:20251126T003049Z
+SUMMARY:[E] Journey to Paldea
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/journey-to-paldea/
+URL:https://leekduck.com/events/journey-to-paldea/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-12-02-journey-to-paldea/journey-to-paldea.jpg
+DTSTART;VALUE=DATE:20251202
+DTEND;VALUE=DATE:20251209
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] Journey to Paldea
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:pokemon-go-city-safari-sydney-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CS] Sydney\, Australia - Pokémon GO City Safari
 DESCRIPTION:Starts at 23:00\, ends at 07:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-sydney-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/
@@ -324,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-buenos-aires-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CS] Buenos Aires\, Argentina - Pokémon GO City Safari
 DESCRIPTION:Starts at 13:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-buenos-aires-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/
@@ -339,7 +294,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-city-safari-miami-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CS] Miami\, USA - Pokémon GO City Safari
 DESCRIPTION:Starts at 15:00\, ends at 23:00.\n\nhttps://leekduck.com/Événements/pokemon-go-city-safari-miami-2025/
 URL:https://leekduck.com/events/pokemon-go-city-safari-miami-2025/
@@ -354,7 +309,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-december-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-december-2025/
 URL:https://leekduck.com/events/max-battle-day-december-2025/
@@ -369,7 +324,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:research-day-december-2025
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RD] Recherche Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/Recherche-Journée-december-2025/
 URL:https://leekduck.com/events/research-day-december-2025/
@@ -384,7 +339,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:january-communitydayclassic2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CD] January Communauté Journée Classic
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/january-CommunautéJournéeclassic2026/
 URL:https://leekduck.com/events/january-communitydayclassic2026/
@@ -399,7 +354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-january-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-january-2026/
 URL:https://leekduck.com/events/raid-day-january-2026/
@@ -414,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:january-communityday2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CD] January Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/january-CommunautéJournée2026/
 URL:https://leekduck.com/events/january-communityday2026/
@@ -429,7 +384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-raid-day-january-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RD] Shadow Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/shadow-raid-Journée-january-2026/
 URL:https://leekduck.com/events/shadow-raid-day-january-2026/
@@ -444,7 +399,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:february-communityday2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[CD] February Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/february-CommunautéJournée2026/
 URL:https://leekduck.com/events/february-communityday2026/
@@ -459,7 +414,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-weekend-february-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[MB] Max Battle Weekend
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-battle-weekend-february-2026/
 URL:https://leekduck.com/events/max-battle-weekend-february-2026/
@@ -474,7 +429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:catch-mastery-day-february-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[E] Catch Mastery Journée
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/catch-mastery-Journée-february-2026/
 URL:https://leekduck.com/events/catch-mastery-day-february-2026/
@@ -489,7 +444,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-february-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-february-2026/
 URL:https://leekduck.com/events/raid-day-february-2026/
@@ -504,7 +459,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-february-2026
-DTSTAMP:20251125T002854Z
+DTSTAMP:20251126T003049Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-february-2026/
 URL:https://leekduck.com/events/max-battle-day-february-2026/
@@ -514,6 +469,21 @@ DTEND:20260215T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[MB] Max Battle Journée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:season-21-precious-paths
+DTSTAMP:20251126T003049Z
+SUMMARY:[S] Precious Paths
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-21-precious-paths/
+URL:https://leekduck.com/events/season-21-precious-paths/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2025/2025-12-02-season-21-precious-paths/season-21-precious-paths.jpg
+DTSTART;VALUE=DATE:20251202
+DTEND;VALUE=DATE:20260303
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[S] Precious Paths
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
