@@ -8,23 +8,8 @@ X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
-UID:max-mondays-2026-01-19
-DTSTAMP:20260120T003208Z
-SUMMARY:[MM] Dynamax Terhal during Max MonJournée
-DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-01-19/
-URL:https://leekduck.com/events/max-mondays-2026-01-19/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
-DTSTART:20260119T180000
-DTEND:20260119T190000
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[MM] Dynamax Terhal during Max MonJournée
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:gbl-precious-paths_master-premier_retro-cup-great-league-edition
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Master Premier et Retro Coupe: Super Ligue Édition | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_master-premier_retro-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-precious-paths_master-premier_retro-cup-great-league-edition/
@@ -39,7 +24,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-01-20
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PSH] Bibichut Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-01-20/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-01-20/
@@ -54,7 +39,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260121
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RH] Fulguris (Incarnate Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260121/
 URL:https://leekduck.com/events/raidhour20260121/
@@ -69,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-showcase-fidough-dachsbun
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PS] Pâtachiot et Briochien PokéStop Showcases
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-showcase-Pâtachiot-Briochien/
 URL:https://leekduck.com/events/pokemon-showcase-fidough-dachsbun/
@@ -84,7 +69,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-raikou-raid-day-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Shadow Raikou Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/shadow-Raikou-raid-Journée-january-2026/
 URL:https://leekduck.com/events/shadow-raikou-raid-day-january-2026/
@@ -99,7 +84,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-sceptile-in-mega-raids-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RB] Mega Jungko dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Jungko-in-mega-Raids-january-2026/
 URL:https://leekduck.com/events/mega-sceptile-in-mega-raids-january-2026/
@@ -114,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:thundurus-incarnate-forme-in-5-star-raid-battles-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RB] Fulguris (Incarnate Forme) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Fulguris-incarnate-forme-in-5-star-raid-battles-january-2026/
 URL:https://leekduck.com/events/thundurus-incarnate-forme-in-5-star-raid-battles-january-2026/
@@ -129,7 +114,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:precious-pals-taken-over-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[TGR] Precious Pals: Taken Over
 DESCRIPTION:Starts at 00:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/precious-pals-taken-over-2026/
 URL:https://leekduck.com/events/precious-pals-taken-over-2026/
@@ -144,7 +129,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:precious-pals-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[E] Precious Pals
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/precious-pals-2026/
 URL:https://leekduck.com/events/precious-pals-2026/
@@ -159,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-01-26
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[MM] Dynamax Nodulithe during Max MonJournée
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-01-26/
 URL:https://leekduck.com/events/max-mondays-2026-01-26/
@@ -174,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_great-league_ultra-premier
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Super Ligue et Ultra Premier | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_Super-Ligue_ultra-premier/
 URL:https://leekduck.com/events/gbl-precious-paths_great-league_ultra-premier/
@@ -189,7 +174,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-01-27
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PSH] Trompignon Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-01-27/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-01-27/
@@ -204,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260128
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RH] Boréas (Incarnate Forme) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260128/
 URL:https://leekduck.com/events/raidhour20260128/
@@ -219,7 +204,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:february-communityday2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[CD] Goupix Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/february-CommunautéJournée2026/
 URL:https://leekduck.com/events/february-communityday2026/
@@ -234,7 +219,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:into-the-depths-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[E] Into the Depths
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/into-the-depths-2026/
 URL:https://leekduck.com/events/into-the-depths-2026/
@@ -249,7 +234,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dynamax-ho-oh-max-battle-weekend
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[MB] Dynamax Ho-Oh Max Battle Weekend
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/dynamax-Ho-Oh-max-battle-weekend/
 URL:https://leekduck.com/events/dynamax-ho-oh-max-battle-weekend/
@@ -264,7 +249,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-cresselia-in-shadow-raids-january-february-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RB] Shadow Cresselia dans Shadow Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Cresselia-in-shadow-Raids-january-february-2026/
 URL:https://leekduck.com/events/shadow-cresselia-in-shadow-raids-january-february-2026/
@@ -279,7 +264,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GP] GO Pass: January
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-january-2026/
 URL:https://leekduck.com/events/go-pass-january-2026/
@@ -294,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_great-league_ultra-league_master-league-split-3
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_Super-Ligue_ultra-Ligue_master-Ligue-split-3/
 URL:https://leekduck.com/events/gbl-precious-paths_great-league_ultra-league_master-league-split-3/
@@ -309,7 +294,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-ampharos-in-mega-raids-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RB] Mega Pharamp dans Mega Raids
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Pharamp-in-mega-Raids-january-2026/
 URL:https://leekduck.com/events/mega-ampharos-in-mega-raids-january-2026/
@@ -324,7 +309,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tornadus-incarnate-forme-in-5-star-raid-battles-january-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RB] Boréas (Incarnate Forme) dans un raid 5 étoiles
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Boréas-incarnate-forme-in-5-star-raid-battles-january-2026/
 URL:https://leekduck.com/events/tornadus-incarnate-forme-in-5-star-raid-battles-january-2026/
@@ -339,7 +324,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:catch-mastery-day-february-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[E] Catch Mastery Journée
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/catch-mastery-Journée-february-2026/
 URL:https://leekduck.com/events/catch-mastery-day-february-2026/
@@ -354,7 +339,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_ultra-league_2026-championship-series-cup
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Ultra Ligue et 2026 Championship Series Coupe | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_ultra-Ligue_2026-championship-series-Coupe/
 URL:https://leekduck.com/events/gbl-precious-paths_ultra-league_2026-championship-series-cup/
@@ -369,7 +354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-february-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-february-2026/
 URL:https://leekduck.com/events/raid-day-february-2026/
@@ -384,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-february-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-february-2026/
 URL:https://leekduck.com/events/max-battle-day-february-2026/
@@ -399,7 +384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_master-league_2026-championship-series-cup
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Master Ligue et 2026 Championship Series Coupe | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_master-Ligue_2026-championship-series-Coupe/
 URL:https://leekduck.com/events/gbl-precious-paths_master-league_2026-championship-series-cup/
@@ -414,7 +399,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-tour-kalos-tainan-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PGT] Pokémon GO Tour: Kalos - Tainan 2026
 DESCRIPTION:Starts at 01:00\, ends at 09:00.\n\nhttps://leekduck.com/Événements/pokemon-go-tour-kalos-tainan-2026/
 URL:https://leekduck.com/events/pokemon-go-tour-kalos-tainan-2026/
@@ -429,7 +414,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-night-pokemon-go-tour-kalos-tainan-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PGT] Mega Night at Pokémon GO Tour: Kalos - Tainan 2026
 DESCRIPTION:Starts at 09:00\, ends at 11:00.\n\nhttps://leekduck.com/Événements/mega-night-pokemon-go-tour-kalos-tainan-2026/
 URL:https://leekduck.com/events/mega-night-pokemon-go-tour-kalos-tainan-2026/
@@ -444,7 +429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-tour-kalos-los-angeles-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PGT] Pokémon GO Tour: Kalos - Los Angeles 2026
 DESCRIPTION:Starts at 17:00\, ends at 01:00.\n\nhttps://leekduck.com/Événements/pokemon-go-tour-kalos-los-angeles-2026/
 URL:https://leekduck.com/events/pokemon-go-tour-kalos-los-angeles-2026/
@@ -459,7 +444,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-night-pokemon-go-tour-kalos-los-angeles-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PGT] Mega Night at Pokémon GO Tour: Kalos - Los Angeles 2026
 DESCRIPTION:Starts at 02:00\, ends at 04:00.\n\nhttps://leekduck.com/Événements/mega-night-pokemon-go-tour-kalos-los-angeles-2026/
 URL:https://leekduck.com/events/mega-night-pokemon-go-tour-kalos-los-angeles-2026/
@@ -474,7 +459,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_great-league_love-cup-great-league-edition
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Super Ligue et Love Coupe: Super Ligue Édition | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_Super-Ligue_love-Coupe-Super-Ligue-Édition/
 URL:https://leekduck.com/events/gbl-precious-paths_great-league_love-cup-great-league-edition/
@@ -489,7 +474,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-tour-kalos-global-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[PGT] Pokémon GO Tour: Kalos - Global 2026
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-tour-kalos-global-2026/
 URL:https://leekduck.com/events/pokemon-go-tour-kalos-global-2026/
@@ -504,7 +489,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:masterwork-research-a-precious-catch
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[R] Masterwork Recherche: A Precious Catch
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/masterwork-Recherche-a-precious-catch/
 URL:https://leekduck.com/events/masterwork-research-a-precious-catch/
@@ -519,7 +504,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-21-precious-paths
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[S] Precious Paths
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-21-precious-paths/
 URL:https://leekduck.com/events/season-21-precious-paths/
@@ -534,7 +519,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gbl-precious-paths_great-league_ultra-league_master-league-mega-edition
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue: Mega Édition | Precious Paths
 DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-precious-paths_Super-Ligue_ultra-Ligue_master-Ligue-mega-Édition/
 URL:https://leekduck.com/events/gbl-precious-paths_great-league_ultra-league_master-league-mega-edition/
@@ -549,7 +534,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-event-march-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[S] Season Événement
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/season-Événement-march-2026/
 URL:https://leekduck.com/events/season-event-march-2026/
@@ -564,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:march-communityday2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[CD] March Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/march-CommunautéJournée2026/
 URL:https://leekduck.com/events/march-communityday2026/
@@ -579,7 +564,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:research-day-march-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Recherche Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/Recherche-Journée-march-2026/
 URL:https://leekduck.com/events/research-day-march-2026/
@@ -594,7 +579,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-march-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-march-2026/
 URL:https://leekduck.com/events/max-battle-day-march-2026/
@@ -609,7 +594,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-april-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-april-2026/
 URL:https://leekduck.com/events/raid-day-april-2026/
@@ -624,7 +609,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:april-communityday2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[CD] April Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/april-CommunautéJournée2026/
 URL:https://leekduck.com/events/april-communityday2026/
@@ -639,7 +624,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hatch-day-april-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[E] Hatch Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/hatch-Journée-april-2026/
 URL:https://leekduck.com/events/hatch-day-april-2026/
@@ -654,7 +639,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-april-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-april-2026/
 URL:https://leekduck.com/events/max-battle-day-april-2026/
@@ -669,7 +654,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-raid-day-may-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Shadow Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/shadow-raid-Journée-may-2026/
 URL:https://leekduck.com/events/shadow-raid-day-may-2026/
@@ -684,7 +669,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:may-communityday2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[CD] May Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/may-CommunautéJournée2026/
 URL:https://leekduck.com/events/may-communityday2026/
@@ -699,7 +684,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:may-communitydayclassic2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[CD] May Communauté Journée Classic
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/may-CommunautéJournéeclassic2026/
 URL:https://leekduck.com/events/may-communitydayclassic2026/
@@ -714,7 +699,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-may-2026
-DTSTAMP:20260120T003208Z
+DTSTAMP:20260121T003357Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-may-2026/
 URL:https://leekduck.com/events/raid-day-may-2026/
