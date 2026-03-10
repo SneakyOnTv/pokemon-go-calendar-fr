@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:go-tour-fairy-type-timed-research
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[R] [Promo Code] GO Tour Fairy Type Timed Recherche
 DESCRIPTION:Starts at 19:00\, ends at 00:00.\n\nhttps://leekduck.com/Événements/go-tour-fairy-type-timed-Recherche/
 URL:https://leekduck.com/events/go-tour-fairy-type-timed-research/
@@ -24,7 +24,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-30th-anniversary-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Pokémon 30th Anniversary
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-30th-anniversary-2026/
 URL:https://leekduck.com/events/pokemon-30th-anniversary-2026/
@@ -39,7 +39,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-30th-anniversary-all-out-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Pokémon 30th Anniversary: All Out
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-30th-anniversary-all-out-2026/
 URL:https://leekduck.com/events/pokemon-30th-anniversary-all-out-2026/
@@ -54,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-03-09
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[MM] Dynamax Pikachu during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-03-09/
 URL:https://leekduck.com/events/max-mondays-2026-03-09/
@@ -69,9 +69,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:articuno-zapdos-moltres-in-5-star-raid-battles-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Artikodin\, Électhor\, et Sulfura dans un raid 5 étoiles
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Artikodin-Électhor-Sulfura-in-5-star-raid-battles-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Artikodin-Électhor-Sulfura-in-5-star-raid-battles-march-2026/
 URL:https://leekduck.com/events/articuno-zapdos-moltres-in-5-star-raid-battles-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20260304
@@ -84,9 +84,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-pinsir-in-mega-raids-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Mega Scarabrute dans Mega Raids
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Scarabrute-in-mega-Raids-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-Scarabrute-in-mega-Raids-march-2026/
 URL:https://leekduck.com/events/mega-pinsir-in-mega-raids-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20260304
@@ -99,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260311
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RH] Zacian (Hero of Many Battles) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260311/
 URL:https://leekduck.com/events/raidhour20260311/
@@ -114,7 +114,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:march-communityday2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[CD] Flambino Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/march-CommunautéJournée2026/
 URL:https://leekduck.com/events/march-communityday2026/
@@ -129,7 +129,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-pokopia-celebration-event-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Pokémon Pokopia Celebration Événement
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-pokopia-celebration-Événement-2026/
 URL:https://leekduck.com/events/pokemon-pokopia-celebration-event-2026/
@@ -144,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-03-16
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[MM] Dynamax Hexadron during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-03-16/
 URL:https://leekduck.com/events/max-mondays-2026-03-16/
@@ -159,9 +159,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-steelix-in-mega-raids-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Mega Steelix dans Mega Raids
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Steelix-in-mega-Raids-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-Steelix-in-mega-Raids-march-2026/
 URL:https://leekduck.com/events/mega-steelix-in-mega-raids-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20260311
@@ -174,9 +174,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:zacian-hero-of-many-battles-in-5-star-raid-battles-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Zacian (Hero of Many Battles) dans un raid 5 étoiles
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/zacian-hero-of-many-battles-in-5-star-raid-battles-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/zacian-hero-of-many-battles-in-5-star-raid-battles-march-2026/
 URL:https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20260311
@@ -189,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260318
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RH] Zamazenta (Hero of Many Battles) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260318/
 URL:https://leekduck.com/events/raidhour20260318/
@@ -204,7 +204,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:replay-water-research-day-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RD] Replay: Water Recherche Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/replay-water-Recherche-Journée-2026/
 URL:https://leekduck.com/events/replay-water-research-day-2026/
@@ -219,7 +219,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bug-out-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Bug Out 2026
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/bug-out-2026/
 URL:https://leekduck.com/events/bug-out-2026/
@@ -234,7 +234,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-03-23
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[MM] Dynamax Regice during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-03-23/
 URL:https://leekduck.com/events/max-mondays-2026-03-23/
@@ -249,9 +249,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-slowbro-in-mega-raids-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Mega Flagadoss dans Mega Raids
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Flagadoss-in-mega-Raids-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-Flagadoss-in-mega-Raids-march-2026/
 URL:https://leekduck.com/events/mega-slowbro-in-mega-raids-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20260318
@@ -264,9 +264,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:zamazenta-hero-of-many-battles-in-5-star-raid-battles-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Zamazenta (Hero of Many Battles) dans un raid 5 étoiles
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/zamazenta-hero-of-many-battles-in-5-star-raid-battles-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/zamazenta-hero-of-many-battles-in-5-star-raid-battles-march-2026/
 URL:https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20260318
@@ -279,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260325
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RH] Regieleki Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260325/
 URL:https://leekduck.com/events/raidhour20260325/
@@ -293,23 +293,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:max-battle-day-march-2026
-DTSTAMP:20260309T004051Z
-SUMMARY:[RD] Max Battle Journée
-DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-march-2026/
-URL:https://leekduck.com/events/max-battle-day-march-2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+UID:gigantamax-pikachu-max-battle-day-2026
+DTSTAMP:20260310T003653Z
+SUMMARY:[MB] Gigantamax Pikachu Max Battle Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/gigantamax-Pikachu-max-battle-Journée-2026/
+URL:https://leekduck.com/events/gigantamax-pikachu-max-battle-day-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-03-28-gigantamax-pikachu-max-battle-day-2026/gigantamax-pikachu-max-battle-day.jpg
 DTSTART:20260328T140000
 DTEND:20260328T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Max Battle Journée
+DESCRIPTION:[MB] Gigantamax Pikachu Max Battle Journée
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-03-30
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[MM] Dynamax Chovsourir during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-03-30/
 URL:https://leekduck.com/events/max-mondays-2026-03-30/
@@ -324,9 +324,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-houndoom-in-mega-raids-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Mega Démolosse dans Mega Raids
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/mega-Démolosse-in-mega-Raids-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-Démolosse-in-mega-Raids-march-2026/
 URL:https://leekduck.com/events/mega-houndoom-in-mega-raids-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
 DTSTART;VALUE=DATE:20260325
@@ -339,9 +339,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:regieleki-in-5-star-raid-battles-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Regieleki dans un raid 5 étoiles
-DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/Regieleki-in-5-star-raid-battles-march-2026/
+DESCRIPTION:Starts at 06:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/Regieleki-in-5-star-raid-battles-march-2026/
 URL:https://leekduck.com/events/regieleki-in-5-star-raid-battles-march-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
 DTSTART;VALUE=DATE:20260325
@@ -354,7 +354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-latias-in-shadow-raids-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RB] Shadow Latias dans Shadow Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Latias-in-shadow-Raids-march-2026/
 URL:https://leekduck.com/events/shadow-latias-in-shadow-raids-march-2026/
@@ -369,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-april-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-april-2026/
 URL:https://leekduck.com/events/raid-day-april-2026/
@@ -383,23 +383,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:tbd-march-2026-week-3
-DTSTAMP:20260309T004051Z
-SUMMARY:[E] Unannounced Événement
-DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/tbd-march-2026-week-3/
-URL:https://leekduck.com/events/tbd-march-2026-week-3/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+UID:a-shockingly-good-time-2026
+DTSTAMP:20260310T003653Z
+SUMMARY:[E] A Shockingly Good Time
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/a-shockingly-good-time-2026/
+URL:https://leekduck.com/events/a-shockingly-good-time-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-03-31-a-shockingly-good-time-2026/a-shockingly-good-time.jpg
 DTSTART;VALUE=DATE:20260331
 DTEND;VALUE=DATE:20260406
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[E] Unannounced Événement
+DESCRIPTION:[E] A Shockingly Good Time
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-march-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[GP] GO Pass: March
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-march-2026/
 URL:https://leekduck.com/events/go-pass-march-2026/
@@ -414,7 +414,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:april-communityday2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[CD] April Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/april-CommunautéJournée2026/
 URL:https://leekduck.com/events/april-communityday2026/
@@ -429,7 +429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hatch-day-april-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Hatch Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/hatch-Journée-april-2026/
 URL:https://leekduck.com/events/hatch-day-april-2026/
@@ -444,7 +444,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-april-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-april-2026/
 URL:https://leekduck.com/events/max-battle-day-april-2026/
@@ -459,7 +459,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-raid-day-may-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RD] Shadow Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/shadow-raid-Journée-may-2026/
 URL:https://leekduck.com/events/shadow-raid-day-may-2026/
@@ -474,7 +474,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:may-communityday2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[CD] May Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/may-CommunautéJournée2026/
 URL:https://leekduck.com/events/may-communityday2026/
@@ -489,7 +489,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:may-communitydayclassic2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[CD] May Communauté Journée Classic
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/may-CommunautéJournéeclassic2026/
 URL:https://leekduck.com/events/may-communitydayclassic2026/
@@ -504,7 +504,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-may-2026
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[RD] Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/raid-Journée-may-2026/
 URL:https://leekduck.com/events/raid-day-may-2026/
@@ -519,7 +519,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-tokyo
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[PGF] Pokémon GO Fest 2026: Tokyo
 DESCRIPTION:Starts at 01:00\, ends at 11:00.\n\nhttps://leekduck.com/Événements/pokemon-go-fest-2026-tokyo/
 URL:https://leekduck.com/events/pokemon-go-fest-2026-tokyo/
@@ -534,7 +534,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-22-memories-in-motion
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[S] Memories dans Motion
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-22-memories-in-motion/
 URL:https://leekduck.com/events/season-22-memories-in-motion/
@@ -549,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-chicago
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[PGF] Pokémon GO Fest 2026: Chicago
 DESCRIPTION:Starts at 15:00\, ends at 01:00.\n\nhttps://leekduck.com/Événements/pokemon-go-fest-2026-chicago/
 URL:https://leekduck.com/events/pokemon-go-fest-2026-chicago/
@@ -564,7 +564,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-copenhagen
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[PGF] Pokémon GO Fest 2026: Copenhagen
 DESCRIPTION:Starts at 07:00\, ends at 16:00.\n\nhttps://leekduck.com/Événements/pokemon-go-fest-2026-copenhagen/
 URL:https://leekduck.com/events/pokemon-go-fest-2026-copenhagen/
@@ -579,7 +579,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:example_event
-DTSTAMP:20260309T004051Z
+DTSTAMP:20260310T003653Z
 SUMMARY:[E] Example Événement Template (Auto ToC Demo)
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/example_Événement/
 URL:https://leekduck.com/events/example_event/
