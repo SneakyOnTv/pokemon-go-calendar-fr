@@ -1,0 +1,580 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:GO Calendar - Everything
+X-WR-CALNAME:Calendrier PoGo Fr by SneakyOnTv
+DESCRIPTION:All Pokémon GO Événements\, dans your local time\, auto-updated et sourced from Leek Duck.
+X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv
+REFRESH-INTERVAL;VALUE=DURATION:PT1440M
+X-PUBLISHED-TTL:PT1440M
+BEGIN:VEVENT
+UID:pokemonspotlighthour2026-08-06
+DTSTAMP:20260808T015508Z
+SUMMARY:[PSH] Cadoizo Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-08-06/
+URL:https://leekduck.com/events/pokemonspotlighthour2026-08-06/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
+DTSTART:20260806T180000
+DTEND:20260806T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PSH] Cadoizo Vedette Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fire-and-ice-hatch-day-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[E] Fire et Ice Hatch Journée
+DESCRIPTION:Starts at 11:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/fire-and-ice-hatch-Journée-2026/
+URL:https://leekduck.com/events/fire-and-ice-hatch-day-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-08-fire-and-ice-hatch-day-2026/fire-and-ice-hatch-day-2026.jpg
+DTSTART:20260808T110000
+DTEND:20260808T170000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] Fire et Ice Hatch Journée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:summer-marathon-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[E] Summer Marathon: Arctic Embers
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/summer-marathon-2026/
+URL:https://leekduck.com/events/summer-marathon-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-04-summer-marathon-2026/summer-marathon-2026.jpg
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260811
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] Summer Marathon: Arctic Embers
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-10
+DTSTAMP:20260808T015508Z
+SUMMARY:[MM] Dynamax Terhal during Max MonJournée
+DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-08-10/
+URL:https://leekduck.com/events/max-mondays-2026-08-10/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
+DTSTART:20260810T060000
+DTEND:20260810T210000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[MM] Dynamax Terhal during Max MonJournée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-forever-forward_ultra-league_weather-cup-great-league-edition
+DTSTAMP:20260808T015508Z
+SUMMARY:[GBL] Ultra Ligue et Weather Coupe: Super Ligue Édition | Forever Forward
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_ultra-Ligue_weather-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-forever-forward_ultra-league_weather-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260812
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Ultra Ligue et Weather Coupe: Super Ligue Édition | Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-blaziken-in-mega-raids-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Mega Braségali dans Mega Raids
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Braségali-in-mega-Raids-august-2026/
+URL:https://leekduck.com/events/mega-blaziken-in-mega-raids-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260812
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Mega Braségali dans Mega Raids
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uxie-mesprit-azelf-in-5-star-raid-battles-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Créhelf\, Créfollet\, et Créfadet dans un raid 5 étoiles
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/Créhelf-Créfollet-Créfadet-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/uxie-mesprit-azelf-in-5-star-raid-battles-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260812
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Créhelf\, Créfollet\, et Créfadet dans un raid 5 étoiles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260812
+DTSTAMP:20260808T015508Z
+SUMMARY:[RH] Groudon Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260812/
+URL:https://leekduck.com/events/raidhour20260812/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
+DTSTART:20260812T180000
+DTEND:20260812T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RH] Groudon Raid Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemonspotlighthour2026-08-13
+DTSTAMP:20260808T015508Z
+SUMMARY:[PSH] Chenipotte Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-08-13/
+URL:https://leekduck.com/events/pokemonspotlighthour2026-08-13/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
+DTSTART:20260813T180000
+DTEND:20260813T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PSH] Chenipotte Vedette Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:august-communityday2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[CD] Goupilou Communauté Journée
+DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/august-CommunautéJournée2026/
+URL:https://leekduck.com/events/august-communityday2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-16-august-communityday2026/nickit-august-cd-2026.jpg
+DTSTART:20260816T140000
+DTEND:20260816T170000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[CD] Goupilou Communauté Journée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:choose-your-path-venom-and-vines-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[CYP] Choose Your Path: Venom et Vines
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/choose-your-path-venom-and-vines-2026/
+URL:https://leekduck.com/events/choose-your-path-venom-and-vines-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/choose-your-path-evergreen.jpg
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260818
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[CYP] Choose Your Path: Venom et Vines
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-17
+DTSTAMP:20260808T015508Z
+SUMMARY:[MM] Dynamax Magicarpe during Max MonJournée
+DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-08-17/
+URL:https://leekduck.com/events/max-mondays-2026-08-17/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
+DTSTART:20260817T060000
+DTEND:20260817T210000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[MM] Dynamax Magicarpe during Max MonJournée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-forever-forward_master-league_evolution-cup-great-league-edition
+DTSTAMP:20260808T015508Z
+SUMMARY:[GBL] Master Ligue et Evolution Coupe: Super Ligue Édition | Forever Forward
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_master-Ligue_evolution-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-forever-forward_master-league_evolution-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260819
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Master Ligue et Evolution Coupe: Super Ligue Édition | Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:groudon-in-5-star-raid-battles-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Groudon dans un raid 5 étoiles
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/Groudon-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/groudon-in-5-star-raid-battles-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260819
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Groudon dans un raid 5 étoiles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-garchomp-in-mega-raids-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Mega Carchacrok dans Mega Raids
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Carchacrok-in-mega-Raids-august-2026/
+URL:https://leekduck.com/events/mega-garchomp-in-mega-raids-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260819
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Mega Carchacrok dans Mega Raids
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260819
+DTSTAMP:20260808T015508Z
+SUMMARY:[RH] Lunala Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260819/
+URL:https://leekduck.com/events/raidhour20260819/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
+DTSTART:20260819T180000
+DTEND:20260819T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RH] Lunala Raid Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemonspotlighthour2026-08-20
+DTSTAMP:20260808T015508Z
+SUMMARY:[PSH] Magicarpe Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-08-20/
+URL:https://leekduck.com/events/pokemonspotlighthour2026-08-20/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
+DTSTART:20260820T180000
+DTEND:20260820T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PSH] Magicarpe Vedette Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:starmie-super-mega-raid-day-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RD] Staross Super Mega Raid Journée
+DESCRIPTION:Starts at 11:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/Staross-super-mega-raid-Journée-2026/
+URL:https://leekduck.com/events/starmie-super-mega-raid-day-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-22-starmie-super-mega-raid-day-2026/starmie-super-mega-raid-day-2026.jpg
+DTSTART:20260822T110000
+DTEND:20260822T170000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RD] Staross Super Mega Raid Journée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:water-festival-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[E] Ultra Unlock: Water Festival
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/water-festival-2026/
+URL:https://leekduck.com/events/water-festival-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-18-water-festival-2026/water-festival-2026.jpg?v2
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260825
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] Ultra Unlock: Water Festival
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-24
+DTSTAMP:20260808T015508Z
+SUMMARY:[MM] Dynamax Kapoera during Max MonJournée
+DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-08-24/
+URL:https://leekduck.com/events/max-mondays-2026-08-24/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
+DTSTART:20260824T060000
+DTEND:20260824T210000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[MM] Dynamax Kapoera during Max MonJournée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-forever-forward_great-league_scroll-cup-great-league-edition
+DTSTAMP:20260808T015508Z
+SUMMARY:[GBL] Super Ligue et Scroll Coupe: Super Ligue Édition | Forever Forward
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_Super-Ligue_scroll-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-forever-forward_great-league_scroll-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260826
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue et Scroll Coupe: Super Ligue Édition | Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lunala-in-5-star-raid-battles-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Lunala dans un raid 5 étoiles
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/lunala-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/lunala-in-5-star-raid-battles-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260826
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Lunala dans un raid 5 étoiles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-swampert-in-mega-raids-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Mega LGaleking dans Mega Raids
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-LGaleking-in-mega-Raids-august-2026/
+URL:https://leekduck.com/events/mega-swampert-in-mega-raids-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260826
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Mega LGaleking dans Mega Raids
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260826
+DTSTAMP:20260808T015508Z
+SUMMARY:[RH] Regirock\, Regice\, et Registeel Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260826/
+URL:https://leekduck.com/events/raidhour20260826/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
+DTSTART:20260826T180000
+DTEND:20260826T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RH] Regirock\, Regice\, et Registeel Raid Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemonspotlighthour2026-08-27
+DTSTAMP:20260808T015508Z
+SUMMARY:[PSH] Férosinge Vedette Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-08-27/
+URL:https://leekduck.com/events/pokemonspotlighthour2026-08-27/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg
+DTSTART:20260827T180000
+DTEND:20260827T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PSH] Férosinge Vedette Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-world-championships-2026-timed-research-twitch-drops
+DTSTAMP:20260808T015508Z
+SUMMARY:[R] Twitch Drops for 2026 Pokémon World Championships
+DESCRIPTION:Starts at 16:00\, ends at 03:00.\n\nhttps://leekduck.com/Événements/pokemon-world-championships-2026-timed-Recherche-twitch-drops/
+URL:https://leekduck.com/events/pokemon-world-championships-2026-timed-research-twitch-drops/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-28-pokemon-world-championships-2026-timed-research-twitch-drops/2026-worlds-go-drops.jpg
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260901
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[R] Twitch Drops for 2026 Pokémon World Championships
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-xp-2026-worlds
+DTSTAMP:20260808T015508Z
+SUMMARY:[E] PokémonXP &amp\; 2026 Worlds
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-xp-2026-worlds/
+URL:https://leekduck.com/events/pokemon-xp-2026-worlds/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-25-pokemon-xp-2026-worlds/pokemon-xp-2026-worlds.jpg
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260831
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] PokémonXP &amp\; 2026 Worlds
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-31
+DTSTAMP:20260808T015508Z
+SUMMARY:[MM] Dynamax Évoli during Max MonJournée
+DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-08-31/
+URL:https://leekduck.com/events/max-mondays-2026-08-31/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg
+DTSTART:20260831T060000
+DTEND:20260831T210000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[MM] Dynamax Évoli during Max MonJournée
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-forever-forward_great-league_ultra-league_master-league-split-3
+DTSTAMP:20260808T015508Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Forever Forward
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_Super-Ligue_ultra-Ligue_master-Ligue-split-3/
+URL:https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-split-3/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-27-forever-forward.jpg
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260902
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260902
+DTSTAMP:20260808T015508Z
+SUMMARY:[RH] Regirock\, Regice\, et Registeel Raid Hour
+DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260902/
+URL:https://leekduck.com/events/raidhour20260902/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/raidhour.jpg
+DTSTART:20260902T180000
+DTEND:20260902T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RH] Regirock\, Regice\, et Registeel Raid Hour
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-go-fest-2026-mega-finale
+DTSTAMP:20260808T015508Z
+SUMMARY:[PGF] Pokémon GO Fest 2026: Mega Finale
+DESCRIPTION:Starts at 10:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemon-go-fest-2026-mega-finale/
+URL:https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-05-pokemon-go-fest-2026-mega-finale/pokemon-go-fest-2026-mega-finale.jpg?v2
+DTSTART:20260905T100000
+DTEND:20260906T190000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[PGF] Pokémon GO Fest 2026: Mega Finale
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:season-23-forever-forward
+DTSTAMP:20260808T015508Z
+SUMMARY:[S] Forever Forward
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-23-forever-forward/
+URL:https://leekduck.com/events/season-23-forever-forward/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-02-season-23-forever-forward/season-23-forever-forward.jpg
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[S] Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:go-pass-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[GP] GO Pass: August
+DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-august-2026/
+URL:https://leekduck.com/events/go-pass-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-04-go-pass-august-2026/go-pass-august-2026.jpg
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GP] GO Pass: August
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-forever-forward_great-league_ultra-league_master-league-mega-edition
+DTSTAMP:20260808T015508Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue: Mega Édition | Forever Forward
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_Super-Ligue_ultra-Ligue_master-Ligue-mega-Édition/
+URL:https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-mega-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-27-forever-forward.jpg
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue: Mega Édition | Forever Forward
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:shadow-giratina-altered-in-shadow-raids-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Shadow Giratina (Altered Forme) dans Shadow Raids
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Giratina-altered-in-shadow-Raids-august-2026/
+URL:https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Shadow Giratina (Altered Forme) dans Shadow Raids
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-gyarados-in-mega-raids-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Mega Léviator dans Mega Raids
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Léviator-in-mega-Raids-august-2026/
+URL:https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Mega Léviator dans Mega Raids
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:regirock-regice-registeel-in-5-star-raid-battles-august-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[RB] Regirock\, Regice\, et Registeel dans un raid 5 étoiles
+DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/Regirock-Regice-Registeel-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-img.jpg
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260909
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Regirock\, Regice\, et Registeel dans un raid 5 étoiles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lego-pokemon-go-2026
+DTSTAMP:20260808T015508Z
+SUMMARY:[E] LEGO Stores et Pokémon GO
+DESCRIPTION:Starts at 10:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/lego-pokemon-go-2026/
+URL:https://leekduck.com/events/lego-pokemon-go-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-03-lego-pokemon-go-2026/lego-stores-pokemon-go.jpg
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20261001
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[E] LEGO Stores et Pokémon GO
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
