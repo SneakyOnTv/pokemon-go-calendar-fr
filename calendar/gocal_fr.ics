@@ -8,53 +8,8 @@ X-WR-CALDESC:Calendrier PoGo Fr by SneakyOnTv
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
-UID:pokemon-world-championships-2026-timed-research-twitch-drops
-DTSTAMP:20260831T044702Z
-SUMMARY:[R] Twitch Drops for 2026 Pokémon World Championships
-DESCRIPTION:Starts at 16:00\, ends at 03:00.\n\nhttps://leekduck.com/Événements/pokemon-world-championships-2026-timed-Recherche-twitch-drops/
-URL:https://leekduck.com/events/pokemon-world-championships-2026-timed-research-twitch-drops/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-28-pokemon-world-championships-2026-timed-research-twitch-drops/2026-worlds-go-drops.jpg
-DTSTART;VALUE=DATE:20260828
-DTEND;VALUE=DATE:20260901
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[R] Twitch Drops for 2026 Pokémon World Championships
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:pokemon-world-championships-2026-san-francisco
-DTSTAMP:20260831T044702Z
-SUMMARY:[E] [San Francisco] 2026 Pokémon World Championships
-DESCRIPTION:Starts at 17:00\, ends at 03:00.\n\nhttps://leekduck.com/Événements/pokemon-world-championships-2026-san-francisco/
-URL:https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-28-pokemon-world-championships-2026-san-francisco/2026-worlds-san-francisco.png
-DTSTART;VALUE=DATE:20260828
-DTEND;VALUE=DATE:20260901
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[E] [San Francisco] 2026 Pokémon World Championships
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:pokemon-xp-2026-worlds
-DTSTAMP:20260831T044702Z
-SUMMARY:[E] PokémonXP &amp\; 2026 Worlds
-DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/pokemon-xp-2026-worlds/
-URL:https://leekduck.com/events/pokemon-xp-2026-worlds/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-25-pokemon-xp-2026-worlds/pokemon-xp-2026-worlds.jpg
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260831
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[E] PokémonXP &amp\; 2026 Worlds
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:max-mondays-2026-08-31
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MM] Dynamax Évoli during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-08-31/
 URL:https://leekduck.com/events/max-mondays-2026-08-31/
@@ -68,23 +23,8 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:gbl-forever-forward_great-league_ultra-league_master-league-split-3
-DTSTAMP:20260831T044702Z
-SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Forever Forward
-DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_Super-Ligue_ultra-Ligue_master-Ligue-split-3/
-URL:https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-split-3/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-27-forever-forward.jpg
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260902
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue | Forever Forward
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:raidhour20260902
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RH] Regirock\, Regice\, et Registeel Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260902/
 URL:https://leekduck.com/events/raidhour20260902/
@@ -99,7 +39,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-ascension
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Mega Ascension
 DESCRIPTION:Starts at 10:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/mega-ascension/
 URL:https://leekduck.com/events/mega-ascension/
@@ -114,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-mega-finale
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[PGF] Pokémon GO Fest 2026: Mega Finale
 DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/pokemon-go-fest-2026-mega-finale/
 URL:https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/
@@ -128,8 +68,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:armored-mewtwo-in-5-star-raid-battles-september-2026
+DTSTAMP:20260901T042651Z
+SUMMARY:[RB] Armored Mewtwo dans un raid 5 étoiles
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/Événements/armored-Mewtwo-in-5-star-raid-battles-september-2026/
+URL:https://leekduck.com/events/armored-mewtwo-in-5-star-raid-battles-september-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/armored-mewtwo-mega-finale-2026.png
+DTSTART:20260905T100000
+DTEND:20260906T180000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[RB] Armored Mewtwo dans un raid 5 étoiles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:10th-anniversary-celebration
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] 10th Anniversary Celebration - Perfect Mewtwo Timed Recherche
 DESCRIPTION:Starts at 16:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/10th-anniversary-celebration/
 URL:https://leekduck.com/events/10th-anniversary-celebration/
@@ -144,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-07
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MM] Dynamax Tarsal during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-09-07/
 URL:https://leekduck.com/events/max-mondays-2026-09-07/
@@ -159,7 +114,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-23-forever-forward
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[S] Forever Forward
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-23-forever-forward/
 URL:https://leekduck.com/events/season-23-forever-forward/
@@ -174,7 +129,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-august-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[GP] GO Pass: August
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-august-2026/
 URL:https://leekduck.com/events/go-pass-august-2026/
@@ -188,23 +143,8 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:gbl-forever-forward_great-league_ultra-league_master-league-mega-edition
-DTSTAMP:20260831T044702Z
-SUMMARY:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue: Mega Édition | Forever Forward
-DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-forever-forward_Super-Ligue_ultra-Ligue_master-Ligue-mega-Édition/
-URL:https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-mega-edition/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-27-forever-forward.jpg
-DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20260909
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue\, et Master Ligue: Mega Édition | Forever Forward
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:shadow-giratina-altered-in-shadow-raids-august-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Shadow Giratina (Altered Forme) dans Shadow Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Giratina-altered-in-shadow-Raids-august-2026/
 URL:https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/
@@ -219,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-gyarados-in-mega-raids-august-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Léviator dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Léviator-in-mega-Raids-august-2026/
 URL:https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/
@@ -234,7 +174,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:regirock-regice-registeel-in-5-star-raid-battles-august-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Regirock\, Regice\, et Registeel dans un raid 5 étoiles
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/Regirock-Regice-Registeel-in-5-star-raid-battles-august-2026/
 URL:https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/
@@ -249,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260909
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RH] Zacian (Hero of Many Battles) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260909/
 URL:https://leekduck.com/events/raidhour20260909/
@@ -264,7 +204,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-10
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[PSH] Aspicot\, Coconfort\, et Dardargnan Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-09-10/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-10/
@@ -279,22 +219,22 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:september-communitydayclassic2026
-DTSTAMP:20260831T044702Z
-SUMMARY:[CD] September Communauté Journée Classic
+DTSTAMP:20260901T042651Z
+SUMMARY:[CD] Griknot Communauté Journée Classic
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/september-CommunautéJournéeclassic2026/
 URL:https://leekduck.com/events/september-communitydayclassic2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-12-september-communitydayclassic2026/gible-community-day-classic.jpg
 DTSTART:20260912T140000
 DTEND:20260912T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] September Communauté Journée Classic
+DESCRIPTION:[CD] Griknot Communauté Journée Classic
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-13
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[PSH] Malosse et Démolosse Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-09-13/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-13/
@@ -308,12 +248,12 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:mega-squads-2026
-DTSTAMP:20260831T044702Z
+UID:mega-squads
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Mega Squads
-DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-squads-2026/
-URL:https://leekduck.com/events/mega-squads-2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/mega-default.jpg
+DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/mega-squads/
+URL:https://leekduck.com/events/mega-squads/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-08-mega-squads/mega-squads.jpg
 DTSTART;VALUE=DATE:20260908
 DTEND;VALUE=DATE:20260915
 BEGIN:VALARM
@@ -324,7 +264,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-14
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MM] Dynamax Rhinocorne during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-09-14/
 URL:https://leekduck.com/events/max-mondays-2026-09-14/
@@ -338,8 +278,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue-mega-Édition_ultra-Ligue-mega-Édition_master-Ligue-mega-Édition-split-1/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-28-twilight-trails.png
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260916
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:mega-beedrill-in-mega-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Dardargnan dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Dardargnan-in-mega-Raids-september-2026/
 URL:https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/
@@ -354,7 +309,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Zacian (Hero of Many Battles) dans un raid 5 étoiles
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/
 URL:https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/
@@ -369,7 +324,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-houndoom-in-mega-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Démolosse dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Démolosse-in-mega-Raids-september-2026/
 URL:https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/
@@ -384,7 +339,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260916
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RH] Zamazenta (Hero of Many Battles) Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260916/
 URL:https://leekduck.com/events/raidhour20260916/
@@ -399,7 +354,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-17
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[PSH] Mystery Pokémon Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-09-17/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-17/
@@ -414,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RD] Super Mega Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/super-mega-raid-Journée-september-2026/
 URL:https://leekduck.com/events/super-mega-raid-day-september-2026/
@@ -429,7 +384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-21
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MM] Dynamax Artikodin\, Électhor\, et Sulfura during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-09-21/
 URL:https://leekduck.com/events/max-mondays-2026-09-21/
@@ -443,8 +398,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et Willpower Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue_ultra-Ligue-mega-Édition_willpower-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260923
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et Willpower Coupe: Super Ligue Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:unannounced-september-event-season-24
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Unannounced Événement
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/unannounced-september-Événement-season-24/
 URL:https://leekduck.com/events/unannounced-september-event-season-24/
@@ -459,7 +429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-venusaur-in-mega-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Florizarre dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Florizarre-in-mega-Raids-september-2026/
 URL:https://leekduck.com/events/mega-venusaur-in-mega-raids-september-2026/
@@ -474,7 +444,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Zamazenta (Hero of Many Battles) dans un raid 5 étoiles
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/
 URL:https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/
@@ -489,7 +459,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260923
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RH] Xurkitree\, Pheromosa\, et Buzzwole Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260923/
 URL:https://leekduck.com/events/raidhour20260923/
@@ -504,7 +474,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-24
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[PSH] Rattata Vedette Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/pokemonVedettehour2026-09-24/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-24/
@@ -519,7 +489,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:catch-mastery-phantump-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Brocélôme Catch Mastery
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/catch-mastery-Brocélôme-2026/
 URL:https://leekduck.com/events/catch-mastery-phantump-2026/
@@ -534,7 +504,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-28
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MM] Dynamax Larméléon during Max MonJournée
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/max-monJournées-2026-09-28/
 URL:https://leekduck.com/events/max-mondays-2026-09-28/
@@ -548,8 +518,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et Retro Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_ultra-Ligue_master-Ligue-mega-Édition_retro-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260930
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et Retro Coupe: Super Ligue Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:mega-malamar-in-mega-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Sepiatroce dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Sepiatroce-in-mega-Raids-september-2026/
 URL:https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/
@@ -564,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Xurkitree\, Pheromosa\, et Buzzwole dans un raid 5 étoiles
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/
 URL:https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/
@@ -579,7 +564,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260930
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RH] Xerneas Raid Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/Événements/raidhour20260930/
 URL:https://leekduck.com/events/raidhour20260930/
@@ -594,7 +579,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lego-pokemon-go-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] LEGO Stores et Pokémon GO
 DESCRIPTION:Starts at 10:00\, ends at 23:59.\n\nhttps://leekduck.com/Événements/lego-pokemon-go-2026/
 URL:https://leekduck.com/events/lego-pokemon-go-2026/
@@ -609,7 +594,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-battle-day-october-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-october-2026/
 URL:https://leekduck.com/events/max-battle-day-october-2026/
@@ -624,7 +609,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:harvest-festival-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Harvest Festival
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/harvest-festival-2026/
 URL:https://leekduck.com/events/harvest-festival-2026/
@@ -639,7 +624,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:go-pass-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[GP] GO Pass: September
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/go-pass-september-2026/
 URL:https://leekduck.com/events/go-pass-september-2026/
@@ -653,8 +638,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_master-league_mega-color-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Master Ligue et Mega Color Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_master-Ligue_mega-color-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20261007
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Master Ligue et Mega Color Coupe: Super Ligue Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Shadow Fulguris (Incarnate Forme) dans Shadow Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/shadow-Fulguris-incarnate-forme-in-shadow-Raids-september-2026/
 URL:https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/
@@ -669,7 +669,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-victreebel-in-mega-raids-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Mega Empiflor dans Mega Raids
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/mega-Empiflor-in-mega-Raids-september-2026/
 URL:https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/
@@ -684,7 +684,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xerneas-in-5-star-raid-battles-september-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RB] Xerneas dans un raid 5 étoiles
 DESCRIPTION:Starts at 06:00\, ends at 22:00.\n\nhttps://leekduck.com/Événements/Xerneas-in-5-star-raid-battles-september-2026/
 URL:https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/
@@ -699,7 +699,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[CD] October Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/october-CommunautéJournée2026/
 URL:https://leekduck.com/events/october-communityday2026/
@@ -713,8 +713,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue-mega-Édition_ultra-Ligue-mega-Édition_master-Ligue-mega-Édition-split-2/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-28-twilight-trails.png
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261014
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:hatch-day-october-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[E] Hatch Journée
 DESCRIPTION:Starts at 11:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/hatch-Journée-october-2026/
 URL:https://leekduck.com/events/hatch-day-october-2026/
@@ -728,8 +743,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et Little Coupe | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue_ultra-Ligue-mega-Édition_little-Coupe/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261021
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et Little Coupe | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:max-battle-day-october-24-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[MB] Max Battle Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/max-battle-Journée-october-24-2026/
 URL:https://leekduck.com/events/max-battle-day-october-24-2026/
@@ -743,8 +773,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et Fantasy Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 20:00\, ends at 20:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_ultra-Ligue_master-Ligue-mega-Édition_fantasy-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261028
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et Fantasy Coupe: Super Ligue Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:super-mega-raid-day-october-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RD] Super Mega Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/super-mega-raid-Journée-october-2026/
 URL:https://leekduck.com/events/super-mega-raid-day-october-2026/
@@ -758,8 +803,53 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Master Ligue et Mega Halloween Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_master-Ligue_mega-halloween-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261104
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Master Ligue et Mega Halloween Coupe: Super Ligue Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue-mega-Édition_ultra-Ligue-mega-Édition_master-Ligue-mega-Édition-split-3/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-season-28-twilight-trails.png
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261111
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue: Mega Édition\, Ultra Ligue: Mega Édition\, et Master Ligue: Mega Édition | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et 2026 GO LAIC Coupe | Twilight Trails
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_Super-Ligue_ultra-Ligue-mega-Édition_2026-go-laic-Coupe/
+URL:https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattle-greatleague-key.jpg
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261118
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Super Ligue\, Ultra Ligue: Mega Édition\, et 2026 GO LAIC Coupe | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:november-communityday2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[CD] November Communauté Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/november-CommunautéJournée2026/
 URL:https://leekduck.com/events/november-communityday2026/
@@ -773,8 +863,23 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et 2026 GO LAIC Coupe | Twilight Trails
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_ultra-Ligue_master-Ligue-mega-Édition_2026-go-laic-Coupe/
+URL:https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261126
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Ultra Ligue\, Master Ligue: Mega Édition\, et 2026 GO LAIC Coupe | Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:super-mega-raid-day-november-2026
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[RD] Super Mega Raid Journée
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/Événements/super-mega-raid-Journée-november-2026/
 URL:https://leekduck.com/events/super-mega-raid-day-november-2026/
@@ -789,7 +894,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:season-24-twilight-trails
-DTSTAMP:20260831T044702Z
+DTSTAMP:20260901T042651Z
 SUMMARY:[S] Twilight Trails
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/Événements/season-24-twilight-trails/
 URL:https://leekduck.com/events/season-24-twilight-trails/
@@ -799,6 +904,21 @@ DTEND;VALUE=DATE:20261202
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[S] Twilight Trails
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition
+DTSTAMP:20260901T042651Z
+SUMMARY:[GBL] Master Ligue et Mega Catch Coupe: Super Ligue Édition | Twilight Trails
+DESCRIPTION:Starts at 21:00\, ends at 21:00.\n\nhttps://leekduck.com/Événements/gbl-twilight-trails_master-Ligue_mega-catch-Coupe-Super-Ligue-Édition/
+URL:https://leekduck.com/events/gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/gobattleleague-master-key.jpg
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261202
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[GBL] Master Ligue et Mega Catch Coupe: Super Ligue Édition | Twilight Trails
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
